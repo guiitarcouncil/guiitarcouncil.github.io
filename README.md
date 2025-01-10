@@ -2,7 +2,7 @@
 
 ## Make sure you have Node Package Manager installed
 
-1. git clone https://github.com/guiitarcouncil/home.git
+1. `git clone https://github.com/guiitarcouncil/home.git~
 
 2. cd home/frontend
 
