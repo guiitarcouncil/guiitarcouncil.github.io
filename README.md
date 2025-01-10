@@ -8,3 +8,4 @@
 
 3. Run `npm install`,`npm install axios`,`npm install --save-dev web-vitals`,`npm install react-router-dom`and`npm instal react-icons`
 
+4. To view project in browser use: `npm run dev`
