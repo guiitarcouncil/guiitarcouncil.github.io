@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Programs from './Programs'; 
 import Footer from './Footer';
+import video1 from './assets/video.mp4';
+import video2 from './assets/video2.mp4';
+import video3 from './assets/video3.mp4';
+import video4 from './assets/video4.mp4';
 
 
 // App Component
@@ -31,8 +35,18 @@ function Home() {
   return (
     <div className="home">
       <div className="carousel">
-        <h1>Welcome to GUIITAR Council</h1>
-        <p></p>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="carousel-video"
+        >
+          <source src={video4} type="video/mp4" />
+        </video>
+        <div className="carousel-content">
+          <h1>Welcome to GUIITAR Council</h1>
+        </div>
       </div>
       <div className="home-sections">
         <section>
@@ -40,18 +54,18 @@ function Home() {
           <p>Driving innovation and entrepreneurship with zero-cost startup support.</p>
         </section>
         <section>
-          <h2>Our Impact</h2>
-          <p>100+ Startups Incubated</p>
-          <p>50+ Student-Led Projects</p>
-        </section>
-        <section>
           <h2>Message from the President</h2>
           <p>A vision to foster creativity and empower the next generation of innovators.</p>
+        </section>
+        <section>
+          <h2>Message from the Provost</h2>
+          <p>Working towards creating an inclusive ecosystem for students and startups.</p>
         </section>
       </div>
     </div>
   );
 }
+
 
 // About Component
 function About() {

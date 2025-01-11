@@ -167,3 +167,58 @@ footer {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
 }
+
+/* Video CSS*/
+/* Video styling */
+.carousel {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the carousel area */
+}
+
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.carousel-content h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Beneath video sections styling */
+.home-sections {
+  padding: 2rem;
+  background: #161b22;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home-sections section {
+  margin-bottom: 1.5rem;
+}
+
+.home-sections h2 {
+  color: #8fbcbb;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.home-sections p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
