@@ -1,0 +1,55 @@
+.scalar-container {
+  background: url("https://via.placeholder.com/1500") center center/cover no-repeat; /* Replace with your background image */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.scalar-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.scalar-stats {
+  display: grid; /* Switch to grid for better control of layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 10px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.scalar-item {
+  text-align: center;
+}
+
+.scalar-item .favicon {
+  font-size: 4rem; /* Increase the size of favicons */
+  margin-bottom: 10px;
+}
+
+.scalar-item .count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.scalar-item p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .scalar-stats {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .scalar-stats {
+    grid-template-columns: 1fr; /* 1 item per row on very small screens */
+  }
+}

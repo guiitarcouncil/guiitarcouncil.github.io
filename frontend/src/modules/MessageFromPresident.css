@@ -1,0 +1,61 @@
+/* Styling for the quote card */
+.quote-card {
+    display: flex;
+    align-items: center;
+    background-color:teal; /* Golden yellow background */
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px;
+    margin: 20px auto;
+    max-width:1300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Rajdhani', sans-serif; /* Use a modern, clean font 
+    p*/
+    /* padding-left: 30px;   */
+  }
+  
+  /* Styling for the image */
+  .quote-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid black; /* White border for the circular image */
+    margin-right: 20px;
+  }
+  
+  /* Styling for the content */
+  .quote-content {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  /* Styling for the quote text */
+  .quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color:whitesmoke;
+    margin: 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .quote-text::before {
+    content: "“ ";
+    font-size: 3rem;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+  
+  
+  /* Styling for the quote author */
+  .quote-author {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:wheat;
+  }
+  
