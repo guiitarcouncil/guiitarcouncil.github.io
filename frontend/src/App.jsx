@@ -1,20 +1,55 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './modules/Navbar';
-import Programs from './modules/Programs'; 
+import Programs from './modules/Programs';
 import Footer from './modules/Footer';
-import Carousel from './modules/Carousel'
+import Carousel from './modules/Carousel';
 import Mission from './modules/Mission';
-import Scalar from './modules/Scalar'
-import MessageFromPresident from './modules/MessageFromPresident'
-import './App.css'; 
+import Scalar from './modules/Scalar';
+import MessageFromPresident from './modules/MessageFromPresident';
+import './App.css';
 
-// App Component
 function App() {
+  const [startMissionAnimation, setStartMissionAnimation] = useState(false);
+  const [startMessageAnimation, setStartMessageAnimation] = useState(false);
+
+  const missionRef = useRef(null);
+  const messageRef = useRef(null);
+
+ 
+  useEffect(() => {
+    const observerOptions = { threshold: 0.2 };
+
+    const missionObserver = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+                setStartMissionAnimation(true);
+            }
+        },
+        observerOptions
+    );
+
+    const messageObserver = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+                setStartMessageAnimation(true);
+            }
+        },
+        observerOptions
+    );
+
+    if (missionRef.current) missionObserver.observe(missionRef.current);
+    if (messageRef.current) messageObserver.observe(messageRef.current);
+
+    return () => {
+        if (missionRef.current) missionObserver.unobserve(missionRef.current);
+        if (messageRef.current) messageObserver.unobserve(messageRef.current);
+    };
+}, []);
+
   return (
-    <Router> 
-        
-        <Navbar />
+    <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Carousel />} />
         <Route path="/about" element={<About />} />
@@ -23,18 +58,20 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      
-        
-        <Mission/>
-        <MessageFromPresident/>
-        <Scalar/>
-        <Footer />
-    
-       
+
+      <div ref={missionRef}>
+        <Mission startAnimation={startMissionAnimation} />
+      </div>
+
+      <div ref={messageRef}>
+        <MessageFromPresident startAnimation={startMessageAnimation} />
+      </div>
+
+      <Scalar />
+      <Footer />
     </Router>
   );
 }
-
 
 // About Component
 function About() {
@@ -87,5 +124,4 @@ function Contact() {
   );
 }
 
-// import Footer from './Footer';
 export default App;

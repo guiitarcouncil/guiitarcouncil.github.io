@@ -41,22 +41,21 @@ function Carousel() {
   
   return (
     <div className="carousel">
-      <video
-        ref={videoRef}
-        autoPlay={true}
-        loop
-        muted
-        playsInline
-        className="carousel-video"
-      >
-        <source src={video5} type="video/mp4" />
-      </video>
+     <video
+  ref={videoRef}
+  autoPlay={true}
+  loop
+  muted
+  playsInline
+  className="carousel-video"
+>
+  <source src={video5} type="video/mp4" />
+</video>
+
       <div className="carousel-content">
         <h1>{text || '\u00A0'}</h1> {/* Use non-breaking space to avoid empty rendering */}
         <p>
-          GU Incubation Innovation Technology and Applied Research (GUIITAR) Council has been established by GSFC University (GSFCU) at Vadodara, dedicated to promote and support
-          creativity, innovation and spirit of enterprise among young minds and innovators.
-          GUIITAR Council is registered under section 8 of Companies Act, 2013.
+          GU Incubation Innovation Technology and Applied Research (GUIITAR) Council is registered under section 8 of Companies Act, 2013 which has been established by GSFC University at Vadodara, dedicated to promote and support creativity, innovation and spirit of enterprise among young minds and innovators.
         </p>
         <div className="cta-buttons">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSchfX1JB-oZvQOm4ff9iJuQjD9f1Tu3T84OT3279RoHjq_ivg/viewform" className="btn" target="_blank" rel="noopener noreferrer">Apply for SSIP Grant</a>
