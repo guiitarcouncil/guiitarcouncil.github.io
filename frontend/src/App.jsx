@@ -13,6 +13,7 @@ import Funding from './modules/Funding';
 import Programs from './modules/Programs';
 import Resources from './modules/Resources';
 import Contact from './modules/Contact';
+import Notfound from './modules/Notfound';
 
 import './App.css';
 
@@ -134,6 +135,7 @@ function App() {
             </>
           }
         />
+         <Route path="*" element={<Notfound />} />
       </Routes>
     </Router>
   );
