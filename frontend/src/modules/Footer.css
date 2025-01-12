@@ -38,7 +38,7 @@
   margin-bottom: 15px;
 }
 .footer-description p{
-  margin-bottom: -15px;
+  margin-bottom: -3px;
 }
 
 .footer-social-icons {
@@ -102,5 +102,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -15px;
+  margin-bottom: -3px;
 }
