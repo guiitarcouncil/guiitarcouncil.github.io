@@ -26,12 +26,12 @@
 }
 
 .footer-logos img {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 10px;
-  width: 250px;
-
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  padding-bottom: 20px;
 }
+
 
 .footer-logo {
   max-width: 100px; 
@@ -43,6 +43,7 @@
 }
 .footer-description p{
   margin-bottom: -3px;
+  color: #ccc;
 }
 
 .footer-social-icons {
@@ -100,11 +101,19 @@
 .footer-copyright{
   margin-bottom: 20px;
   margin-left: 40vw;
+  align-items: center;
 }
 
 .footer-copyright p{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -3px;
+  margin-bottom: 3px;
+}
+.footer-social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.1);
 }
