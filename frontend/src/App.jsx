@@ -1,39 +1,86 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './modules/Navbar';
-import Carousel from './modules/Carousel'; // Home
-import Mission from './modules/Mission';
-import MessageFromPresident from './modules/MessageFromPresident';
-import Scalar from './modules/Scalar';
 import Footer from './modules/Footer';
-import About from './modules/About'; // About.jsx
-import Funding from './modules/Funding'; // Funding.jsx
-import Programs from './modules/Programs'; // Programs.jsx
-import Resources from './modules/Resources'; // Resources.jsx
-import Contact from './modules/Contact'; // Contact.jsx
+import Carousel from './modules/Carousel'; // Home
+import Scalar from './modules/Scalar'; // Scalar
+import Mission from './modules/Mission'; // Mission section
+import MessageFromPresident from './modules/MessageFromPresident'; // Message section
+
+// Import all other components
+import About from './modules/About';
+import Funding from './modules/Funding';
+import Programs from './modules/Programs';
+import Resources from './modules/Resources';
+import Contact from './modules/Contact';
 
 import './App.css';
 
 function App() {
+  const [startMissionAnimation, setStartMissionAnimation] = useState(false);
+  const [startMessageAnimation, setStartMessageAnimation] = useState(false);
+
+  const missionRef = useRef(null);
+  const messageRef = useRef(null);
+
+  useEffect(() => {
+    const observerOptions = { threshold: 0.2 };
+
+    const missionObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartMissionAnimation(true);
+        }
+      },
+      observerOptions
+    );
+
+    const messageObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartMessageAnimation(true);
+        }
+      },
+      observerOptions
+    );
+
+    if (missionRef.current) missionObserver.observe(missionRef.current);
+    if (messageRef.current) messageObserver.observe(messageRef.current);
+
+    return () => {
+      if (missionRef.current) missionObserver.unobserve(missionRef.current);
+      if (messageRef.current) messageObserver.unobserve(messageRef.current);
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>
-        {/* Home Route with Shared Layout */}
+        {/* Home Route */}
         <Route
           path="/"
           element={
             <>
               <Navbar />
               <Carousel />
-              <Mission />
-              <MessageFromPresident />
+
+              {/* Mission Section */}
+              <div ref={missionRef}>
+                <Mission startAnimation={startMissionAnimation} />
+              </div>
+
+              {/* Message From President Section */}
+              <div ref={messageRef}>
+                <MessageFromPresident startAnimation={startMessageAnimation} />
+              </div>
+
               <Scalar />
               <Footer />
             </>
           }
         />
 
-        {/* About Page with Shared Layout */}
+        {/* About Page */}
         <Route
           path="/about"
           element={
@@ -45,7 +92,7 @@ function App() {
           }
         />
 
-        {/* Funding Page with Shared Layout */}
+        {/* Funding Page */}
         <Route
           path="/funding"
           element={
@@ -57,19 +104,10 @@ function App() {
           }
         />
 
-        {/* Programs Page WITHOUT Shared Layout */}
-        <Route 
-          path="/programs" 
-          element={
-            <>
-          <Navbar /> 
-          <Programs />  
-          <Footer />
-          </>
-          } 
-          />
+        {/* Programs Page */}
+        <Route path="/programs" element={<Programs />} />
 
-        {/* Resources Page with Shared Layout */}
+        {/* Resources Page */}
         <Route
           path="/resources"
           element={
@@ -81,7 +119,7 @@ function App() {
           }
         />
 
-        {/* Contact Page with Shared Layout */}
+        {/* Contact Page */}
         <Route
           path="/contact"
           element={
