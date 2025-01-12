@@ -1,6 +1,8 @@
 .footer {
   width: 100vw;
-  background-color: #0a0a0a;
+  background-image: url('../assets/footer.jpeg'); 
+  background-size: cover;
+  background-position: center; 
   color: #fff;
   padding: 20px 40px;
   display: flex;
@@ -8,6 +10,7 @@
   justify-content: space-between;
   padding-bottom: 150px;
 }
+
 
 .footer-container {
   display: flex;
@@ -25,11 +28,12 @@
   display: flex;
   gap: 15px;
   margin-bottom: 10px;
-  width: 200px;
+  width: 250px;
+
 }
 
 .footer-logo {
-  max-width: 80px;
+  max-width: 100px; 
 }
 
 .footer-description {
@@ -68,8 +72,8 @@
 }
 
 .footer-section h4 {
-  font-size: 16px;
-  color: blue;
+  font-size: 26px;
+  color: wheat;
   margin-bottom: 10px;
 }
 

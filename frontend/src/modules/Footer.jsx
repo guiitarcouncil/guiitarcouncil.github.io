@@ -34,7 +34,7 @@ function Footer() {
         </div>
         <div className="footer-right">
           <div className="footer-section">
-            <h4>About T-Hub</h4>
+            <h4>About GUIITAR Council</h4>
             <ul>
               <li>About Us</li>
               <li>Awards</li>
@@ -59,11 +59,11 @@ function Footer() {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li>RTI</li>
-              <li>Corporate Notices</li>
+              <li>lore</li>
+              <li>Startup </li>
               <li>Terms and Conditions</li>
               <li>Privacy and Cookies Policy</li>
-              <li>Media Kit</li>
+              <li>Past Events</li>
             </ul>
           </div>
         </div>
