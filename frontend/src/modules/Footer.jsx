@@ -12,8 +12,11 @@ function Footer() {
             
           </div>
           <p className="footer-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit consectetur iste!
-          </p>
+          <p>Event Room, Second Floor, GUIITAR Council,</p>
+          <p>Anviksha - GSFC University,</p>
+          <p>P. O. Fertilizernagar,</p>
+          <p>Vadodara-391750, Gujarat,</p>
+          <p >INDIA</p></p>
           <div className="footer-social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaFacebookF />
@@ -36,13 +39,11 @@ function Footer() {
           <div className="footer-section">
             <h4>About GUIITAR Council</h4>
             <ul>
-              <li>About Us</li>
-              <li>Awards</li>
-              <li>Careers</li>
-              <li>Startups</li>
-              <li>Corporates</li>
+              <li>Home</li>
+              <li>About</li>
+              <li>Funding</li>
               <li>Programs</li>
-              <li>Contact Us</li>
+              <li>Resources</li>
             </ul>
           </div>
           <div className="footer-section">
@@ -67,6 +68,12 @@ function Footer() {
             </ul>
           </div>
         </div>
+      </div>
+      
+      <div className="footer-copyright">
+        <p>Guiitar Council © 2025</p>
+        <p>Made with ❤ in India</p>
+
       </div>
     </footer>
   );

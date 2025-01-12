@@ -8,7 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
+  padding-bottom: revert-layer;
 }
 
 
@@ -40,8 +41,12 @@
   font-size: 14px;
   margin-bottom: 15px;
 }
+.footer-description p{
+  margin-bottom: -15px;
+}
 
 .footer-social-icons {
+  padding-top: 15px;
   display: flex;
   gap: 10px;
 }
@@ -91,4 +96,15 @@
 
 .footer-section ul li:hover {
   color: #fff;
+}
+.footer-copyright{
+  margin-bottom: 20px;
+  margin-left: 40vw;
+}
+
+.footer-copyright p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
 }
