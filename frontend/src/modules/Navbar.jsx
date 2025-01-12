@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';  // Import Link
 import './Navbar.css';
-import logo from '../assets/logo-removebg-preview.png'
-import logo1 from '../assets/logo1.png'
+import logo from '../assets/logo-removebg-preview.png';
+import logo1 from '../assets/logo1.png';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,13 +24,14 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <div className="logo"><a href="/"><img src={logo1} alt="logo" /></a></div>
+        <div className="logo"><Link to="/"><img src={logo1} alt="logo" /></Link></div>
         <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#funding">Funding</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#resources">Resources</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/funding">Funding</Link></li>
+          <li><Link to="/programs">Programs</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
         </ul>
       </div>
     </nav>

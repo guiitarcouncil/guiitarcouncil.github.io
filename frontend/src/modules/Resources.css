@@ -1,0 +1,21 @@
+.resources {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .resources h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .resources ul {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .resources ul li {
+    margin-bottom: 10px;
+  }
+  
