@@ -105,7 +105,11 @@ function App() {
         />
 
         {/* Programs Page */}
-        <Route path="/programs" element={<Programs />} />
+        <Route path="/programs" element={ <>
+              <Navbar />
+              <Funding />
+              <Footer />
+            </>} />
 
         {/* Resources Page */}
         <Route
