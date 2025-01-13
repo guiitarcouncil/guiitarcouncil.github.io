@@ -1,3 +1,7 @@
+Certainly! Here's an updated version of your README that includes the steps for setting up a virtual environment and installing dependencies from `requirements.txt` using Python:
+
+---
+
 # Guide to Running the Project Locally
 
 Follow these steps to run this project on your system.
@@ -14,27 +18,67 @@ Make sure to install the following software:
 
 ## Steps to Run the Project
 
-1. **Clone the Repository**  
-   First, clone the project repository to your local machine by running the following command in your terminal:
-   ```bash
-   git clone https://github.com/guiitarcouncil/home.git
-   ```
+### 1. Clone the Repository
 
-2. **Navigate to the Frontend Directory**  
-   Once the repository is cloned, open the `frontend` folder in your terminal or VSCode.
+First, clone the project repository to your local machine by running the following command in your terminal or VS Code:
+```bash
+git clone https://github.com/guiitarcouncil/home.git
+```
 
-3. **Install Dependencies**  
-   Run the following command to install the necessary dependencies:
-   ```bash
-   npm install axios react-router-dom react-icons web-vitals --save-dev tsparticles @tsparticles/react
-   ```
+### 2. Set Up Backend
 
-4. **Run the Project Locally**  
-   To view the project in your browser, use the following command:
-   ```bash
-   npm run dev
-   ```
+#### Create a Virtual Environment
 
-   This will start the development server, and you should be able to access the project in your browser.
+Navigate to the project directory and create a virtual environment to isolate your Python dependencies:
+```bash
+cd home
+python -m venv venv
+```
+
+#### Activate the Virtual Environment
+
+- **On Windows**:
+  ```bash
+  venv\Scripts\activate
+  ```
+
+- **On macOS/Linux**:
+  ```bash
+  source venv/bin/activate
+  ```
+
+#### Install Python Dependencies
+
+Once the virtual environment is activated, install the required Python dependencies from the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set Up the Frontend
+
+#### Navigate to the Frontend Directory
+
+After setting up Python dependencies, go to the `frontend` directory in your terminal or VS Code:
+```bash
+cd frontend
+```
+
+#### Install Frontend Dependencies
+
+Run the following command to install the necessary frontend dependencies:
+```bash
+npm install axios react-router-dom react-icons web-vitals --save-dev tsparticles @tsparticles/react
+```
+
+### 4. Run the Project Locally
+
+#### Start the Development Server
+
+To view the project in your browser, run:
+```bash
+npm run dev
+```
+
+This will start the development server, and you should be able to access the project in your browser.
 
 ---
