@@ -1,7 +1,3 @@
-Certainly! Here's an updated version of your README that includes the steps for setting up a virtual environment and installing dependencies from `requirements.txt` using Python:
-
----
-
 # Guide to Running the Project Locally
 
 Follow these steps to run this project on your system.
