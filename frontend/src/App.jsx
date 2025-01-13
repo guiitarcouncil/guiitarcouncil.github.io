@@ -6,7 +6,7 @@ import Carousel from './modules/Carousel'; // Home
 import Scalar from './modules/Scalar'; // Scalar
 import Mission from './modules/Mission'; // Mission section
 import MessageFromPresident from './modules/MessageFromPresident'; // Message section
-
+import Particle from './modules/Particle'
 // Import all other components
 import About from './modules/About';
 import Funding from './modules/Funding';

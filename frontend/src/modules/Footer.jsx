@@ -17,11 +17,10 @@ function Footer() {
             <img src={logo} alt="logo" />
           </div>
           <div className="footer-description">
-            <p>Event Room, Second Floor,</p>
-            <p>Anviksha - GSFC University,</p>
-            {/* <p>P. O. Fertilizernagar,</p> */}
-            <p>Vadodara-391750, Gujarat</p>
-            {/* <p>INDIA</p> */}
+            <p>Event Room, Second Floor</p>
+            <p>Anviksha - GSFC University</p>
+            <p>Vadodara, Gujarat - 391750</p>
+            <p>India</p>
           </div>
 
           <div className="footer-social-icons">
@@ -110,4 +109,3 @@ function Footer() {
 }
 
 export default Footer;
- 
