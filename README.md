@@ -63,7 +63,7 @@ cd frontend
 
 Run the following command to install the necessary frontend dependencies:
 ```bash
-npm install axios react-router-dom react-icons web-vitals --save-dev tsparticles @tsparticles/react
+npm install axios react-router-dom react-icons font-awesome web-vitals --save-dev tsparticles @tsparticles/react
 ```
 
 ### 4. Run the Project Locally
