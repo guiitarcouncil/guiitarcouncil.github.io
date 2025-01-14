@@ -13,6 +13,8 @@ footer {
 }
 .footer-container {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
   padding-bottom: 55px;
@@ -41,23 +43,22 @@ footer {
 .footer-section ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .footer-section ul li {
+  font-size: 14px;
   margin-bottom: 5px;
+  color: #ccc;
+  cursor: pointer;
 }
 
-.footer-section a {
+.footer-section ul li:hover {
   color: #fff;
-  text-decoration: none;
 }
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
+.footer-copyright{
+  margin-bottom: 20px;
+  margin-left: 40vw;
   align-items: center;
-  margin-top: 10px;
 }
 
 .footer-logo {
@@ -76,6 +77,6 @@ footer {
   text-decoration: none;
 }
 
-.social-icon:hover {
-  color: #ccc;
+.footer-social-icons a:hover {
+  transform: scale(1.1);
 }
