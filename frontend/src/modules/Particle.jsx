@@ -29,7 +29,7 @@ export default function Particle() {
               autoPlay: true,
               fpsLimit: 50,
               detectRetina: true,
-              fullScreen: { enable: false }, // Disable full-screen mode
+              fullScreen: { enable: false }, 
               interactivity: {
                 detectsOn: "window",
                 events: {
@@ -56,7 +56,7 @@ export default function Particle() {
                 color: { value: "#ffffff" },
                 links: {
                   color: "#ffffff",
-                  distance: 250,
+                  distance: 150,
                   enable: true,
                   opacity: 0.4,
                   width: 1.5,
@@ -66,7 +66,7 @@ export default function Particle() {
                   enable: true,
                   outModes: { default: "out" },
                   random: false,
-                  speed: 4.0,
+                  speed: 2.0,
                   straight: false,
                 },
                 number: {

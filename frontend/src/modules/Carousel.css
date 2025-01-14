@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 .carousel {
   position: relative;
-  height: 100vh; 
+  height: 95vh; 
   display: flex;
   align-items: center;
   justify-content: flex-start; 
@@ -22,19 +20,19 @@
 .carousel-content {
   position: relative;
   z-index: 1;
-  color: white; /* Text color */
-  text-align: left; /* Align text to the left */
-  max-width: 700px; /* Restrict width for readability */
-  margin-left: 50px; /* Add space from the left edge of the screen */
-  padding: 0; /* Remove padding */
+  color: white; 
+  text-align: left; 
+  max-width: 700px; 
+  margin-left: 50px;
+  padding: 0; 
   font-weight: 700;
   font-style: normal;
 }
 
 .carousel-content h1 {
-  font-size: 3rem; /* Adjust the size of the text */
+  font-size: 3rem; 
   font-weight: bold;
-  line-height: 1.3; /* Adjust line height for spacing */
-  color: #ffffff; /* White text color */
+  line-height: 1.3; 
+  color: #ffffff; 
   font-family: 'Oswald', sans-serif;
 }

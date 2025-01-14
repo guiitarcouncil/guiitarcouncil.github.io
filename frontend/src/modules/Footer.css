@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 .footer {
   width: 100vw;
   background-image: url('../assets/footer.jpeg'); 
@@ -10,10 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* padding-bottom: 150px; */
   padding-bottom: revert-layer;
 }
-
 
 .footer-container {
   display: flex;
@@ -33,7 +29,6 @@
   height: auto;
   padding-bottom: 20px;
 }
-
 
 .footer-logo {
   max-width: 100px; 

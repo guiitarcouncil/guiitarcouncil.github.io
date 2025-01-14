@@ -1,36 +1,32 @@
-/* Styling for the quote card */
 .quote-card {
   display: flex;
   align-items: center;
-  background-color: teal; /* Golden yellow background */
+  background-color: teal; 
   border-radius: 10px;
   padding: 20px;
   height: 400px;
   margin: 20px auto;
   max-width: 1300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: 'Rajdhani', sans-serif; /* Modern, clean font */
-  opacity: 0; /* Initially hidden */
-  transform: translateX(100%); /* Position off-screen to the right */
+  font-family: 'Rajdhani', sans-serif; 
+  opacity: 0; 
+  transform: translateX(100%); 
   transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
-/* When the component becomes visible */
 .quote-card.visible {
   opacity: 1;
-  transform: translateX(0); /* Fly into the screen */
+  transform: translateX(0); 
 }
 
-/* Styling for the image */
 .quote-image img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 4px solid black; /* White border for the circular image */
+  border: 4px solid black; 
   margin-right: 20px;
 }
 
-/* Styling for the content */
 .quote-content {
   display: flex;
   text-align: left;
@@ -38,7 +34,6 @@
   justify-content: left;
 }
 
-/* Styling for the quote text */
 .quote-text {
   font-size: 1.5rem;
   font-style: italic;
@@ -57,7 +52,6 @@
   top: -10px;
 }
 
-/* Styling for the quote author */
 .quote-author {
   margin-top: 10px;
   font-size: 1.2rem;
@@ -65,7 +59,6 @@
   color: wheat;
 }
 
-/* Keyframe animation for sliding in from the right */
 @keyframes slideInFromRight {
   from {
     opacity: 0;

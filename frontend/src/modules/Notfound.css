@@ -9,11 +9,11 @@
 :root {
   --primary-color: #faca2e;
   --eye-pupil-color: #050505;
-  --bg-color: #fff; /* White background for the entire page */
-  --text-color: #000; /* Black text */
-  --fs-heading: 48px; /* Increased size for the heading */
-  --fs-text: 36px; /* Increased size for the description */
-  --fs-button: 20px; /* Increased button font size */
+  --bg-color: #fff; 
+  --text-color: #000; 
+  --fs-heading: 48px;
+  --fs-text: 36px; 
+  --fs-button: 20px; 
   --fs-icon: 30px;
   --pupil-size: 30px;
   --eye-size: 80px;
@@ -30,12 +30,12 @@
 body {
   display: flex;
   min-height: 100vh;
-  background-color: var(--bg-color); /* Entire page background is now white */
-  color: var(--text-color); /* Text color is black */
+  background-color: var(--bg-color); 
+  color: var(--text-color); 
   font-family: "Fira Sans", sans-serif;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  flex-direction: column; /* Align all content vertically */
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
 }
 
 .container {
@@ -52,14 +52,14 @@ body {
   &__heading {
     &-title {
       text-transform: capitalize;
-      font-size: var(--fs-heading); /* Increased font size */
+      font-size: var(--fs-heading); 
       font-weight: 500;
-      color: var(--text-color); /* Black text */
+      color: var(--text-color); 
     }
 
     &-desciption {
       margin-top: 10px;
-      font-size: var(--fs-text); /* Increased font size */
+      font-size: var(--fs-text); 
       font-weight: 200;
     }
   }
@@ -81,7 +81,7 @@ body {
 
     &:hover {
       box-shadow: none;
-      background-color: #e8a828; /* Slightly darker shade for hover effect */
+      background-color: #e8a828;
       color: #fff;
     }
   }
@@ -90,26 +90,26 @@ body {
 .eyes {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adjusted spacing between eyes */
+  gap: 20px; 
 }
 
 .eye {
-  width: 80px; /* Width of the eye */
-  height: 80px; /* Height of the eye */
-  background-color: var(--primary-color); /* Yellow eye */
-  border-radius: 50%; /* Makes the eye circular */
+  width: 80px; 
+  height: 80px; 
+  background-color: var(--primary-color); 
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Needed for the pupil to move inside */
+  position: relative; 
 }
 
 .eye__pupil {
-  width: 30px; /* Width of the pupil */
-  height: 30px; /* Height of the pupil */
-  background-color: var(--eye-pupil-color); /* Black pupil */
-  border-radius: 50%; /* Makes the pupil circular */
-  position: absolute; /* To allow movement */
+  width: 30px; 
+  height: 30px; 
+  background-color: var(--eye-pupil-color); 
+  border-radius: 50%;
+  position: absolute; 
   animation: movePupil 2s infinite ease-in-out;
 }
 

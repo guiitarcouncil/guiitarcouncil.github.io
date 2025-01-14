@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Mission.css";
-import missionImage from "../assets/trial.png"; // Update the path to your image file
+import missionImage from "../assets/trial.png";
 
 const Mission = () => {
   return (
@@ -14,18 +15,17 @@ const Mission = () => {
         />
       </div>
       <p className="mission-description">
-        A nonprofit, MassChallenge connects startups, experts, corporations,
-        and communities to grow and transform businesses and economies. Our
-        unique equity-free model allows us to accelerate high-impact startups
-        with bold, disruptive ideas from non-traditional backgrounds.
+        The GUIITAR Council, established by GSFC University in Vadodara, is a
+        Section 8 company dedicated to fostering creativity, innovation, and
+        entrepreneurship among young minds. With cutting-edge infrastructure,
+        mentorship, networking opportunities, and resources like co-working
+        spaces and business support, we empower innovators to transform ideas
+        into impactful technologies. Our goal is to nurture confident,
+        independent leaders and drive advancements that benefit society and
+        industries.
       </p>
       <p className="mission-description">
-        We offer a variety of programs, accelerators, and partnerships
-        throughout the year to those who share our vision of transformative
-        innovation.{" "}
-        <a href="https://www.masschallenge.org" target="_blank" rel="noopener noreferrer">
-          Learn more
-        </a>
+        <Link to="/about">Learn more</Link>
       </p>
     </div>
   );
