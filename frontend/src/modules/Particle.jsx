@@ -27,7 +27,7 @@ export default function Particle() {
             particlesLoaded={particlesLoaded}
             options={{
               autoPlay: true,
-              fpsLimit: 150,
+              fpsLimit: 50,
               detectRetina: true,
               fullScreen: { enable: false }, // Disable full-screen mode
               interactivity: {
@@ -45,18 +45,18 @@ export default function Particle() {
                 },
                 modes: {
                   grab: {
-                    distance: 650,
+                    distance: 500,
                     links: { opacity: 1 },
                   },
-                  push: { quantity: 4 },
-                  repulse: { distance: 200, duration: 0.2 },
+                  push: { quantity: 2 },
+                  repulse: { distance: 100, duration: 0.1 },
                 },
               },
               particles: {
                 color: { value: "#ffffff" },
                 links: {
                   color: "#ffffff",
-                  distance: 150,
+                  distance: 250,
                   enable: true,
                   opacity: 0.4,
                   width: 1.5,
@@ -66,7 +66,7 @@ export default function Particle() {
                   enable: true,
                   outModes: { default: "out" },
                   random: false,
-                  speed: 9.8,
+                  speed: 4.0,
                   straight: false,
                 },
                 number: {
@@ -78,7 +78,7 @@ export default function Particle() {
                 size: { value: { min: 1, max: 4 } },
               },
               background: {
-                color: { value: "#2c5584" },
+                color: { value: "#2b5482" },
               },
               motion: {
                 reduce: { factor: 4, value: true },

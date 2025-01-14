@@ -14,11 +14,11 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><Link to="/about">About Us</Link></li>
           <li><Link to="/funding">Funding</Link></li>
           <li><Link to="/programs">Programs</Link></li>
           <li><Link to="/resources">Resources</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </nav>

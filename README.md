@@ -78,3 +78,9 @@ npm run dev
 This will start the development server, and you should be able to access the project in your browser.
 
 ---
+## Tech Stack Used:
+1. [Vite + ReactJS](https://v3.vitejs.dev/)
+2. [TsParticleJS with React](https://github.com/tsparticles/react)
+3. [Django](https://djangoproject.com/)
+4. [Django Rest Framework](https://www.django-rest-framework.org/) 
+5. For Frontend deployment Vercel.com [here](https://vercel.com/)

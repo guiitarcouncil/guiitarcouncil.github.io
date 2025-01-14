@@ -11,7 +11,7 @@ function Carousel() {
 
       <div className="carousel-content">
         <h1>
-          Fueling Students, Entrepreneurs and Innovators <br /> Through Education, <br /> Collaboration, and <br /> Acceleration
+          Fueling Students, Entrepreneurs and Innovators Through Education, Collaboration, and Acceleration.
         </h1>
       </div>
     </div>

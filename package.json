@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "axios": "^1.7.9"
+    "@radix-ui/react-navigation-menu": "^1.2.3",
+    "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.471.1"
   }
 }
