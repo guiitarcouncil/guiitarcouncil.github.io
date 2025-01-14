@@ -22,20 +22,23 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m-5f)ta)b**a*^m(6)04@)5x24t&h(avetj49#sfih_c5lh1+j'
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['192.168.29.244','localhost']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['uiitarcouncil.pythonanywhere.com']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # React development server
 ]
 
+GITHUB_WEBHOOK_SECRET = '57281c893a4e6b490ae6bf4154c7937ddd82dc2230339a273f8e3e7a9ee02d6f' 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'deploy',
     'api',
     'rest_framework',
     'corsheaders',
