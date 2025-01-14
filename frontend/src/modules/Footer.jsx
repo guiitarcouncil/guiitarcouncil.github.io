@@ -1,10 +1,3 @@
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaYoutube,
-  FaInstagram,
-} from "react-icons/fa";
 import "./Footer.css";
 import logo from "../assets/white_logo.png";
 import 'font-awesome/css/font-awesome.min.css'
@@ -64,13 +57,10 @@ function Footer() {
         <a href="https://www.youtube.com/c/GSFCUniversityOfficial" className="social-icon"><i className="fa fa-youtube"></i></a>
         <a href="mailto:guiitar@gsfcuniversity.ac.in" className="social-icon"><i className="fa fa-envelope"></i></a>
       </div>
-
-      <div className="footer-copyright">
-        <p>Guiitar Council © 2025</p>
-        <p>Made with ❤ in India</p>
-      </div>
-    </footer>
+    </div>
+  </footer>
   );
 }
 
 export default Footer;
+
