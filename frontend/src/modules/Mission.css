@@ -1,88 +1,50 @@
-/* Mission Section Styles */
-.our-mission {
-  flex: 1;
-  background: linear-gradient(135deg, #003366, #0055b3);
-  color: white;
-  padding: 60px 30px; /* Increased padding */
-  text-align: left;
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b5482;
+  margin-bottom: 30px;
+}
+
+.mission-image-wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
-  font-family: 'Arial', sans-serif;
-  margin-right: 20px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.9s ease-in, transform 0.9s ease-in; /* Faster animation */
+  overflow: hidden;
 }
 
-.our-mission.visible {
-  opacity: 1;
-  transform: translateY(0);
+.mission-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Content Styling */
-.our-mission h2 {
-  font-size: 3.5rem; /* Increased font size */
-  margin-bottom: 30px; /* Increased spacing below */
-  text-transform: uppercase;
-  letter-spacing: 3px; /* More spacing between letters */
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Larger shadow */
+.mission-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 20px 0;
+  max-width: 900px;
 }
 
-.our-mission p {
-  font-size: 1.3rem; /* Larger font size for the paragraph */
-  line-height: 2; /* Increased line height for better readability */
-  max-width: 800px; /* Wider content area */
-  margin-top: 30px; /* Increased margin */
+.mission-description a {
+  color: #2b5482;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.our-mission .divider {
-  width: 120px; /* Increased divider width */
-  height: 5px; /* Increased divider height */
-  background-color: #ffd700;
-  margin: 30px 0; /* Increased margin */
-}
-
-/* Animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.fade-in.delay-1 {
-  animation-delay: 0.5s;
-}
-
-.fade-in.delay-2 {
-  animation-delay: 1s;
-}
-
-.fade-in.delay-3 {
-  animation-delay: 1.2s;
-}
-
-.slide-in {
-  opacity: 0;
-  animation: slideIn 1.0s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    width: 0;
-  }
-  to {
-    opacity: 1;
-    width: 120px; /* Adjusted width for larger divider */
-  }
+.mission-description a:hover {
+  text-decoration: underline;
 }

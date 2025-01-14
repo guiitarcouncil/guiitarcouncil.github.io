@@ -27,7 +27,7 @@ function App() {
               <Navbar />
               <Carousel />
               <MessageFromPresident />
-
+              <Mission/>
               <Scalar />
               <Footer />
             </>
