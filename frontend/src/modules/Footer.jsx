@@ -49,8 +49,8 @@ function Footer() {
     <div className="footer-bottom">
       <img src={logo} alt="GUIITAR Council Logo" className="footer-logo" />
       <div className="social-links">
-        <a href="https://in.linkedin.com/school/gsfcuniversity/" className="social-icon"><i className="fa fa-linkedin"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=917573002444" className="social-icon"><i className="fa fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/guiitarcouncil/" className="social-icon"><i className="fa fa-linkedin"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=919313262712" className="social-icon"><i className="fa fa-whatsapp"></i></a>
         <a href="https://www.facebook.com/gsfcuniversity" className="social-icon"><i className="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/gsfcuniversity" className="social-icon"><i className="fa fa-instagram"></i></a>
         <a href="https://x.com/GSFCUniversity" className="social-icon"><i className="fa fa-twitter"></i></a>
