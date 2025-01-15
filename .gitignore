@@ -1,4 +1,7 @@
 .git
 .venv/
-*.yaml 
 node_modules/
+dist/
+__pycache__/
+*.yaml 
+*.pyc

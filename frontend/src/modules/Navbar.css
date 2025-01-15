@@ -25,6 +25,7 @@
 .logo img {
   height: 50px;
   cursor: pointer;
+  padding-left: 20px;
 }
 
 .nav-links {

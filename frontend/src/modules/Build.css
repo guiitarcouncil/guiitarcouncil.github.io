@@ -1,0 +1,95 @@
+
+.build-the-future {
+  background-color: #2b5482;
+  color: #333333;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.offerings {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.offering {
+  background-color: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 10px;
+  object-fit: contain; 
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2b5482;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.offering-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #2b5482; /* Button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+
+.apply-section {
+  /* margin-top: 0px; */
+  text-align: center;
+}
+
+.apply-title {
+  font-size: 1.8rem;
+  color: #2b5482;
+  /* margin-bottom: 20px; */
+}
+
+.apply-button {
+  /* padding: 10px 20px; */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b5482;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}

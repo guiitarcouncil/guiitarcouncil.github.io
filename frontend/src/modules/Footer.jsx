@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../assets/white_logo.png";
+import logo from "../assets/white-logo.png";
 import 'font-awesome/css/font-awesome.min.css'
 
 function Footer() {
@@ -7,16 +7,16 @@ function Footer() {
      <footer>
     <div className="footer-container">
       <div className="footer-section">
-        <p className="footer-copyright">© 2025 GUIITAR Council</p>
-        <p>Event Room, Second Floor,</p>
-        <p>Anviksha - GSFC University,</p>
-        <p>Vadodara, Gujarat - 391750</p>
-        <p>India</p>
-        {/* <p className="footer-mail"><a href="mailto:guiitar@gsfcuniversity.ac.in">guiitar@gsfcuniversity.ac.in</a></p> */}
+        <p className="footer-copyright" style={{color: '#fff',fontSize:'20px'}}>© 2025 GUIITAR Council </p>
+        <p style={{color: '#fff',fontSize:'20px'}}>Event Room, Second Floor,</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >Anviksha - GSFC University,</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >Vadodara, Gujarat - 391750</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >India</p>
+        
       </div>
       <div className="footer-divider"></div>
       <div className="footer-section">
-        {/* <h4>ENTREPRENEUR SUPPORT</h4> */}
+        
         <ul>
           <li><a href="#">Infrastructure</a></li>
           <li><a href="#">Company Portfolio</a></li>
@@ -49,8 +49,8 @@ function Footer() {
     <div className="footer-bottom">
       <img src={logo} alt="GUIITAR Council Logo" className="footer-logo" />
       <div className="social-links">
-        <a href="https://in.linkedin.com/school/gsfcuniversity/" className="social-icon"><i className="fa fa-linkedin"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=917573002444" className="social-icon"><i className="fa fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/guiitarcouncil/" className="social-icon"><i className="fa fa-linkedin"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=919313262712" className="social-icon"><i className="fa fa-whatsapp"></i></a>
         <a href="https://www.facebook.com/gsfcuniversity" className="social-icon"><i className="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/gsfcuniversity" className="social-icon"><i className="fa fa-instagram"></i></a>
         <a href="https://x.com/GSFCUniversity" className="social-icon"><i className="fa fa-twitter"></i></a>
