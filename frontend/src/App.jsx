@@ -13,6 +13,7 @@ import Programs from "./modules/Programs";
 import Resources from "./modules/Resources";
 import Contact from "./modules/Contact";
 import Notfound from "./modules/Notfound";
+import Associations from "./modules/Associations";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
               <Carousel />
               <Mission/>
               <Scalar />
+              <Associations/>
               <Footer />
             </>
           }
