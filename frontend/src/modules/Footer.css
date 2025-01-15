@@ -7,6 +7,7 @@ footer {
 }
 .footer-copyright {
   margin-bottom: 25px;
+  color: #fff; 
 }
 .footer-mail {
   margin-top: 25px;
@@ -18,6 +19,7 @@ footer {
   padding-bottom: 55px;
   margin-bottom: 40px;
   position: relative;
+  color: #fff; 
 }
 
 .footer-section {
@@ -25,6 +27,7 @@ footer {
   flex: 1;
   margin: 0 10px;
   font-size: 20px;
+  color: #fff; 
 }
 
 .footer-divider {

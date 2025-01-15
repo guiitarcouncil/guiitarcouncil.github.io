@@ -45,7 +45,7 @@ export default function Particle() {
                 },
                 modes: {
                   grab: {
-                    distance: 500,
+                    distance: 450,
                     links: { opacity: 1 },
                   },
                   push: { quantity: 2 },

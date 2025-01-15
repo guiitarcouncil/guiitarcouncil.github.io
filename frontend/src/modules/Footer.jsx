@@ -7,11 +7,11 @@ function Footer() {
      <footer>
     <div className="footer-container">
       <div className="footer-section">
-        <p className="footer-copyright">© 2025 GUIITAR Council</p>
-        <p>Event Room, Second Floor,</p>
-        <p>Anviksha - GSFC University,</p>
-        <p>Vadodara, Gujarat - 391750</p>
-        <p>India</p>
+        <p className="footer-copyright" style={{color: '#fff',fontSize:'20px'}}>© 2025 GUIITAR Council </p>
+        <p style={{color: '#fff',fontSize:'20px'}}>Event Room, Second Floor,</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >Anviksha - GSFC University,</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >Vadodara, Gujarat - 391750</p>
+        <p style={{color: '#fff',fontSize:'20px'}} >India</p>
         
       </div>
       <div className="footer-divider"></div>
