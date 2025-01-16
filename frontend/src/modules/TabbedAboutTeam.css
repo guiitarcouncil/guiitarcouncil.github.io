@@ -1,4 +1,3 @@
-
 .tabbed-about-container {
     padding: 40px;
     background-color: #f9f9f9; 
@@ -50,7 +49,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
 
 .team-member {
@@ -65,14 +63,16 @@
 .team-member:hover {
     transform: translateY(-5px);
 }
-
+.team-member img:hover {
+    transform: scale(1.1); /* Image grows on hover */
+  }
 .image-container {
     position: relative;
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -107,6 +107,35 @@
 }
 
 .team-member p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666; /* Explicit color for roles */
+}
+
+
+.image-container img {
+    width: 250px; /* Set a consistent width */
+    height: 250px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image fits within the container without distortion */
+    border-radius: 30%; /* Optional: Makes the image circular */
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Match the width of the image */
+    height: 250px; /* Match the height of the image */
+    margin: 0 auto; /* Center the image container */
+    border: 2px solid #ddd; /* Optional: Add a border around images */
+    border-radius: 50%; /* Optional: Matches circular image styling */
+    overflow: hidden; /* Ensures the image stays within the circular container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for a polished look */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjusts for image size */
+    gap: 25px;
+    padding: 10px;
 }
