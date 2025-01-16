@@ -1,0 +1,116 @@
+
+
+/* General Styles */
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full screen height */
+  color: #fff;
+  background: #2c5584;
+  padding: 30px; /* Larger padding for spacing */
+}
+
+/* Left Section: Map */
+.map-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 85%; /* Larger map */
+  height: 85%; /* Square dimensions */
+  border-radius: 15px;
+  border: 5px solid #000000; /* Bold border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+.address-box {
+  position: absolute;
+  bottom: 15%; /* Positioned closer to the bottom */
+  /* left: 5%; Slightly left-aligned */
+  background-color: rgba(0, 0, 0, 0.85); /* Transparent background */
+  padding: 10px; /* Larger padding */
+  border-radius: 10px; /* More rounded corners */
+  color: #fff;
+  width: 70%; /* Adjusted width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 15px; /* Slightly larger font */
+}
+
+.address-box p {
+  margin: 5px 0;
+}
+
+/* Right Section: Feedback Form */
+.feedback-container {
+  flex: 1;
+  padding: 30px 50px; /* Increased padding for more spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align form contents */
+}
+
+.feedback-title {
+  font-size: 28px; /* Larger heading font */
+  text-align: center; /* Center align title */
+  margin-bottom: 30px; /* Spacing below the title */
+  color: #ffffff;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between fields */
+  align-items: center;
+  width: 70%; /* Restore previous width */
+}
+
+.input-field,
+.textarea-field {
+  width: 100%; /* Full width of parent container */
+  padding: 15px; /* More padding */
+  border-radius: 8px;
+  border: 2px solid #646cff;
+  background-color: #ffffff;
+  color: #fff;
+  font-size: 18px; /* Larger font size */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.input-field,:hover{
+  /* box-shadow: 2px solid black; */
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.submit-button {
+  width: 50%; /* Wider button */
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Larger button font */
+}
+
+.submit-button:hover {
+  background-color: #5a52e0;
+}
+
+.footer-note {
+  margin-top: 25px;
+  font-size: 16px; /* Slightly larger font */
+  color: #ccc;
+  text-align: center; /* Center-align the note */
+}
+
+
