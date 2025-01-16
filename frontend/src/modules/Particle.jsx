@@ -27,7 +27,7 @@ export default function Particle() {
             particlesLoaded={particlesLoaded}
             options={{
               autoPlay: true,
-              fpsLimit: 50,
+              fpsLimit: 150,
               detectRetina: true,
               fullScreen: { enable: false }, 
               interactivity: {
@@ -45,28 +45,28 @@ export default function Particle() {
                 },
                 modes: {
                   grab: {
-                    distance: 450,
+                    distance: 400,
                     links: { opacity: 1 },
                   },
                   push: { quantity: 2 },
-                  repulse: { distance: 100, duration: 0.1 },
+                  repulse: { distance: 100, duration: 0.7 },
                 },
               },
               particles: {
                 color: { value: "#ffffff" },
                 links: {
                   color: "#ffffff",
-                  distance: 150,
+                  distance: 100,
                   enable: true,
-                  opacity: 0.4,
-                  width: 1.5,
+                  opacity: 0.9,
+                  width: 2.5,
                 },
                 move: {
                   direction: "none",
                   enable: true,
                   outModes: { default: "out" },
                   random: false,
-                  speed: 2.0,
+                  speed: 3.0,
                   straight: false,
                 },
                 number: {
