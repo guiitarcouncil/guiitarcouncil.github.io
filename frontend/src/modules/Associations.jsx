@@ -21,6 +21,7 @@ import img17 from "../assets/associations/as17-new.png";
 import img18 from "../assets/associations/as18-new.png";
 import img19 from "../assets/associations/as19-new.jpeg";
 import img20 from "../assets/associations/as20-new.png";
+import { CloudMoonRain } from "lucide-react";
 
 const Associations = () => {
     return (
@@ -52,7 +53,8 @@ const Associations = () => {
             <img src={img8} alt="Gujarat Alkalies and Chemicals Limited" className="association-logo" style={{ width: "190px" ,paddingTop: "30px" }} />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src={img9} alt="Gujarat Council on Science and Technology" className="association-logo" style={{ width: "160px" }} />
+            <img src={img9} alt="Gujarat Council on Science and Technology" className="association-logo" style={{ width: "160px", backgroundcolor: "transparent"
+             }} />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
             <img src={img10} alt="Gujarat CSR Authority" className="association-logo" style={{ width: "170px" }} />
