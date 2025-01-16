@@ -1,7 +1,96 @@
+.custom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  padding: 3rem;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+/* Semi-transparent overlay */
+.custom-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Semi-transparent black */
+  z-index: 1;
+}
+
+/* Position the content above the overlay */
+.contact-content,
+.info-box {
+  position: relative;
+  z-index: 2;
+}
+
+/* Left side styling */
+.contact-content {
+  flex: 1;
+  max-width: 45%; /* Increase space for the left side */
+}
+
+.contact-content h1 {
+  font-size: 5rem; /* Larger font for emphasis */
+  margin-bottom: 1.5rem;
+}
+
+.contact-content p {
+  font-size: 1.5rem; /* Slightly larger text for readability */
+  margin-bottom: 0.8rem;
+  color: #0d0c0c;
+  
+}
+
+/* Right side styling */
+.info-box {
+  visibility: hidden;
+  flex: 0.5; /* Make the right part smaller */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Reduce space between mission and vision boxes */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Mission and Vision boxes */
+.mission,
+.vision {
+  position: relative;
+  padding: 1rem; /* Reduce padding to make boxes smaller */
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 1.5rem; /* Adjust text size for smaller boxes */
+  margin-bottom: 0.8rem;
+}
+
+.mission p,
+.vision p {
+  font-size: 0.9rem; /* Reduce text size for smaller content */
+  line-height: 1.4;
+}
+
+/* Quotes for visual effect */
+.quote {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00; /* Gold for contrast */
+}
 
 /* General Styles */
-.contact-us-container {
+.form-container {
   display: flex;
   flex-direction: row;
   height: 100vh; /* Full screen height */
@@ -23,25 +112,8 @@
   width: 85%; /* Larger map */
   height: 85%; /* Square dimensions */
   border-radius: 15px;
-  border: 5px solid #000000; /* Bold border */
+  border: 3px solid #0d0c0c; /* Bold border */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
-}
-
-.address-box {
-  position: absolute;
-  bottom: 15%; /* Positioned closer to the bottom */
-  /* left: 5%; Slightly left-aligned */
-  background-color: rgba(0, 0, 0, 0.85); /* Transparent background */
-  padding: 10px; /* Larger padding */
-  border-radius: 10px; /* More rounded corners */
-  color: #fff;
-  width: 70%; /* Adjusted width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  font-size: 15px; /* Slightly larger font */
-}
-
-.address-box p {
-  margin: 5px 0;
 }
 
 /* Right Section: Feedback Form */
@@ -74,16 +146,12 @@
   width: 100%; /* Full width of parent container */
   padding: 15px; /* More padding */
   border-radius: 8px;
-  border: 2px solid #646cff;
+  border: 2px solid #0d0c0c;
   background-color: #ffffff;
   color: #fff;
   font-size: 18px; /* Larger font size */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.input-field,:hover{
-  /* box-shadow: 2px solid black; */
-}
 
 .input-field:focus,
 .textarea-field:focus {
