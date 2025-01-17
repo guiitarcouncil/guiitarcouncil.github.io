@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   padding: 3rem;
   position: relative;
   color: white;
@@ -44,9 +44,180 @@
 .contact-content p {
   font-size: 1.5rem; /* Slightly larger text for readability */
   margin-bottom: 0.8rem;
-  color: #0d0c0c;
+  /* color: #0d0c0c; */
+  color: white;
+}
+
+
+/* Center the Programs Menu */
+.programs-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* Increased space between cards */
+  padding: 7rem;
+  background-color: #2c5584; /* Blue background */
+  height: 100vh; /* Full viewport height */
+  /* border-bottom: 2px solid #ffff; */
+}
+
+/* Program Card Styling */
+.program-card {
+  background: white;
+  border-radius: 15px; /* Slightly larger border radius */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  text-align: center;
+  padding: 3rem; /* Increased padding for more space */
+  width: 400px; /* Wider cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-15px); /* More lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Program Icon */
+.icon {
+  margin-bottom: 2rem; /* Increased spacing below the icon */
+}
+
+.program-icon {
+  width: 70px; /* Larger icon */
+  height: 70px;
+}
+
+/* Program Title */
+.program-card h3 {
+  font-size: 2rem; /* Larger title */
+  color: #2e4985; /* Blue title */
+  margin-bottom: 1.5rem;
+}
+
+/* Program Description */
+.program-card p {
+  font-size: 1.2rem; /* Larger text for description */
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Learn More Button */
+.learn-more {
+  background-color: #2e4985; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Larger button */
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem; /* Larger button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #1b3161; /* Darker blue on hover */
+}
+
+/* Overall section styling */
+.follow-us-section {
+  display: flex; /* Flex layout */
+  align-items: flex-start; /* Align items at the top */
+  justify-content: flex-start; /* Align to the left */
+  padding: 7rem;
+  background-color: #2c5584; /* Light background for contrast */
+  gap: 2rem; /* Space between text and image */
+  color: #fff; /* Rich maroon color for text */
+}
+
+/* Content container */
+.follow-us-content {
+  max-width: 40%; /* Restrict width for the text section */
+}
+
+/* Title Styling */
+.follow-us-title {
+  font-size: 3.5rem; /* Bigger title font */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #ffff;
+
+}
+
+/* Social Links Styling */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 1rem; /* Space between links */
   
 }
+
+.contact-links li {
+  font-size: 1.8rem; /* Bigger link font */
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: hsl(0, 0%, 70%); /* Slightly brighter hover color */
+}
+
+/* Image Section */
+.follow-us-image {
+  flex: 1; /* Allow image to grow to fill remaining space */
+  max-width: 70%; /* Restrict the maximum width of the image */
+}
+
+.follow-us-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners for the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding-left: 10px;
+}
+
+
+/* Come See Us Soon */
+.come-section {
+  background-color: #2c5584;
+  padding: 3rem 0; /* Adds more space above and below */
+  text-align: left; /* Align content to the left */
+  padding-left: 3rem; /* Add more padding from the left */
+}
+
+.come-heading {
+  font-size: 3rem; /* Increased font size for the heading */
+  font-weight: bold;
+  color: #ffff; /* Dark maroon color */
+  margin-bottom: 1.5rem; /* Adds space below the heading */
+}
+
+.come-details {
+  font-size: 1.5rem; /* Increased font size for details */
+  margin: 1rem 0; /* Adds more space between each detail */
+  color: #fff;
+}
+
+.come-link {
+  text-decoration: none;
+  color: #fff; /* Matches the heading color */
+  font-size: 1.5rem; /* Matches the font size of details */
+}
+
+.come-link:hover {
+  text-decoration: underline;
+  color: hsl(0, 0%, 80%);
+}
+
+
 
 /* Right side styling */
 .info-box {
@@ -127,7 +298,7 @@
 }
 
 .feedback-title {
-  font-size: 28px; /* Larger heading font */
+  font-size: 50px; /* Larger heading font */
   text-align: center; /* Center align title */
   margin-bottom: 30px; /* Spacing below the title */
   color: #ffffff;
