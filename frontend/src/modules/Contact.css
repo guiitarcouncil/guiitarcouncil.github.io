@@ -1,7 +1,267 @@
+.custom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+/* Semi-transparent overlay */
+.custom-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Semi-transparent black */
+  z-index: 1;
+}
+
+/* Position the content above the overlay */
+.contact-content,
+.info-box {
+  position: relative;
+  z-index: 2;
+}
+
+/* Left side styling */
+.contact-content {
+  flex: 1;
+  max-width: 45%; /* Increase space for the left side */
+}
+
+.contact-content h1 {
+  font-size: 5rem; /* Larger font for emphasis */
+  margin-bottom: 1.5rem;
+}
+
+.contact-content p {
+  font-size: 1.5rem; /* Slightly larger text for readability */
+  margin-bottom: 0.8rem;
+  /* color: #0d0c0c; */
+  color: white;
+}
+
+
+/* Center the Programs Menu */
+.programs-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* Increased space between cards */
+  padding: 7rem;
+  background-color: #2c5584; /* Blue background */
+  height: 100vh; /* Full viewport height */
+  /* border-bottom: 2px solid #ffff; */
+}
+
+/* Program Card Styling */
+.program-card {
+  background: white;
+  border-radius: 15px; /* Slightly larger border radius */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  text-align: center;
+  padding: 3rem; /* Increased padding for more space */
+  width: 400px; /* Wider cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-15px); /* More lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Program Icon */
+.icon {
+  margin-bottom: 2rem; /* Increased spacing below the icon */
+}
+
+.program-icon {
+  width: 70px; /* Larger icon */
+  height: 70px;
+}
+
+/* Program Title */
+.program-card h3 {
+  font-size: 2rem; /* Larger title */
+  color: #2e4985; /* Blue title */
+  margin-bottom: 1.5rem;
+}
+
+/* Program Description */
+.program-card p {
+  font-size: 1.2rem; /* Larger text for description */
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Learn More Button */
+.learn-more {
+  background-color: #2e4985; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Larger button */
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem; /* Larger button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #1b3161; /* Darker blue on hover */
+}
+
+/* Overall section styling */
+.follow-us-section {
+  display: flex; /* Flex layout */
+  align-items: flex-start; /* Align items at the top */
+  justify-content: flex-start; /* Align to the left */
+  padding: 7rem;
+  background-color: #2c5584; /* Light background for contrast */
+  gap: 2rem; /* Space between text and image */
+  color: #fff; /* Rich maroon color for text */
+}
+
+/* Content container */
+.follow-us-content {
+  max-width: 40%; /* Restrict width for the text section */
+}
+
+/* Title Styling */
+.follow-us-title {
+  font-size: 3.5rem; /* Bigger title font */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #ffff;
+
+}
+
+/* Social Links Styling */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 1rem; /* Space between links */
+  
+}
+
+.contact-links li {
+  font-size: 1.8rem; /* Bigger link font */
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: hsl(0, 0%, 70%); /* Slightly brighter hover color */
+}
+
+/* Image Section */
+.follow-us-image {
+  flex: 1; /* Allow image to grow to fill remaining space */
+  max-width: 70%; /* Restrict the maximum width of the image */
+}
+
+.follow-us-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners for the image */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding-left: 10px;
+}
+
+
+/* Come See Us Soon */
+.come-section {
+  background-color: #2c5584;
+  padding: 3rem 0; /* Adds more space above and below */
+  text-align: left; /* Align content to the left */
+  padding-left: 3rem; /* Add more padding from the left */
+}
+
+.come-heading {
+  font-size: 3rem; /* Increased font size for the heading */
+  font-weight: bold;
+  color: #ffff; /* Dark maroon color */
+  margin-bottom: 1.5rem; /* Adds space below the heading */
+}
+
+.come-details {
+  font-size: 1.5rem; /* Increased font size for details */
+  margin: 1rem 0; /* Adds more space between each detail */
+  color: #fff;
+}
+
+.come-link {
+  text-decoration: none;
+  color: #fff; /* Matches the heading color */
+  font-size: 1.5rem; /* Matches the font size of details */
+}
+
+.come-link:hover {
+  text-decoration: underline;
+  color: hsl(0, 0%, 80%);
+}
+
+
+
+/* Right side styling */
+.info-box {
+  visibility: hidden;
+  flex: 0.5; /* Make the right part smaller */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Reduce space between mission and vision boxes */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Mission and Vision boxes */
+.mission,
+.vision {
+  position: relative;
+  padding: 1rem; /* Reduce padding to make boxes smaller */
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 1.5rem; /* Adjust text size for smaller boxes */
+  margin-bottom: 0.8rem;
+}
+
+.mission p,
+.vision p {
+  font-size: 0.9rem; /* Reduce text size for smaller content */
+  line-height: 1.4;
+}
+
+/* Quotes for visual effect */
+.quote {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00; /* Gold for contrast */
+}
 
 /* General Styles */
-.contact-us-container {
+.form-container {
   display: flex;
   flex-direction: row;
   height: 100vh; /* Full screen height */
@@ -23,25 +283,8 @@
   width: 85%; /* Larger map */
   height: 85%; /* Square dimensions */
   border-radius: 15px;
-  border: 5px solid #000000; /* Bold border */
+  border: 3px solid #0d0c0c; /* Bold border */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
-}
-
-.address-box {
-  position: absolute;
-  bottom: 15%; /* Positioned closer to the bottom */
-  /* left: 5%; Slightly left-aligned */
-  background-color: rgba(0, 0, 0, 0.85); /* Transparent background */
-  padding: 10px; /* Larger padding */
-  border-radius: 10px; /* More rounded corners */
-  color: #fff;
-  width: 70%; /* Adjusted width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  font-size: 15px; /* Slightly larger font */
-}
-
-.address-box p {
-  margin: 5px 0;
 }
 
 /* Right Section: Feedback Form */
@@ -55,7 +298,7 @@
 }
 
 .feedback-title {
-  font-size: 28px; /* Larger heading font */
+  font-size: 50px; /* Larger heading font */
   text-align: center; /* Center align title */
   margin-bottom: 30px; /* Spacing below the title */
   color: #ffffff;
@@ -74,16 +317,12 @@
   width: 100%; /* Full width of parent container */
   padding: 15px; /* More padding */
   border-radius: 8px;
-  border: 2px solid #646cff;
+  border: 2px solid #0d0c0c;
   background-color: #ffffff;
   color: #fff;
   font-size: 18px; /* Larger font size */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.input-field,:hover{
-  /* box-shadow: 2px solid black; */
-}
 
 .input-field:focus,
 .textarea-field:focus {
