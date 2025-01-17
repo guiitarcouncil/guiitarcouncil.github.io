@@ -2,109 +2,123 @@ import React from "react";
 import "./Contact.css";
 import bg from "../assets/contact.jpg";
 import trial from "../assets/trial.png";
+import money from "../assets/money.png";
+import brain from "../assets/brain.png";
 
 function Contact() {
   return (
     <>
-      {/* Contact Section */}
       <div className="custom-section" style={{ backgroundImage: `url(${bg})` }}>
         {/* Left Content */}
         <div className="contact-content">
           <h1>Contact Us</h1>
           <p>We want to hear from you!</p>
-          <p>Email us at guiitar@gsfcuniversity.ac.in</p>
-        </div>
-
-        {/* Right Content */}
-        <div className="info-box">
-          <div className="mission">
-            <h2>
-              <span className="quote">“</span>OUR MISSION
-            </h2>
-            <p>Content Here!</p>
-          </div>
-          <div className="vision">
-            <p>Content Here!</p>
-            <h2>
-              OUR VISION<span className="quote">”</span>
-            </h2>
-          </div>
+          <p>Write us at: guiitar@gsfcuniversity.ac.in</p>
         </div>
       </div>
 
-      {/* Program Section */}
+      <div className="explore">
+        <h2>Grow with us</h2>
+      </div>
 
       <div className="programs-menu">
-      {/* Funding Card */}
-      <div className="program-card">
-        <div className="icon">
-          <img
-            src="path-to-funding-icon.png"
-            alt="Funding Icon"
-            className="program-icon"
-          />
+        <div className="program-card">
+          <div className="icon">
+            <img
+               src={money}
+              alt="Funding Icon"
+              className="program-icon"
+            />
+          </div>
+          <h3>SSIP Program</h3>
+          <p>Get upto 2.5 Lacs for project and startup.</p>
+          <button className="learn-more">Learn More</button>
         </div>
-        <h3>SSIP</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci.</p>
-        <button className="learn-more">Learn More</button>
-      </div>
+       
 
-      {/* Infrastructure Card */}
-      <div className="program-card">
-        <div className="icon">
-          <img
-            src="path-to-infrastructure-icon.png"
-            alt="Infrastructure Icon"
-            className="program-icon"
-          />
+        <div className="program-card">
+          <div className="icon">
+            <img
+               src={brain}
+              alt="Infrastructure Icon"
+              className="program-icon"
+            />
+          </div>
+          <h3>IPR Support</h3>
+          <p>Intellectual Property Rights Support</p>
+          <button className="learn-more">Learn More</button>
         </div>
-        <h3>Prog 2</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, magni.</p>
-        <button className="learn-more">Learn More</button>
+
+        <div className="program-card">
+          <div className="icon">
+            <img
+               src={money}
+              alt="Infrastructure Icon"
+              className="program-icon"
+            />
+          </div>
+          <h3>Nodal Program</h3>
+          <p>Support Up to INR 30.00 lakh per startup.</p>
+          <button className="learn-more">Learn More</button>
+        </div>
       </div>
-    </div>
 
-    {/* Social Media Section */}
-
-    <div className="follow-us-section">
-      <div className="follow-us-content">
-        <h1 className="follow-us-title">Follow Us on Social!</h1>
-        <ul className="contact-links">
-          <li>
-            <a href="https://www.facebook.com/gsfcuniversity" target="_blank" rel="noopener noreferrer">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/c/GSFCUniversityOfficial" target="_blank" rel="noopener noreferrer">
-              Youtube
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/GSFCUniversity" target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/guiitarcouncil/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/gsfcuniversity" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
-          </li>
-        </ul>
+      <div className="follow-us-section">
+        <div className="follow-us-content">
+          <h1 className="follow-us-title">Follow us on Social Media</h1>
+          <ul className="contact-links">
+            <li>
+              <a
+                href="https://www.facebook.com/gsfcuniversity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/c/GSFCUniversityOfficial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/GSFCUniversity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/guiitarcouncil/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/gsfcuniversity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="follow-us-image">
+          <img src={trial} alt="Social gathering" />
+        </div>
       </div>
-      <div className="follow-us-image">
-        <img src={trial} alt="Social gathering" />
-      </div>
-    </div>
 
-    
-
-      {/* Form Section */}
       <div className="form-container">
         {/* Left Section: Map */}
         <div className="map-container">
@@ -127,34 +141,12 @@ function Contact() {
               className="textarea-field"
             ></textarea>
             <button type="submit" className="submit-button">
-              Send
+              Submit
             </button>
           </form>
-          <p className="footer-note">
-            {/* Chicharrones blog Helvetica normcore Iceland tousled brook viral artisan. */}
-          </p>
+          <p className="footer-note"></p>
         </div>
       </div>
-
-    {/* Come see us Section */}
-
-    <div className="come-section">
-      <h1 className="come-heading">Come See Us Soon</h1>
-      <p className="come-details">
-      Event Room, Second Floor,
-        <br />
-        Anviksha - GSFC University,
-        <br />
-        Vadodara, Gujarat - 391750
-        <br />
-        India
-      </p>
-      <p className="come-details">
-        <a href="mailto:guiitar@gsfcuniversity.ac.in" className="come-link">
-        guiitar@gsfcuniversity.ac.in
-        </a>
-      </p>
-    </div>
     </>
   );
 }
