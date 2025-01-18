@@ -1,18 +1,22 @@
 import React from 'react';
 import './Programs.css';
 import Navbar from '../modules/Navbar';
+import AchievementCarousel from '../modules/AchievementCarousel';
 
+const achievements = [
+  { studentCount: 2, grantAmount: 5000, projectName: 'AI Researchy' },
+  { studentCount: 15, grantAmount: 10000, projectName: 'Green Energy' },
+  { studentCount: 8, grantAmount: 3000, projectName: 'Tech for Good' },
+];
 
 function Programs() {
-  
-  <Navbar/>
   return (
     <div className="programs">
-      <header className="programs-header">
-        <h1>Our Programs</h1>
-        <p>Empowering students and startups through tailored programs and initiatives.</p>
-      </header>
-
+      <Navbar />
+      
+      <section className="programs-achievements">
+        <AchievementCarousel achievements={achievements} />
+      </section>
     </div>
   );
 }

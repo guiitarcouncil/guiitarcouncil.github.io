@@ -23,6 +23,7 @@ function Footer() {
           <li><a href="#">Previous Events</a></li>
           <li><a href="#">Startups Incubated</a></li>
           <li><a href="#">Innovate with Us</a></li>
+          <li><a href="#">Policies</a></li>
         </ul>
       </div>
       <div className="footer-section">

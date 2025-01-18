@@ -65,7 +65,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Funding />
+              <Programs/>
               <Footer />
             </>
           }

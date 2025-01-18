@@ -1,0 +1,231 @@
+.ac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ac h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b5482;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Programs Image */
+.program-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.program-text {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.achievement-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2b5482;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.achievement-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  width: 1000px;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 18px;
+}
+
+.achievement-card .details {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.students {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.student {
+  text-align: center;
+  gap: 10px;
+}
+
+.student-image {
+  width: 170px;
+  height: 200px;
+  border-radius: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+.student-name {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.carousel-btn {
+  background-color: #2b5482;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #000;
+}
+
+.carousel-btn.prev {
+  position: absolute;
+  left: -50px;
+}
+
+.carousel-btn.next {
+  position: absolute;
+  right: -50px;
+}
+
+/* 3D Priting Program */
+.printing {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.printing-content {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center;
+  gap: 90px;
+}
+
+.printing-text {
+  flex: 1;
+  max-width: 700px; 
+  text-align: left;
+  padding: 20px;
+}
+
+.printing-model {
+  flex: 1;
+  width: 700px; 
+}
+
+.printing h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.printing-text h2 {
+  font-size: 24px;
+  color: #2b5482;
+  margin-bottom: 15px;
+}
+
+.printing-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Drone Program */
+.drone {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.drone-content {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center;
+  gap: 90px;
+}
+
+.drone-text {
+  flex: 1;
+  max-width: 700px; 
+  text-align: left;
+  padding: 20px;
+}
+
+.drone-i {
+  flex: 1;
+  width: 700px; 
+}
+.drone-i img{
+  width: 100%;
+  height: 350px;
+}
+.drone h1 {
+  font-size: 28px;
+  color: #2b5482;
+  margin-bottom: 20px;
+}
+
+.drone-text h2 {
+  font-size: 24px;
+  color: #2b5482;
+  margin-bottom: 15px;
+}
+
+.drone-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}

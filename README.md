@@ -63,7 +63,7 @@ cd frontend
 
 Run the following command to install the necessary frontend dependencies:
 ```bash
-npm install axios react-router-dom react-icons font-awesome web-vitals --save-dev tsparticles @tsparticles/react lucide-react
+npm install axios react-router-dom react-icons font-awesome web-vitals --save-dev tsparticles @tsparticles/react lucide-react @google/model-viewer
 ```
 
 ### 4. Run the Project Locally
@@ -86,5 +86,5 @@ This will start the development server, and you should be able to access the pro
 5. For Frontend deployment Vercel.com [here](https://vercel.com/)
 6. Icons used from [Flaticon](https://flaticon.com/)
 7. AI Enhanced Images using [AIEASE](https://www.aiease.ai/app/enhance-photo)
-
-
+8. 3D model using [Google Model Viewer](https://modelviewer.dev/)
+9. 
