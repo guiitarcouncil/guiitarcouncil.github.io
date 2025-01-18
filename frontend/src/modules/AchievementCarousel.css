@@ -6,34 +6,16 @@
 }
 
 .ac h1 {
-  font-size: 32px;
+  font-size: 3.0rem;
   font-weight: bold;
   color: #2b5482;
   margin-bottom: 20px;
   text-align: center;
 }
-/* Programs Image */
-.program-image {
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.program-text {
-  font-size: 16px;
-  color: #555;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-.achievement-heading {
-  font-size: 32px;
-  font-weight: bold;
-  color: #2b5482;
-  text-align: center;
-  margin-bottom: 20px;
+.main-heading{
+  padding-top: 50px;
+  align-items: center;
+  font-size: 2.5rem;
 }
 
 .achievement-carousel {
@@ -42,10 +24,8 @@
   justify-content: center;
   gap: 10px;
   background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  max-width: 900px;
+  width: 1100px;
   margin: 40px auto;
   position: relative;
 }
@@ -56,32 +36,38 @@
   background: #ffffff;
   border: none;
   border-radius: 12px;
-  width: 1000px;
+  width: 1100px;
   box-shadow: none;
-  transition: transform 0.3s ease;
 }
 
-.achievement-card h3 {
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.project-header h3 {
   font-size: 24px;
   color: #333;
-  margin-bottom: 10px;
+  flex: 1;
+  text-align: center;
 }
 
-.achievement-card p {
-  margin: 10px 0;
-  color: #555;
-  font-size: 18px;
+.project-header .uni, .project-header .cmpy {
+  width: 150px;
+  height: 50px;
 }
 
-.achievement-card .details {
-  font-size: 16px;
-  color: #777;
-  margin-top: 10px;
+.project-header .uni img, .project-header .cmpy img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .students {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 30px;
   justify-content: center;
   margin-top: 20px;
@@ -89,12 +75,11 @@
 
 .student {
   text-align: center;
-  gap: 10px;
 }
 
 .student-image {
-  width: 170px;
-  height: 200px;
+  width: 130px;
+  height: 170px;
   border-radius: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover;
@@ -132,6 +117,7 @@
   position: absolute;
   right: -50px;
 }
+
 
 /* 3D Priting Program */
 .printing {
@@ -228,4 +214,15 @@
   font-size: 18px;
   color: #555;
   line-height: 1.6;
+}
+
+/* University logo */
+
+.achievement-carousel .uni img{
+  height: 50px;
+  width: 150px;
+}
+.achievement-carousel .cmpy img{
+  height: 50px;
+  width: 150px;
 }
