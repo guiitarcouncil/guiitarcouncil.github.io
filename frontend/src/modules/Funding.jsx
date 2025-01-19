@@ -1,16 +1,17 @@
 import React from 'react';
 import './Funding.css';
+import wallImage from '../assets/wall.jpg';
+import './Funding.css';
 
-function Funding() {
+
+const Funding = () => {
   return (
-    <div className="funding">
-      <h1>Funding Opportunities</h1>
-      <ul>
-        <li>SSIP</li>
-        <li>Nodal Institute</li>
-      </ul>
+    <div className="img-container">
+      <img src={wallImage} alt="Background image" className="funding-image" />
+      <div className="funding-text-overlay">Funding Opportunities</div>
     </div>
   );
-}
+};
 
 export default Funding;
+
