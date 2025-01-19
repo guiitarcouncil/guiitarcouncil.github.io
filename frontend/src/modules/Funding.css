@@ -1,0 +1,20 @@
+.img-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .funding-image {
+    height: 700px;
+    width: 100vw;
+  }
+  
+  .funding-text-overlay {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-30%, -50%);
+    color: #fff;
+    font-size: 60px;
+  }
+  
+  
