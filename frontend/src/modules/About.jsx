@@ -11,11 +11,13 @@ function About() {
       {/* Full width image section */}
       <div className="header-image-container">
         <img src={headerImage} alt="Header" className="header-image" />
+        <div className="funding-text-overlay">About GUIITAR
+        </div>
       </div>
 
       <div className="about-container">
         <div className="about-content">
-          <h2>About GUIITAR</h2>
+          <h2>About US</h2>
           <p>
             GU Incubation Innovation Technology and Applied Research (GUIITAR)
             Council has been established by GSFC University (GSFCU) at Vadodara,
