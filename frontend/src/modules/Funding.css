@@ -2,7 +2,11 @@
     position: relative;
     display: inline-block;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .funding-image {
     height: 80vh;
     width: 100vw;
@@ -12,7 +16,11 @@
     justify-content: center;
     gap: 40px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .funding-text-overlay {
     position: absolute;
     top: 35%;
@@ -21,7 +29,11 @@
     color: #fff;
     font-size: 60px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
  /* Main Content */
   .main-content {
     flex: 1; /* Expand to fill available space */
@@ -31,7 +43,11 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,7 +56,11 @@
     max-width: 1400px; /* Increase max width */
     gap: 50px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .card, .image-card {
     display: flex;
     flex-direction: column;
@@ -53,16 +73,24 @@
     gap: 30px;
 
   }
+<<<<<<< HEAD
 
   .image-card {
     font-size: 3rem; /* Larger font size for "IMG" */
     color: #2b5482;
+=======
+  
+  .image-card {
+    font-size: 3rem; /* Larger font size for "IMG" */
+    color: #007bff;
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
     font-weight: bold;
     background-color: #f0f8ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 2px solid #ccc; /* Thicker border */
 
   }
+<<<<<<< HEAD
 
   .card h3 {
     margin: 0;
@@ -70,19 +98,44 @@
     color: #2b5482;
   }
 
+=======
+  
+  .card h3 {
+    margin: 0;
+    font-size: 4rem; /* Larger heading */
+    color: #007bff;
+  }
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .card p {
     font-size: 1.2rem; /* Larger text */
     color: #333;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
   .card button {
     margin-top: 20px; /* Add more spacing */
     padding: 10px 20px; /* Larger button size */
     font-size: 1.2rem; /* Larger font size */
+<<<<<<< HEAD
     background-color: #2b5482;
+=======
+    background-color: #007bff;
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
   }
 
+<<<<<<< HEAD
+=======
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
+>>>>>>> a3aa84b7e43a713390afb81c5637d8760552fbf9
