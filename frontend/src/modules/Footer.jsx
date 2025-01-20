@@ -19,19 +19,20 @@ function Footer() {
         
         <ul>
           <li><a href="#">Infrastructure</a></li>
-          <li><a href="#">Company Portfolio</a></li>
           <li><a href="#">Previous Events</a></li>
           <li><a href="#">Startups Incubated</a></li>
           <li><a href="#">Innovate with Us</a></li>
+          <li><a href="#">Annual Return</a></li>
           <li><a href="#">Policies</a></li>
         </ul>
       </div>
       <div className="footer-section">
         {/* <h4>ACCELERATOR PROGRAMS</h4> */}
         <ul>
-          <li><a href="#">SSIP Program</a></li>
-          <li><a href="#">Nodal Program</a></li>
+          <li><a href="#">SSIP Grant</a></li>
+          <li><a href="#">Nodal Institute Grant</a></li>
           <li><a href="#">Drone Workshop</a></li>
+          <li><a href="#">3D Printing Workshop</a></li>
           <li><a href="#">Active Projects/Startups</a></li>
           <li><a href="#">Student-led Projects</a></li>
         </ul>
