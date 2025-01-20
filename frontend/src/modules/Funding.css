@@ -17,4 +17,71 @@
     font-size: 60px;
   }
   
+ /* Main Content */
+  .main-content {
+    flex: 1; /* Expand to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px; /* Increase gap between elements */
+    width: 90%; /* Occupy 90% of the width */
+    max-width: 1400px; /* Increase max width */
+    gap: 50px;
+  }
+  
+  .card, .image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px; /* Increase border radius */
+    padding: 40px; /* Increase padding */
+    /* background-color: #ffffff; */
+    gap: 30px;
+
+  }
+  
+  .image-card {
+    font-size: 3rem; /* Larger font size for "IMG" */
+    color: #007bff;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Thicker border */
+
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 3rem; /* Larger heading */
+    color: #007bff;
+  }
+  
+  .card p {
+    font-size: 1.2rem; /* Larger text */
+    color: #333;
+  }
+  
+  .card button {
+    margin-top: 20px; /* Add more spacing */
+    padding: 10px 20px; /* Larger button size */
+    font-size: 1.2rem; /* Larger font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
   
