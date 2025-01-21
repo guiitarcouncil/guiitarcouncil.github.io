@@ -26,7 +26,7 @@ import { CloudMoonRain } from "lucide-react";
 const Associations = () => {
     return (
       <div className="associations-container">
-        <h2 className="associations-heading">Our Associations</h2>
+        <h2 className="associations-heading">You're in Good Company</h2>
         <div className="associations-grid">
           <a href="https://udhyog.gujarat.gov.in/" target="_blank" rel="noopener noreferrer">
             <img src={img1} alt="Indian Commissionerate" className="association-logo" style={{ width: "200px" }} />

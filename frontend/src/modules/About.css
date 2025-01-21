@@ -1,15 +1,27 @@
-/* Full-width header image styling */
-.header-image-container {
+/* Header image container styles (from Funding.css) */
+.img-container {
   width: 100%;
-  height: 500px; /* You can adjust the height as needed */
+  height: 100vh; /* Make the header take the full height of the viewport */
   overflow: hidden;
+  position: relative; /* Ensures text overlay positions correctly */
 }
 
-.header-image {
+.funding-image {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures the image covers the entire space */
 }
+
+.funding-text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(-30%, -50%);
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
 
 /* Rest of your existing CSS... */
 .about-container {

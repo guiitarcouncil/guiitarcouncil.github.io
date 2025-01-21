@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logo from "../assets/white-logo.png";
+import logo1 from "../assets/white.png";
 import 'font-awesome/css/font-awesome.min.css'
 
 function Footer() {
@@ -49,7 +50,7 @@ function Footer() {
       </div>
     </div>
     <div className="footer-bottom">
-      <img src={logo} alt="GUIITAR Council Logo" className="footer-logo" />
+      <img src={logo1} alt="GUIITAR Council Logo" className="footer-logo" />
       <div className="social-links">
         <a href="https://www.linkedin.com/company/guiitarcouncil/" className="social-icon"><i className="fa fa-linkedin"></i></a>
         <a href="https://api.whatsapp.com/send?phone=919313262712" className="social-icon"><i className="fa fa-whatsapp"></i></a>

@@ -11,8 +11,8 @@ import drone from "../assets/drone.jpg";
 import uni from "../assets/university-logo.png";
 import cmpy from "../assets/G.png";
 import ssip from "../assets/associations/as4-new.png";
+
 const achievements = [
-  
   {
     projectName: "Fire in HollyWood 2",
     grantAmount: "250,000",
@@ -26,6 +26,7 @@ const achievements = [
       { name: "Scarlett Johansson", imageUrl: scarlet },
       { name: "Sydney Sweeney", imageUrl: sydney },
     ],
+    mentor: "Vedant Mistry", // Only store the name
   },
   {
     projectName: "Fire in HollyWood",
@@ -40,8 +41,8 @@ const achievements = [
       { name: "Scarlett Johansson", imageUrl: scarlet },
       { name: "Sydney Sweeney", imageUrl: sydney },
     ],
+    mentor: "Jane Smith", 
   },
-  
 ];
 
 const AchievementCarousel = () => {
@@ -110,13 +111,13 @@ const AchievementCarousel = () => {
               style={{
                 width: "100%",
                 height: "400px",
-                
               }}
             ></model-viewer>
           </div>
         </div>
       </div>
 
+      <h1 className="main-heading">Student Achievements</h1>
       <div className="achievement-carousel">
         <button className="carousel-btn prev" onClick={handlePrev}>
           &#10094;
@@ -139,7 +140,6 @@ const AchievementCarousel = () => {
           </p>
           <p className="details">{achievements[currentIndex].details}</p>
 
-          
           <div className="students">
             {achievements[currentIndex].students.map((student, index) => (
               <div key={index} className="student">
@@ -152,12 +152,17 @@ const AchievementCarousel = () => {
               </div>
             ))}
           </div>
+          <div className="mentor">
+            <h4>Faculty Mentor:</h4>
+            <p>{achievements[currentIndex].mentor}</p> {}
+          </div>
         </div>
 
         <button className="carousel-btn next" onClick={handleNext}>
           &#10095;
         </button>
       </div>
+      <h1 className="main-heading">Previous Events</h1>
     </div>
   );
 };

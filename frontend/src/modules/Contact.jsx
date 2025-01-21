@@ -5,16 +5,58 @@ import trial from "../assets/trial.png";
 import money from "../assets/money.png";
 import brain from "../assets/brain.png";
 
+const ProgramCard = ({ icon, title, description }) => (
+  <div className="program-card">
+    <div className="icon">
+      <img src={icon} alt={`${title} Icon`} className="program-icon" />
+    </div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <button className="learn-more">Learn More</button>
+  </div>
+);
+
 function Contact() {
+  const programs = [
+    {
+      icon: money,
+      title: "SSIP Program",
+      description: "Get up to 2.5 Lacs for project and startup.",
+    },
+    {
+      icon: brain,
+      title: "IPR Support",
+      description: "Intellectual Property Rights Support.",
+    },
+    {
+      icon: money,
+      title: "Nodal Program",
+      description: "Support up to INR 30.00 lakh per startup.",
+    },
+  ];
+
+  const socialLinks = [
+    { name: "Facebook", url: "https://www.facebook.com/gsfcuniversity" },
+    {
+      name: "Youtube",
+      url: "https://www.youtube.com/c/GSFCUniversityOfficial",
+    },
+    { name: "Twitter", url: "https://x.com/GSFCUniversity" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/company/guiitarcouncil/",
+    },
+    { name: "Instagram", url: "https://www.instagram.com/gsfcuniversity" },
+  ];
+
   return (
     <>
-      <div className="custom-section" style={{ backgroundImage: `url(${bg})` }}>
-        {/* Left Content */}
-        <div className="contact-content">
-          <h1>Contact Us</h1>
-          <p>We want to hear from you!</p>
-          <p>Write us at: guiitar@gsfcuniversity.ac.in</p>
-        </div>
+      <div className="mainabout">
+            <div className="img-container">
+              <img src={bg} alt="About GUIITAR" className="funding-image" />
+              <div className="funding-text-overlay">Contact Us</div>
+        
+            </div>
       </div>
 
       <div className="explore">
@@ -22,96 +64,32 @@ function Contact() {
       </div>
 
       <div className="programs-menu">
-        <div className="program-card">
-          <div className="icon">
-            <img
-               src={money}
-              alt="Funding Icon"
-              className="program-icon"
-            />
-          </div>
-          <h3>SSIP Program</h3>
-          <p>Get upto 2.5 Lacs for project and startup.</p>
-          <button className="learn-more">Learn More</button>
-        </div>
-       
-
-        <div className="program-card">
-          <div className="icon">
-            <img
-               src={brain}
-              alt="Infrastructure Icon"
-              className="program-icon"
-            />
-          </div>
-          <h3>IPR Support</h3>
-          <p>Intellectual Property Rights Support</p>
-          <button className="learn-more">Learn More</button>
-        </div>
-
-        <div className="program-card">
-          <div className="icon">
-            <img
-               src={money}
-              alt="Infrastructure Icon"
-              className="program-icon"
-            />
-          </div>
-          <h3>Nodal Program</h3>
-          <p>Support Up to INR 30.00 lakh per startup.</p>
-          <button className="learn-more">Learn More</button>
-        </div>
+        {programs.map((program, index) => (
+          <ProgramCard
+            key={index}
+            icon={program.icon}
+            title={program.title}
+            description={program.description}
+          />
+        ))}
       </div>
 
       <div className="follow-us-section">
         <div className="follow-us-content">
           <h1 className="follow-us-title">Follow us on Social Media</h1>
           <ul className="contact-links">
-            <li>
-              <a
-                href="https://www.facebook.com/gsfcuniversity"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/c/GSFCUniversityOfficial"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Youtube
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/GSFCUniversity"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/guiitarcouncil/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/gsfcuniversity"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </li>
+            {socialLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow us on ${link.name}`}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="follow-us-image">
@@ -120,31 +98,38 @@ function Contact() {
       </div>
 
       <div className="form-container">
-        {/* Left Section: Map */}
         <div className="map-container">
           <iframe
-            title="Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.1498742656313!2d73.14239577434728!3d22.385706739796035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc97b15555555%3A0x86e6773a36e1a153!2sGSFC%20University!5e0!3m2!1sen!2sin!4v1737072060195!5m2!1sen!2sin"
+            title="GSFC University Location"
+            src="https://www.google.com/maps/embed?... (trimmed URL)"
             className="map"
           ></iframe>
         </div>
-
-        {/* Right Section: Feedback Form */}
         <div className="feedback-container">
           <h2 className="feedback-title">Get Involved with Us</h2>
-          <form className="feedback-form">
-            <input type="text" placeholder="Name" className="input-field" />
-            <input type="email" placeholder="Email" className="input-field" />
+          <form className="feedback-form" aria-label="Feedback Form">
+            <input
+              type="text"
+              placeholder="Name"
+              className="input-field"
+              aria-label="Your Name"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="input-field"
+              aria-label="Your Email"
+            />
             <textarea
               placeholder="Message"
               rows="5"
               className="textarea-field"
+              aria-label="Your Message"
             ></textarea>
             <button type="submit" className="submit-button">
               Submit
             </button>
           </form>
-          <p className="footer-note"></p>
         </div>
       </div>
     </>
