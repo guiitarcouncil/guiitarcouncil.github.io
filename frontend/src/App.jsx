@@ -15,13 +15,14 @@ import Contact from "./modules/Contact";
 import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
 import Build from "./modules/Build"
-
+import ScrollToTop from "./modules/ScrollTop";
 
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"

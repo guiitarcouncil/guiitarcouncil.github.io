@@ -39,7 +39,9 @@
   width: 900px;
   box-shadow: none;
 }
-
+.pname{
+  color: #2b5482;
+}
 .project-header {
   display: flex;
   align-items: center;
@@ -78,8 +80,8 @@
 }
 
 .student-image {
-  width: 110px;
-  height: 130px;
+  width: 140px;
+  height: 180px;
   border-radius: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover;
@@ -234,7 +236,7 @@
 
 .mentor h4 {
   font-size: 20px;
-  color: #333;
+  color: #2b5482;
 }
 
 .mentor p {

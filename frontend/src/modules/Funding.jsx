@@ -3,7 +3,7 @@ import './Funding.css';
 import wallImage from '../assets/wall.jpg';
 import ssip from '../assets/associations/as4-new.png';
 import ipr_logo from '../assets/ipr.jpg';
-import wall2 from '../assets/contact.jpg'; // Reusing the header image
+import wall2 from '../assets/contact.jpg'; 
 
 const Funding = () => {
   return (
@@ -15,7 +15,6 @@ const Funding = () => {
       </div>
 
 
-      
       <div className="main-content">
         <div className="grid-container">
           <div className="card">

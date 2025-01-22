@@ -31,7 +31,7 @@ function Contact() {
     {
       icon: money,
       title: "Nodal Program",
-      description: "Support up to INR 30.00 lakh per startup.",
+      description: "Support up to INR 30 lakhs.",
     },
   ];
 
@@ -60,7 +60,7 @@ function Contact() {
       </div>
 
       <div className="explore">
-        <h2>Grow with us</h2>
+        <h2>Explore our Programs</h2>
       </div>
 
       <div className="programs-menu">

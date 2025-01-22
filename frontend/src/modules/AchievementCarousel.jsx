@@ -7,30 +7,54 @@ import janiston from "../assets/achievements/janiston.png";
 import katew from "../assets/achievements/kate-winslet.jpg";
 import scarlet from "../assets/achievements/sjohansson.jpg";
 import sydney from "../assets/achievements/sydney-sweeney.jpg";
+import aksha from "../assets/aksha.jpg";
+import khushi from "../assets/khushi.jpg";
+import tirth from "../assets/tirth.jpg";
 import drone from "../assets/drone.jpg";
 import uni from "../assets/university-logo.png";
 import cmpy from "../assets/G.png";
 import ssip from "../assets/associations/as4-new.png";
 
+import kartavi from "../assets/achievements/kartavi.jpg";
+import lavanya from "../assets/achievements/lavanya.jpg";
+import vrati from "../assets/achievements/vrati.jpg";
+import divya from "../assets/achievements/divya.jpg";
+import chahana from "../assets/achievements/chahana.jpg";
+import vidur from "../assets/achievements/vidur.jpg";
+
 const achievements = [
   {
-    projectName: "Fire in HollyWood 2",
-    grantAmount: "250,000",
+    projectName: "Defense Robot",
+    grantAmount: "184,800",
     details:
-      "USP: Our 3D printing program offers an exciting opportunity to explore the world of additive manufacturing. Whether you're a beginner or an experienced designer, you'll learn how to create prototypes, models, and even end-use products using cutting-edge 3D printers.",
+      "USP: Durable, Multi-terrain, with advanvced cameras and a professional-grade desig for unmatched reliability in critical operations.",
     students: [
-      { name: "Jennifer Aniston", imageUrl: janiston },
-      { name: "Elizabeth Olsen", imageUrl: eolsen },
-      { name: "Ana de Armas", imageUrl: ana },
-      { name: "Kate Winslet", imageUrl: katew },
-      { name: "Scarlett Johansson", imageUrl: scarlet },
-      { name: "Sydney Sweeney", imageUrl: sydney },
+      { name: "Aksha Vahora", imageUrl: aksha },
+      { name: "Khushi Bhingradiya", imageUrl: khushi },
+      { name: "Tirth Pandya", imageUrl: tirth },
+      
     ],
-    mentor: "Vedant Mistry", // Only store the name
+    mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
   {
-    projectName: "Fire in HollyWood",
-    grantAmount: "250,000",
+    projectName: "Unmanned Ground Vehicle (UGV)",
+    grantAmount: "152,665",
+    details:
+      "USP: Modular, eco-friendly, GPS-enabled, built for high tasks like survelliance. and industrial monitoring and military and disaster response.",
+    students: [
+      { name: "Kartavi Patel", imageUrl: kartavi },
+      { name: "Lavanya Jain", imageUrl: lavanya },
+      { name: "Vrati Arya", imageUrl: vrati },
+      { name: "Divya Tiwari", imageUrl: divya },
+      { name: "Chahana Kamdar", imageUrl: chahana },
+      { name: "Vidur Shah", imageUrl: vidur },
+      
+    ],
+    mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
+  },
+  {
+    projectName: "Queens of HollyWood",
+    grantAmount: "250,000,000",
     details:
       "USP: Our 3D printing program offers an exciting opportunity to explore the world of additive manufacturing. Whether you're a beginner or an experienced designer, you'll learn how to create prototypes, models, and even end-use products using cutting-edge 3D printers.",
     students: [
@@ -41,7 +65,7 @@ const achievements = [
       { name: "Scarlett Johansson", imageUrl: scarlet },
       { name: "Sydney Sweeney", imageUrl: sydney },
     ],
-    mentor: "Jane Smith", 
+    mentor: "Vedant Mistry", 
   },
 ];
 
@@ -128,11 +152,17 @@ const AchievementCarousel = () => {
             <div className="uni">
               <img src={uni} alt="University Logo" />
             </div>
-            <h3>{achievements[currentIndex].projectName}</h3>
+            <div className="uni">
+              <img src={ssip} alt="University Logo" />
+            </div>
             <div className="cmpy">
               <img src={cmpy} alt="Company Logo" />
             </div>
           </div>
+            <div className="pname" >
+
+            <h3>{achievements[currentIndex].projectName}</h3>
+            </div>
 
           <p>
             Grant Amount:{" "}
