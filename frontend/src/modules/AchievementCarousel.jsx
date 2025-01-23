@@ -1,12 +1,6 @@
 import "@google/model-viewer";
 import React, { useState } from "react";
 import "./AchievementCarousel.css";
-import ana from "../assets/achievements/ana.jpeg";
-import eolsen from "../assets/achievements/eolsen.jpg";
-import janiston from "../assets/achievements/janiston.png";
-import katew from "../assets/achievements/kate-winslet.jpg";
-import scarlet from "../assets/achievements/sjohansson.jpg";
-import sydney from "../assets/achievements/sydney-sweeney.jpg";
 import aksha from "../assets/aksha.jpg";
 import khushi from "../assets/khushi.jpg";
 import tirth from "../assets/tirth.jpg";
@@ -21,6 +15,15 @@ import vrati from "../assets/achievements/vrati.jpg";
 import divya from "../assets/achievements/divya.jpg";
 import chahana from "../assets/achievements/chahana.jpg";
 import vidur from "../assets/achievements/vidur.jpg";
+import diyaVisani from "../assets/achievements/diyaVisani.jpg";
+import aakankshaYadav from "../assets/achievements/aakankshaYadav.jpg";
+import Riyan from "../assets/achievements/Reeyan.jpg";
+import eshanDevadhara from "../assets/achievements/eshanDevadhara.jpg";
+import dhruviGohel from "../assets/achievements/dhruviGohel.jpg";
+import Dev from "../assets/achievements/Dev.jpg";
+import tanujaVadi from "../assets/achievements/tanujaVadi.jpg";
+import reeyaPrajapati from "../assets/achievements/reeyaPrajapati.jpg";
+// import vidur from "../assets/achievements/.jpg";
 
 const achievements = [
   {
@@ -34,6 +37,90 @@ const achievements = [
       { name: "Tirth Pandya", imageUrl: tirth },
       
     ],
+    mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
+  },
+  {
+    projectName: "Vegano Joy",
+    grantAmount: "25,000",
+    details:
+      "USP: Durable, Multi-terrain, with advanvced cameras and a professional-grade desig for unmatched reliability in critical operations.",
+    students: [
+      { name: "Mr Rohan Asthana", imageUrl: aksha },//Images : https://drive.google.com/drive/folders/1V8k-ryGcrYmm1SETnMhgyHdK37u3A-EB
+      { name: "Mr. Aditya S. Prajapati", imageUrl: khushi },
+      { name: "Ankush Makwana", imageUrl: tirth },
+      { name: "Shreya Lad", imageUrl: tirth },
+      
+    ],
+    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+  },
+  {
+    projectName: "Chewable Oral Toothpaste",
+    grantAmount: "83,500",
+    details:
+      "Null",
+    students: [
+      { name: "Aakanksha Yadav", imageUrl: aakankshaYadav },
+      { name: "Diya Visani", imageUrl: diyaVisani },
+      
+    ],
+    
+    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+  },
+  {
+    projectName: "Nutriblend Pro ",
+    grantAmount: "30,000",
+    details:
+      "NULL",
+    students: [
+      { name: "Janmejay Borad", imageUrl: aksha },//IMG Remainging
+      { name: "Parth Gol", imageUrl: khushi },
+      { name: "Pranav Kadam", imageUrl: tirth },
+      
+    ],
+    
+    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+  },
+  {
+    projectName: "USV Neil (Unmanned Maritime Vessel/ Drone)",
+    grantAmount: "158,000",
+    details:
+      "NULL",
+    students: [//1 IMG remaining (Manthan)
+      { name: "Eshan Devadhara", imageUrl: eshanDevadhara },
+      { name: "Atharva Sisodiya", imageUrl: khushi },//remaining
+      { name: "Dhruvi Gohil", imageUrl: dhruviGohel },
+      { name: "Reeyan Shaikh", imageUrl: Riyan },
+      
+    ],
+    
+    mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
+  },
+  {
+    projectName: "Ayurtrix - Three Folding Life",
+    grantAmount: "250,000",
+    details:
+      "NULL",
+    students: [
+      { name: "Dev Shitole", imageUrl: Dev },
+      { name: "Reeya Prajapati", imageUrl: reeyaPrajapati  },
+      { name: "Tanuja vadi", imageUrl: tanujaVadi },
+      
+    ],
+    
+    mentor: "Prof. Devjani Banerjee", // Only store the name
+  },
+  {
+    projectName: "Nutriblend Pro ",
+    grantAmount: "30,000",
+    details:
+      "NULL",
+    students: [
+      { name: "Janmejay Borad", imageUrl: aksha },
+      { name: "Parth Gol", imageUrl: khushi },
+      { name: "Pranav Kadam", imageUrl: tirth },
+      
+    ],
+    
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
   {
@@ -52,21 +139,7 @@ const achievements = [
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  {
-    projectName: "Queens of HollyWood",
-    grantAmount: "250,000,000",
-    details:
-      "USP: Our 3D printing program offers an exciting opportunity to explore the world of additive manufacturing. Whether you're a beginner or an experienced designer, you'll learn how to create prototypes, models, and even end-use products using cutting-edge 3D printers.",
-    students: [
-      { name: "Jennifer Aniston", imageUrl: janiston },
-      { name: "Elizabeth Olsen", imageUrl: eolsen },
-      { name: "Ana de Armas", imageUrl: ana },
-      { name: "Kate Winslet", imageUrl: katew },
-      { name: "Scarlett Johansson", imageUrl: scarlet },
-      { name: "Sydney Sweeney", imageUrl: sydney },
-    ],
-    mentor: "Vedant Mistry", 
-  },
+  
 ];
 
 const AchievementCarousel = () => {
