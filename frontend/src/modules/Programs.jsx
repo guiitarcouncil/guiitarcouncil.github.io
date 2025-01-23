@@ -2,7 +2,7 @@ import React from 'react';
 import './Programs.css';
 import Navbar from '../modules/Navbar';
 import AchievementCarousel from '../modules/AchievementCarousel';
-import programImage from '../assets/contact.jpg'; // Add your image file path here
+import programImage from '../assets/others/contact.jpg'; // Add your image file path here
 
 const achievements = [
   { studentCount: 2, grantAmount: 5000, projectName: 'AI Research' },

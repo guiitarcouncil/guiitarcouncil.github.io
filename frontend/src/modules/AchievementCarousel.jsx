@@ -1,12 +1,12 @@
 import "@google/model-viewer";
 import React, { useState } from "react";
 import "./AchievementCarousel.css";
-import aksha from "../assets/aksha.jpg";
-import khushi from "../assets/khushi.jpg";
-import tirth from "../assets/tirth.jpg";
-import drone from "../assets/drone.jpg";
-import uni from "../assets/university-logo.png";
-import cmpy from "../assets/G.png";
+import aksha from "../assets/achievements/aksha.jpg";
+import khushi from "../assets/achievements/khushi.jpg";
+import tirth from "../assets/achievements/tirth.jpg";
+import drone from "../assets/others/drone.jpg";
+import uni from "../assets/logos/university-logo.png";
+import cmpy from "../assets/logos/G.png";
 import ssip from "../assets/associations/as4-new.png";
 
 import kartavi from "../assets/achievements/kartavi.jpg";
@@ -23,7 +23,6 @@ import dhruviGohel from "../assets/achievements/dhruviGohel.jpg";
 import Dev from "../assets/achievements/Dev.jpg";
 import tanujaVadi from "../assets/achievements/tanujaVadi.jpg";
 import reeyaPrajapati from "../assets/achievements/reeyaPrajapati.jpg";
-// import vidur from "../assets/achievements/.jpg";
 
 const achievements = [
   {

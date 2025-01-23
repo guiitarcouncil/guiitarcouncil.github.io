@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './Navbar.css';
-import logo from '../assets/logo-removebg-preview.png';
-import logo1 from '../assets/new.png';
+import logo1 from '../assets/logos/new.png';
 
 function Navbar() {
   return (

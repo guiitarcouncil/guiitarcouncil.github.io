@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import bg from "../assets/contact.jpg";
+import bg from "../assets/others/contact.jpg";
 import trial from "../assets/trial.png";
 import money from "../assets/money.png";
 import brain from "../assets/brain.png";

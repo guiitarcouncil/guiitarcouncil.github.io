@@ -1,9 +1,8 @@
 import React from 'react';
 import './Funding.css';
-import wallImage from '../assets/wall.jpg';
 import ssip from '../assets/associations/as4-new.png';
-import ipr_logo from '../assets/ipr.jpg';
-import wall2 from '../assets/contact.jpg'; 
+import ipr_logo from '../assets/others/ipr.jpg';
+import wall2 from '../assets/others/contact.jpg'; 
 
 const Funding = () => {
   return (
@@ -13,7 +12,6 @@ const Funding = () => {
         <img src={wall2} alt="Background image" className="funding-image" />
         <div className="funding-text-overlay">Funding Opportunities</div>
       </div>
-
 
       <div className="main-content">
         <div className="grid-container">
