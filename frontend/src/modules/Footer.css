@@ -30,6 +30,10 @@ footer {
   color: #fff; 
 }
 
+.footer-section a:hover {
+  color: #808080; /* Grey color */
+}
+
 .footer-divider {
   width: 1px;
   background-color: #fff;

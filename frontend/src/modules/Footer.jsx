@@ -1,5 +1,6 @@
 import "./Footer.css";
-import logo from "../assets/logos/white-logo.png";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo1 from "../assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -8,55 +9,139 @@ function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-section">
-          <p className="footer-copyright" style={{ color: "#fff", fontSize: "20px" }}>
+          <p
+            className="footer-copyright"
+            style={{ color: "#fff", fontSize: "20px" }}
+          >
             © 2025 GUIITAR Council
           </p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>Event Room, Second Floor,</p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>Anviksha - GSFC University,</p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>Vadodara, Gujarat - 391750</p>
+          <p style={{ color: "#fff", fontSize: "20px" }}>
+            Event Room, Second Floor,
+          </p>
+          <p style={{ color: "#fff", fontSize: "20px" }}>
+            Anviksha - GSFC University,
+          </p>
+          <p style={{ color: "#fff", fontSize: "20px" }}>
+            Vadodara, Gujarat - 391750
+          </p>
           <p style={{ color: "#fff", fontSize: "20px" }}>India</p>
         </div>
         <div className="footer-divider"></div>
         <div className="footer-section">
           <ul>
-            <li><a href="/programs">Infrastructure</a></li>
-            <li><a href="/programs">Previous Events</a></li>
-            <li><a href="/programs">Startups Incubated</a></li>
-            <li><a href="/contact">Innovate with Us</a></li>
-            <li><a href="#">Annual Return</a></li>
-            <li><a href="#">Policies</a></li>
+            <li>
+              <Link to="/programs">Infrastructure</Link>
+            </li>
+            <li>
+              <Link to="/programs">Previous Events</Link>
+            </li>
+            <li>
+              <Link to="/programs">Startups Incubated</Link>
+            </li>
+            <li>
+              <Link to="/contact">Innovate with Us</Link>
+            </li>
+            <li>
+              <a href="#">Annual Return</a>
+            </li>
+            <li>
+              <a href="#">Policies</a>
+            </li>
           </ul>
         </div>
         <div className="footer-section">
           <ul>
-            <li><a href="/programs">SSIP Grant</a></li>
-            <li><a href="/programs">Nodal Institute Grant</a></li>
-            <li><a href="/programs">Drone Workshop</a></li>
-            <li><a href="/programs">3D Printing Workshop</a></li>
-            <li><a href="/programs">Active Projects/Startups</a></li>
-            <li><a href="/programs">Student-led Projects</a></li>
+            <li>
+              <Link to="/programs">SSIP Grant</Link>
+            </li>
+            <li>
+              <Link to="/programs">Nodal Institute Grant</Link>
+            </li>
+            <li>
+              <Link to="/programs">Drone Workshop</Link>
+            </li>
+            <li>
+              <Link to="/programs">3D Printing Workshop</Link>
+            </li>
+            <li>
+              <Link to="/programs">Active Projects/Startups</Link>
+            </li>
+            
           </ul>
         </div>
         <div className="footer-section">
           <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/about">Mentorship</a></li>
-            <li><a href="/about">Leadership</a></li>
-            <li><a href="/">Our Associations</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>{" "}
+           
+            <li>
+              <HashLink
+                smooth
+                to="/about#leadership"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Leadership
+              </HashLink>
+            </li>
+            <li>
+              <HashLink
+                smooth
+                to="/#associations"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Our Associations
+              </HashLink>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>{" "}
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
         <img src={logo1} alt="GUIITAR Council Logo" className="footer-logo" />
         <div className="social-links">
-          <a href="https://www.linkedin.com/company/guiitarcouncil/" className="social-icon"><i className="fa fa-linkedin"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=919313262712" className="social-icon"><i className="fa fa-whatsapp"></i></a>
-          <a href="https://www.facebook.com/gsfcuniversity" className="social-icon"><i className="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/gsfcuniversity" className="social-icon"><i className="fa fa-instagram"></i></a>
-          <a href="https://x.com/GSFCUniversity" className="social-icon"><i className="fa fa-twitter"></i></a>
-          <a href="https://www.youtube.com/c/GSFCUniversityOfficial" className="social-icon"><i className="fa fa-youtube"></i></a>
-          <a href="mailto:guiitar@gsfcuniversity.ac.in" className="social-icon"><i className="fa fa-envelope"></i></a>
+          <a
+            href="https://www.linkedin.com/company/guiitarcouncil/"
+            className="social-icon"
+          >
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=919313262712"
+            className="social-icon"
+          >
+            <i className="fa fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/gsfcuniversity"
+            className="social-icon"
+          >
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/gsfcuniversity"
+            className="social-icon"
+          >
+            <i className="fa fa-instagram"></i>
+          </a>
+          <a href="https://x.com/GSFCUniversity" className="social-icon">
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/c/GSFCUniversityOfficial"
+            className="social-icon"
+          >
+            <i className="fa fa-youtube"></i>
+          </a>
+          <a href="mailto:guiitar@gsfcuniversity.ac.in" className="social-icon">
+            <i className="fa fa-envelope"></i>
+          </a>
         </div>
       </div>
     </footer>

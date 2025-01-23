@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./modules/Navbar";
 import Footer from "./modules/Footer";
@@ -12,8 +12,9 @@ import Resources from "./modules/Resources";
 import Contact from "./modules/Contact";
 import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
-import Build from "./modules/Build"
+import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
+import TabbedAboutTeam from "./modules/TabbedAboutTeam";
 
 import "./App.css";
 
@@ -28,15 +29,16 @@ function App() {
             <>
               <Navbar />
               <Carousel />
-              <Mission/>
-              <Build/>
+              <Mission />
+              <Build />
               <Scalar />
-              <Associations/>
+              <div id="associations">
+                <Associations />
+              </div>
               <Footer />
             </>
           }
         />
-
         <Route
           path="/about"
           element={
@@ -47,7 +49,6 @@ function App() {
             </>
           }
         />
-
         <Route
           path="/funding"
           element={
@@ -58,18 +59,16 @@ function App() {
             </>
           }
         />
-
         <Route
           path="/programs"
           element={
             <>
               <Navbar />
-              <Programs/>
+              <Programs />
               <Footer />
             </>
           }
         />
-
         <Route
           path="/resources"
           element={
@@ -80,7 +79,6 @@ function App() {
             </>
           }
         />
-
         <Route
           path="/contact"
           element={
