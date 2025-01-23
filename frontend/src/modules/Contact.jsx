@@ -58,20 +58,23 @@ function Contact() {
         </div>
       </div>
 
-      <div className="explore">
-        <h2>Explore our Programs</h2>
+      <div className="contact-card-container">
+      <div className="contact-card-address">
+        <h4>Office Address</h4>
+        <p>Event Room, Second Floor,</p>
+        <p>Anviksha - GSFC University,</p>
+        <p>Vadodara, Gujarat - 391750</p>
+        <p>India</p>
       </div>
-
-      <div className="programs-menu">
-        {programs.map((program, index) => (
-          <ProgramCard
-            key={index}
-            icon={program.icon}
-            title={program.title}
-            description={program.description}
-          />
-        ))}
+      <div className="contact-card-details">
+        <p><strong>Mr. Kiran Parmar</strong></p>
+        <p>Sr. Manager GUIITAR</p>
+        <p>+91 9313262712</p>
       </div>
+      <div className="contact-card-email">
+        <p>Email: <a href="mailto:guiitar@gsfcuniversity.ac.in">guiitar@gsfcuniversity.ac.in</a></p>
+      </div>
+    </div>
 
       <div className="follow-us-section">
         <div className="follow-us-content">
