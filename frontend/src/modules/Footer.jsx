@@ -1,6 +1,6 @@
 import "./Footer.css";
-import logo from "../assets/white-logo.png";
-import logo1 from "../assets/white.png";
+import logo from "../assets/logos/white-logo.png";
+import logo1 from "../assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
 
 function Footer() {

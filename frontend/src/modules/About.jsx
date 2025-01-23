@@ -1,9 +1,8 @@
 import React from "react";
 import "./About.css";
 import TabbedAboutTeam from "./TabbedAboutTeam";
-import MessageFromPresident from "./MessageFromPresident";
-import image from "../assets/campus.jpg";
-import headerImage from "../assets/contact.jpg";
+import image from "../assets/others/campus.jpg";
+import headerImage from "../assets/others/contact.jpg";
 
 function About() {
   return (

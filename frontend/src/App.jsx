@@ -5,8 +5,6 @@ import Footer from "./modules/Footer";
 import Carousel from "./modules/Carousel";
 import Scalar from "./modules/Scalar";
 import Mission from "./modules/Mission";
-import MessageFromPresident from "./modules/MessageFromPresident";
-import Particle from "./modules/Particle";
 import About from "./modules/About";
 import Funding from "./modules/Funding";
 import Programs from "./modules/Programs";
