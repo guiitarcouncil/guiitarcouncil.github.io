@@ -5,17 +5,6 @@ import trial from "../assets/trial.png";
 import money from "../assets/money.png";
 import brain from "../assets/brain.png";
 
-const ProgramCard = ({ icon, title, description }) => (
-  <div className="program-card">
-    <div className="icon">
-      <img src={icon} alt={`${title} Icon`} className="program-icon" />
-    </div>
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <button className="learn-more">Learn More</button>
-  </div>
-);
-
 function Contact() {
   const programs = [
     {
