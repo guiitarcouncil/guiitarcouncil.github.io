@@ -5,6 +5,17 @@ import trial from "../assets/trial.png";
 import money from "../assets/money.png";
 import brain from "../assets/brain.png";
 
+const ProgramCard = ({ icon, title, description }) => (
+  <div className="program-card">
+    <div className="icon">
+      <img src={icon} alt={`${title} Icon`} className="program-icon" />
+    </div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <button className="learn-more">Learn More</button>
+  </div>
+);
+
 function Contact() {
   const programs = [
     {
@@ -48,22 +59,24 @@ function Contact() {
       </div>
 
       <div className="contact-card-container">
-      <div className="contact-card-address">
-        <h4>Office Address</h4>
-        <p>Event Room, Second Floor,</p>
-        <p>Anviksha - GSFC University,</p>
-        <p>Vadodara, Gujarat - 391750, India</p>
+        <div className="contact-card-address">
+          <h4>Office Address</h4>
+          <p>Event Room, Second Floor,</p>
+          <p>Anviksha - GSFC University,</p>
+          <p>Vadodara, Gujarat - 391750, India</p>
+        </div>
+        <div className="contact-card-address">
+          <h4>Mr. Kiran Parmar</h4>
+          <p>Sr. Manager, GUIITAR COUNCIL</p>
+          <p>+91 9313262712</p>
+          <p>
+            Email:{" "}
+            <a href="mailto:guiitar@gsfcuniversity.ac.in">
+              guiitar@gsfcuniversity.ac.in
+            </a>
+          </p>
+        </div>
       </div>
-      <div className="contact-card-details">
-        <p><strong>Mr. Kiran Parmar</strong></p>
-        <p>Sr. Manager, GUIITAR COUNCIL</p>
-        <p>+91 9313262712</p> 
-        <p>Email: <a href="mailto:guiitar@gsfcuniversity.ac.in">guiitar@gsfcuniversity.ac.in</a></p>
-      </div>
-      <div className="contact-card-email">
-       
-      </div>
-    </div>
 
       <div className="follow-us-section">
         <div className="follow-us-content">
@@ -100,7 +113,7 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="feedback-container">
+        <div id="form" className="feedback-container">
           <h2 className="feedback-title">Get Involved with Us</h2>
           <form className="feedback-form" aria-label="Feedback Form">
             <input
