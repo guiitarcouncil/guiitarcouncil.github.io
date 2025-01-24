@@ -26,9 +26,7 @@
     color: #fff;
     font-size: 60px;
   }
-  
-  
-  
+
  /* Main Content */
   .main-content {
     flex: 1; /* Expand to fill available space */
@@ -63,7 +61,7 @@
   
   .image-card {
     font-size: 3rem; /* Larger font size for "IMG" */
-    color: #007bff;
+    color: #2b5482;
     font-weight: bold;
     background-color: #f0f8ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,7 +72,7 @@
   .card h3 {
     margin: 0;
     font-size: 4rem; /* Larger heading */
-    color: #007bff;
+    color: #2b5482;
   }
   
   .card p {
@@ -86,7 +84,7 @@
     margin-top: 20px; /* Add more spacing */
     padding: 10px 20px; /* Larger button size */
     font-size: 1.2rem; /* Larger font size */
-    background-color: #007bff;
+    background-color: #2b5482;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -95,6 +93,7 @@
 
   
   .card button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: #2b5482;
   }
   

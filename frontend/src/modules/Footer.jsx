@@ -35,38 +35,91 @@ function Footer() {
             <li>
               <Link to="/programs">Previous Events</Link>
             </li>
+           
             <li>
-              <Link to="/programs">Startups Incubated</Link>
+            <HashLink
+                smooth
+                to="/contact#form"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Innovate with us
+              </HashLink>
             </li>
             <li>
-              <Link to="/contact">Innovate with Us</Link>
+              <a
+                href="https://drive.google.com/file/d/1ZyfsgLfviEvapp_Ey8jDl9grjev1tIIe/view?usp=drive_link"
+                target="_blank"
+              >
+                Annual Return
+              </a>
             </li>
-            <li>
-              <a href="#">Annual Return</a>
-            </li>
-            <li>
-              <a href="#">Policies</a>
-            </li>
+            <a
+                href="https://drive.google.com/drive/folders/1JXvxN1ys5SzgwIUpajSl8wWqYnuGjkkT"
+                target="_blank"
+              >
+                Startup Resources
+                </a>
           </ul>
         </div>
         <div className="footer-section">
           <ul>
             <li>
-              <Link to="/programs">SSIP Grant</Link>
+              <HashLink
+                smooth
+                to="/funding#ssip"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                SSIP 2.0
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Nodal Institute Grant</Link>
+              <HashLink
+                smooth
+                to="/funding#nodal"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Nodal Institute
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Drone Workshop</Link>
+              <HashLink
+                smooth
+                to="/programs#drone"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Drone Workshop
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">3D Printing Workshop</Link>
+              <HashLink
+                smooth
+                to="/programs#3d"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                3D Printing Workshop
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Active Projects/Startups</Link>
+              <HashLink
+                smooth
+                to="/programs#active"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Active Projects
+              </HashLink>
             </li>
-            
           </ul>
         </div>
         <div className="footer-section">
@@ -74,7 +127,6 @@ function Footer() {
             <li>
               <Link to="/about">About Us</Link>
             </li>{" "}
-           
             <li>
               <HashLink
                 smooth

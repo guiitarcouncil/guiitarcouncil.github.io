@@ -34,9 +34,23 @@ const Build = () => {
             </p>
             <button className="offering-button">Learn More</button>
           </Link>
+
+          {/* <HashLink
+            smooth
+            to="/funding#ssip"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            <h2>Infrastructure</h2>
+            <p>
+              Work in state-of-the-art facilities designed for collaboration and
+              growth.
+            </p>
+          </HashLink> */}
         </div>
         <div className="offering">
-          <Link to="/programs">
+          <Link to="/about">
             <img src={communityIcon} alt="Mentorship" className="icon" />
             <h2>Mentorship</h2>
             <p>

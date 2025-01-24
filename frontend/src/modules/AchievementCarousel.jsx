@@ -51,7 +51,6 @@ const achievements = [
       { name: "Aksha Vahora", imageUrl: aksha },
       { name: "Khushi Bhingradiya", imageUrl: khushi },
       { name: "Tirth Pandya", imageUrl: tirth },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
@@ -67,7 +66,8 @@ const achievements = [
       { name: "Shreya Lad", imageUrl: shreyaLad },
       
     ],
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {//Done
     projectName: "Chewable Oral Toothpaste",
@@ -77,10 +77,10 @@ const achievements = [
     students: [
       { name: "Aakanksha Yadav", imageUrl: aakankshaYadav },
       { name: "Diya Visani", imageUrl: diyaVisani },
-      
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {//Done
     projectName: "Nutriblend Pro ",
@@ -93,8 +93,9 @@ const achievements = [
       { name: "Pranav Kadam", imageUrl: pranav },
       
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {//DONE
     projectName: "USV Neil (Unmanned Maritime Vessel/ Drone)",
@@ -106,9 +107,8 @@ const achievements = [
       { name: "Atharva Sisodiya", imageUrl: AtharvaSisodiya },
       { name: "Dhruvi Gohil", imageUrl: dhruviGohel },
       { name: "Reeyan Shaikh", imageUrl: Riyan },
-      
     ],
-    
+
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
   {//Done
@@ -120,9 +120,8 @@ const achievements = [
       { name: "Dev Shitole", imageUrl: devShitole },
       { name: "Reeya Prajapati", imageUrl: reeyaPrajapati  },
       { name: "Tanuja vadi", imageUrl: tanujaVadi },
-      
     ],
-    
+
     mentor: "Prof. Devjani Banerjee", // Only store the name
   },
   {//Done
@@ -179,11 +178,9 @@ const achievements = [
       { name: "Divya Tiwari", imageUrl: divya },
       { name: "Chahana Kamdar", imageUrl: chahana },
       { name: "Vidur Shah", imageUrl: vidur },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  
 ];
 
 const AchievementCarousel = () => {
@@ -204,7 +201,7 @@ const AchievementCarousel = () => {
       <h1 className="main-heading">Explore Our Programs</h1>
 
       <div className="drone">
-        <div className="drone-content">
+        <div id="drone" className="drone-content">
           <div className="drone-i">
             <img src={drone} alt="Drone" />
           </div>
@@ -226,7 +223,7 @@ const AchievementCarousel = () => {
       </div>
 
       <div className="printing">
-        <div className="printing-content">
+        <div id="3d" className="printing-content">
           <div className="printing-text">
             <h2>Learn 3D Printing</h2>
             <p>
@@ -258,7 +255,9 @@ const AchievementCarousel = () => {
         </div>
       </div>
 
-      <h1 className="main-heading">Student Achievements</h1>
+      <h1 id="active" className="main-heading">
+        Student Achievements
+      </h1>
       <div className="achievement-carousel">
         <button className="carousel-btn prev" onClick={handlePrev}>
           &#10094;
@@ -276,10 +275,9 @@ const AchievementCarousel = () => {
               <img src={cmpy} alt="Company Logo" />
             </div>
           </div>
-            <div className="pname" >
-
+          <div className="pname">
             <h3>{achievements[currentIndex].projectName}</h3>
-            </div>
+          </div>
 
           <p>
             Grant Amount:{" "}
