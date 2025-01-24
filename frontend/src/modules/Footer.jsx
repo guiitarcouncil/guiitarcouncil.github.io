@@ -35,14 +35,25 @@ function Footer() {
             <li>
               <Link to="/programs">Previous Events</Link>
             </li>
+           
             <li>
-              <Link to="/programs">Startups Incubated</Link>
+            <HashLink
+                smooth
+                to="/contact#form"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Innovate with us
+              </HashLink>
             </li>
             <li>
-              <Link to="/contact">Innovate with Us</Link>
-            </li>
-            <li>
-              <a href="#">Annual Return</a>
+              <a
+                href="https://drive.google.com/file/d/1ZyfsgLfviEvapp_Ey8jDl9grjev1tIIe/view?usp=drive_link"
+                target="_blank"
+              >
+                Annual Return
+              </a>
             </li>
             <li>
               <a href="#">Policies</a>
@@ -96,7 +107,7 @@ function Footer() {
               </HashLink>
             </li>
             <li>
-            <HashLink
+              <HashLink
                 smooth
                 to="/programs#active"
                 scroll={(el) =>
