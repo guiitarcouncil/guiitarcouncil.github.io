@@ -52,21 +52,60 @@ function Footer() {
         <div className="footer-section">
           <ul>
             <li>
-              <Link to="/programs">SSIP Grant</Link>
+              <HashLink
+                smooth
+                to="/funding#ssip"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                SSIP 2.0
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Nodal Institute Grant</Link>
+              <HashLink
+                smooth
+                to="/funding#nodal"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Nodal Institute
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Drone Workshop</Link>
+              <HashLink
+                smooth
+                to="/programs#drone"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Drone Workshop
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">3D Printing Workshop</Link>
+              <HashLink
+                smooth
+                to="/programs#3d"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                3D Printing Workshop
+              </HashLink>
             </li>
             <li>
-              <Link to="/programs">Active Projects/Startups</Link>
+            <HashLink
+                smooth
+                to="/programs#active"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Active Projects
+              </HashLink>
             </li>
-            
           </ul>
         </div>
         <div className="footer-section">
@@ -74,7 +113,6 @@ function Footer() {
             <li>
               <Link to="/about">About Us</Link>
             </li>{" "}
-           
             <li>
               <HashLink
                 smooth

@@ -34,7 +34,6 @@ const achievements = [
       { name: "Aksha Vahora", imageUrl: aksha },
       { name: "Khushi Bhingradiya", imageUrl: khushi },
       { name: "Tirth Pandya", imageUrl: tirth },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
@@ -44,82 +43,75 @@ const achievements = [
     details:
       "USP: Durable, Multi-terrain, with advanvced cameras and a professional-grade desig for unmatched reliability in critical operations.",
     students: [
-      { name: "Mr Rohan Asthana", imageUrl: aksha },//Images : https://drive.google.com/drive/folders/1V8k-ryGcrYmm1SETnMhgyHdK37u3A-EB
+      { name: "Mr Rohan Asthana", imageUrl: aksha }, //Images : https://drive.google.com/drive/folders/1V8k-ryGcrYmm1SETnMhgyHdK37u3A-EB
       { name: "Mr. Aditya S. Prajapati", imageUrl: khushi },
       { name: "Ankush Makwana", imageUrl: tirth },
       { name: "Shreya Lad", imageUrl: tirth },
-      
     ],
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {
     projectName: "Chewable Oral Toothpaste",
     grantAmount: "83,500",
-    details:
-      "Null",
+    details: "Null",
     students: [
       { name: "Aakanksha Yadav", imageUrl: aakankshaYadav },
       { name: "Diya Visani", imageUrl: diyaVisani },
-      
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {
     projectName: "Nutriblend Pro ",
     grantAmount: "30,000",
-    details:
-      "NULL",
+    details: "NULL",
     students: [
-      { name: "Janmejay Borad", imageUrl: aksha },//IMG Remainging
+      { name: "Janmejay Borad", imageUrl: aksha }, //IMG Remainging
       { name: "Parth Gol", imageUrl: khushi },
       { name: "Pranav Kadam", imageUrl: tirth },
-      
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
   {
     projectName: "USV Neil (Unmanned Maritime Vessel/ Drone)",
     grantAmount: "158,000",
-    details:
-      "NULL",
-    students: [//1 IMG remaining (Manthan)
+    details: "NULL",
+    students: [
+      //1 IMG remaining (Manthan)
       { name: "Eshan Devadhara", imageUrl: eshanDevadhara },
-      { name: "Atharva Sisodiya", imageUrl: khushi },//remaining
+      { name: "Atharva Sisodiya", imageUrl: khushi }, //remaining
       { name: "Dhruvi Gohil", imageUrl: dhruviGohel },
       { name: "Reeyan Shaikh", imageUrl: Riyan },
-      
     ],
-    
+
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
   {
     projectName: "Ayurtrix - Three Folding Life",
     grantAmount: "250,000",
-    details:
-      "NULL",
+    details: "NULL",
     students: [
       { name: "Dev Shitole", imageUrl: Dev },
-      { name: "Reeya Prajapati", imageUrl: reeyaPrajapati  },
+      { name: "Reeya Prajapati", imageUrl: reeyaPrajapati },
       { name: "Tanuja vadi", imageUrl: tanujaVadi },
-      
     ],
-    
+
     mentor: "Prof. Devjani Banerjee", // Only store the name
   },
   {
     projectName: "Nutriblend Pro ",
     grantAmount: "30,000",
-    details:
-      "NULL",
+    details: "NULL",
     students: [
       { name: "Janmejay Borad", imageUrl: aksha },
       { name: "Parth Gol", imageUrl: khushi },
       { name: "Pranav Kadam", imageUrl: tirth },
-      
     ],
-    
+
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
   {
@@ -134,11 +126,9 @@ const achievements = [
       { name: "Divya Tiwari", imageUrl: divya },
       { name: "Chahana Kamdar", imageUrl: chahana },
       { name: "Vidur Shah", imageUrl: vidur },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  
 ];
 
 const AchievementCarousel = () => {
@@ -159,7 +149,7 @@ const AchievementCarousel = () => {
       <h1 className="main-heading">Explore Our Programs</h1>
 
       <div className="drone">
-        <div className="drone-content">
+        <div id="drone" className="drone-content">
           <div className="drone-i">
             <img src={drone} alt="Drone" />
           </div>
@@ -181,7 +171,7 @@ const AchievementCarousel = () => {
       </div>
 
       <div className="printing">
-        <div className="printing-content">
+        <div id="3d" className="printing-content">
           <div className="printing-text">
             <h2>Learn 3D Printing</h2>
             <p>
@@ -213,7 +203,9 @@ const AchievementCarousel = () => {
         </div>
       </div>
 
-      <h1 className="main-heading">Student Achievements</h1>
+      <h1 id="active" className="main-heading">
+        Student Achievements
+      </h1>
       <div className="achievement-carousel">
         <button className="carousel-btn prev" onClick={handlePrev}>
           &#10094;
@@ -231,10 +223,9 @@ const AchievementCarousel = () => {
               <img src={cmpy} alt="Company Logo" />
             </div>
           </div>
-            <div className="pname" >
-
+          <div className="pname">
             <h3>{achievements[currentIndex].projectName}</h3>
-            </div>
+          </div>
 
           <p>
             Grant Amount:{" "}

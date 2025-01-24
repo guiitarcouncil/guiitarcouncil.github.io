@@ -16,7 +16,7 @@ const Funding = () => {
       <div className="main-content">
         <div className="grid-container">
           <div className="card">
-            <h3>SSIP Grant</h3>
+            <h3 id = "ssip">SSIP Grant</h3>
             <p>
               SSIP (Student Startup and Innovation Policy) is an initiative by Gujarat Government to empower students and young innovators by fostering a culture of entrepreneurship and innovation. It supports startups in both traditional and emerging technologies. Open to students and alumni across all education levels, SSIP offers financial assistance for prototype or proof of concept (POC) with mentorship and infrastructure to transform ideas into impactful ventures.
             </p>
@@ -28,7 +28,7 @@ const Funding = () => {
           <div className="image-card"><img src={ssip} alt="" height={"180vh"} /></div>
           <div className="image-card"><img src={ssip} alt="" height={"180vh"} /></div>
           <div className="card">
-            <h3>Nodal Institute Fund</h3>
+            <h3 id ="nodal">Nodal Institute Fund</h3>
             <p>
               GUIITAR Council, recognized under the Gujarat Industrial Policy 2020, empowers startups and innovators by providing funding, mentorship, and resources. With a focus on sectors like AI, agriculture, clean-tech, and healthcare, it offers seed funding up to ₹30 lakhs, monthly sustenance allowances, skill development grants, and support for acceleration programs, fostering a thriving startup ecosystem in Vadodara and beyond.
             </p>
@@ -38,7 +38,7 @@ const Funding = () => {
             </div>
           </div>
           <div className="card">
-            <h3>IPR</h3>
+            <h3 >IPR Centre</h3>
             <p>
               The IPR Centre at GSFC University supports students, faculty, and alumni in protecting their intellectual creations, including patents, copyrights, trademarks, and designs. It raises awareness, provides end-to-end guidance, and ensures effective IP management. Financial support is offered for IP filings under SSIP, covering domestic and international patents, trademarks, copyrights, and more, fostering innovation and securing intellectual assets.
             </p>
