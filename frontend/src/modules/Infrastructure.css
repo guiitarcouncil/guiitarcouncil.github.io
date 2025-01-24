@@ -1,4 +1,64 @@
-.infrastructure-heading{
+.infrastructure-heading h3{
+    color: #2c5584;
+    font-size: 4.5rem;
+    background-color: #fff;
+    /* padding-left: 10vw; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .infrastructure-cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+      gap: 30px; /* Increased spacing between cards */
+      padding: 100px; /* Space around the grid */
+      justify-content: center; /* Horizontally center the grid content */
+      align-items: center; /* Vertically align the grid within the container */
+      margin: 0 auto; /* Center container horizontally on the page */
+      background-color: #fff; /* Light background for visibility */
+      /* margin-left: 10vw; */
+      box-sizing: border-box; /* Ensure padding doesn’t affect layout */
+    }
+    
+    .card {
+      border: 2px solid #2c5584; /* Border for each card */
+      border-radius: 10px; /* Rounded corners for cards */
+      width: 100%; /* Full width of grid cell */
+      height: 100%; /* Set card height */
+      background-color: #fff; /* Card background color */
+      display: flex;
+      flex-direction: column; /* Arrange content vertically */
+      align-items: center; /* Center align content horizontally */
+      justify-content: space-between; /* Add space between items */
+      padding: 20px; /* Inner padding for content */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    }
+    
+    .card-title {
+      font-size: 2.5rem; /* Larger font for the title */
+      font-weight: bold;
+      color: #2c5584;
+      margin-bottom:0px ;
+      /* margin-bottom: 10px; Add space below the title */
+      text-align: center;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      border-radius: 5px; /* Rounded image corners */
+      top: -100px;
+    }
+    
+    .card-text {
+      /* padding-top: -19px; */
+      margin-bottom: 10px;
+      font-size: 1rem; /* Slightly larger font for text */
+      font-weight: bold;
+      color: #555;
+      text-align: center;
+    }.infrastructure-heading{
     color: #2c5584;
     font-size: 5rem;
     background-color: #fff;
@@ -59,65 +119,4 @@
       font-weight: bold;
       color: #555;
       text-align: center;
-    }.infrastructure-heading{
-        color: #2c5584;
-        font-size: 5rem;
-        background-color: #fff;
-        /* padding-left: 10vw; */
-        display: flex;
-        justify-content: center;
-        padding-top: 10vh;
-      }
-      
-      .infrastructure-cards-container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-          gap: 30px; /* Increased spacing between cards */
-          padding: 100px; /* Space around the grid */
-          justify-content: center; /* Horizontally center the grid content */
-          align-items: center; /* Vertically align the grid within the container */
-          margin: 0 auto; /* Center container horizontally on the page */
-          background-color: #fff; /* Light background for visibility */
-          /* margin-left: 10vw; */
-          box-sizing: border-box; /* Ensure padding doesn’t affect layout */
-        }
-        
-        .card {
-          border: 2px solid #2c5584; /* Border for each card */
-          border-radius: 10px; /* Rounded corners for cards */
-          width: 100%; /* Full width of grid cell */
-          height: 100%; /* Set card height */
-          background-color: #fff; /* Card background color */
-          display: flex;
-          flex-direction: column; /* Arrange content vertically */
-          align-items: center; /* Center align content horizontally */
-          justify-content: space-between; /* Add space between items */
-          padding: 20px; /* Inner padding for content */
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
-        }
-        
-        .card-title {
-          font-size: 2.5rem; /* Larger font for the title */
-          font-weight: bold;
-          color: #2c5584;
-          margin-bottom:0px ;
-          /* margin-bottom: 10px; Add space below the title */
-          text-align: center;
-        }
-        
-        .card-image img {
-          width: 100%;
-          height: auto;
-          max-height: 300px;
-          border-radius: 5px; /* Rounded image corners */
-          top: -100px;
-        }
-        
-        .card-text {
-          /* padding-top: -19px; */
-          margin-bottom: 10px;
-          font-size: 1rem; /* Slightly larger font for text */
-          font-weight: bold;
-          color: #555;
-          text-align: center;
-        }
+    }

@@ -28,7 +28,10 @@ function Infrastructure() {
   return (
     <>
       <div className="infrastructure-heading">
-          <div className="infra-text">Infrastructure</div>
+            <h3>
+
+       Our  Infrastructure
+            </h3>
       </div>
       <div className="infrastructure-cards-container">
       {cardsData.map((card, index) => (

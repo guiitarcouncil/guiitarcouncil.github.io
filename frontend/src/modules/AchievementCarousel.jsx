@@ -8,7 +8,6 @@ import drone from "../assets/others/drone.jpg";
 import uni from "../assets/logos/university-logo.png";
 import cmpy from "../assets/logos/G.png";
 import ssip from "../assets/associations/as4-new.png";
-
 import kartavi from "../assets/achievements/kartavi.jpg";
 import lavanya from "../assets/achievements/lavanya.jpg";
 import vrati from "../assets/achievements/vrati.jpg";
@@ -28,7 +27,6 @@ import rohan from "../assets/achievements/rohan.jpg";
 import ankush from "../assets/achievements/ankush.jpg";
 import shreyaLad from "../assets/achievements/shreyaLad.jpg";
 import AtharvaSisodiya from "../assets/achievements/AtharvaSisodiya.jpg";
-import ParthGol from "../assets/achievements/ParthGol.jpg";
 import janmejayBorad from "../assets/achievements/janmejayBorad.jpg";
 import parthGol from "../assets/achievements/parthGol.jpg";
 import pranav from "../assets/achievements/pranav.jpg";
