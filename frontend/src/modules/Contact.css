@@ -33,6 +33,74 @@
   color: white;
 }
 
+.contact-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.contact-card-address {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 100px;
+}
+
+.contact-card-address h4 {
+  color: #2c5584; /* Blue text for header */
+  margin-bottom: 10px;
+  font-size: 3rem; /* Larger font */
+}
+
+.contact-card-address p {
+  
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.4rem; /* Increased font size */
+}
+
+.contact-card-details {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 80px;
+}
+
+.contact-card-details p strong{
+  color: #2c5584;
+  margin: 8px 0;
+  font-size: 2.5rem; /* Bigger font size */
+}
+.contact-card-details p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.4rem; /* Increased font size */
+}
+
+.contact-card-email {
+  flex: 1;
+  text-align: right;
+  margin-right: 80px; 
+  margin-top: 20px;
+}
+
+.contact-card-email p {
+  font-size: 2rem; /* Increased font size */
+  text-align: left;
+  color: #000;}
+
+.contact-card-email a {
+  color: #2c5584;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.contact-card-email a:hover {
+  text-decoration: underline;
+}
 
 .follow-us-section {
   display: flex; 
