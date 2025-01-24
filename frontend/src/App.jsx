@@ -45,7 +45,7 @@ function App() {
             <>
               <Navbar />
               <About />
-            <Infrastructure/>
+              <Infrastructure />
               <Footer />
             </>
           }
