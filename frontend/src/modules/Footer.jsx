@@ -55,9 +55,12 @@ function Footer() {
                 Annual Return
               </a>
             </li>
-            <li>
-              <a href="#">Policies</a>
-            </li>
+            <a
+                href="https://drive.google.com/drive/folders/1JXvxN1ys5SzgwIUpajSl8wWqYnuGjkkT"
+                target="_blank"
+              >
+                Startup Resources
+                </a>
           </ul>
         </div>
         <div className="footer-section">

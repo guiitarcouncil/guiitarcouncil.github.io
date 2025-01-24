@@ -26,7 +26,7 @@ const Funding = () => {
             </div>
           </div>
           <div className="image-card"><img src={ssip} alt="" height={"180vh"} /></div>
-          <div className="image-card"><img src={nodal} alt="" height={"180vh"} /></div>
+          <div className="image-card"><img src={nodal} alt="" height={"250vh"} /></div>
           <div className="card">
             <h3 id ="nodal">Nodal Institute </h3>
             <p>
