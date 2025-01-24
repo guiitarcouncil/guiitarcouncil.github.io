@@ -33,81 +33,72 @@
   color: white;
 }
 
-.explore h2 {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 3.5rem;
-  color: #2c5584;
-  background-color: #fff;
-  margin-bottom: 0; /* Remove bottom margin */
-  padding-bottom: 0; /* Ensure no padding */
-}
-
-.programs-menu {
+.contact-card-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 7rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #fff;
-  height: 70vh;
-  margin-top: 0; /* Remove top margin */
+  font-family: Arial, sans-serif;
 }
 
-
-.program-card {
-  background: #2c5584;
-  border-radius: 15px; 
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
-  text-align: center;
-  padding: 3rem;
-  width: 400px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.contact-card-address {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 100px;
 }
 
-.program-card:hover {
-  transform: translateY(-15px); 
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+.contact-card-address h4 {
+  color: #2c5584; /* Blue text for header */
+  margin-bottom: 10px;
+  font-size: 3rem; /* Larger font */
 }
 
-.icon {
-  margin-bottom: 2rem; 
+.contact-card-address p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.4rem; /* Increased font size */
 }
 
-.program-icon {
-  width: 60px;  /* Specify a width */
-  height: auto;  /* Maintain aspect ratio */
-  display: block; /* Make sure the image is not hidden */
-  margin: 0 auto; /* Center the image if needed */
+.contact-card-details {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 80px;
 }
 
-
-.program-card h3 {
-  font-size: 2rem; 
-  color: #fff; 
-  margin-bottom: 1.5rem;
+.contact-card-details p strong{
+  margin: 8px 0;
+  color: #111;
+  font-size: 2.5rem; /* Bigger font size */
+}
+.contact-card-details p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1.8rem; /* Increased font size */
 }
 
-.program-card p {
-  font-size: 1.2rem; 
-  color: #fff;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+.contact-card-email {
+  flex: 1;
+  text-align: right;
+  margin-right: 80px; 
+  margin-top: 20px;
 }
 
-.learn-more {
-  background-color: #fff; 
+.contact-card-email p {
+  font-size: 2rem; /* Increased font size */
+  text-align: left;
+  color: #000;}
+
+.contact-card-email a {
   color: #2c5584;
-  border: none;
-  border-radius: 8px; 
-  padding: 0.75rem 1.5rem;
-  font-size: 1.2rem; 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 1.7rem;
 }
 
-.learn-more:hover {
-  background-color: #1b3161; 
+.contact-card-email a:hover {
+  text-decoration: underline;
 }
 
 .follow-us-section {
