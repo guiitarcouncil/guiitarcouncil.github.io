@@ -46,7 +46,7 @@
     gap: 50px;
   }
   
-  .card, .image-card {
+  .car, .image-car {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,7 @@
 
   }
   
-  .image-card {
+  .image-car {
     font-size: 3rem; /* Larger font size for "IMG" */
     color: #2b5482;
     font-weight: bold;
@@ -69,18 +69,18 @@
 
   }
   
-  .card h3 {
+  .car h3 {
     margin: 0;
     font-size: 4rem; /* Larger heading */
     color: #2b5482;
   }
   
-  .card p {
+  .car p {
     font-size: 1.2rem; /* Larger text */
     color: #333;
   }
   
-  .card button {
+  .car button {
     margin-top: 20px; /* Add more spacing */
     padding: 10px 20px; /* Larger button size */
     font-size: 1.2rem; /* Larger font size */
@@ -92,7 +92,7 @@
   }
 
   
-  .card button:hover {
+  .car button:hover {
     background-color: #fff;
     color: #2b5482;
     border: #333 solid 1px;
