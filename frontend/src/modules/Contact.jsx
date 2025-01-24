@@ -63,16 +63,16 @@ function Contact() {
         <h4>Office Address</h4>
         <p>Event Room, Second Floor,</p>
         <p>Anviksha - GSFC University,</p>
-        <p>Vadodara, Gujarat - 391750</p>
-        <p>India</p>
+        <p>Vadodara, Gujarat - 391750, India</p>
       </div>
       <div className="contact-card-details">
         <p><strong>Mr. Kiran Parmar</strong></p>
-        <p>Sr. Manager GUIITAR</p>
-        <p>+91 9313262712</p>
+        <p>Sr. Manager, GUIITAR COUNCIL</p>
+        <p>+91 9313262712</p> 
+        <p>Email: <a href="mailto:guiitar@gsfcuniversity.ac.in">guiitar@gsfcuniversity.ac.in</a></p>
       </div>
       <div className="contact-card-email">
-        <p>Email: <a href="mailto:guiitar@gsfcuniversity.ac.in">guiitar@gsfcuniversity.ac.in</a></p>
+       
       </div>
     </div>
 
