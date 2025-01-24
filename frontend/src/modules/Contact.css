@@ -1,4 +1,8 @@
- .custom-section {
+*{
+  font-family: Oswald,"sans-serif";
+}
+
+.custom-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,8 +42,6 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #fff;
   font-family: Arial, sans-serif;
 }
@@ -53,14 +55,14 @@
 .contact-card-address h4 {
   color: #2c5584; /* Blue text for header */
   margin-bottom: 10px;
-  font-size: 2.8rem; /* Larger font */
+  font-size: 3.5rem;
 }
 
 .contact-card-address p {
-  
+
   margin: 8px 0;
   color: #555;
-  font-size: 1.4rem; /* Increased font size */
+  font-size: 1.4rem; 
 }
 
 .follow-us-section {
@@ -73,9 +75,9 @@
   color: #fff; 
 }
 
-/* Content container */
+
 .follow-us-content {
-  max-width: 40%; /* Restrict width for the text section */
+  max-width: 40%; 
 }
 
 /* Title Styling */
@@ -276,7 +278,7 @@
   width: 50%; /* Wider button */
   padding: 12px;
   border-radius: 8px;
-  background-color: #6c63ff;
+  background-color: #2b5482;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -284,7 +286,10 @@
 }
 
 .submit-button:hover {
-  background-color: #5a52e0;
+  background-color: #fff;
+  color: #2b5482;
+  border:#000 2px solid;
+
 }
 
 .footer-note {

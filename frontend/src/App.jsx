@@ -15,7 +15,7 @@ import Associations from "./modules/Associations";
 import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
 import TabbedAboutTeam from "./modules/TabbedAboutTeam";
-
+import Infrastructure from "./modules/Infrastructure";
 import "./App.css";
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
             <>
               <Navbar />
               <About />
+            <Infrastructure/>
               <Footer />
             </>
           }
