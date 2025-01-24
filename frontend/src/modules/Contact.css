@@ -57,6 +57,7 @@
 }
 
 .contact-card-address p {
+  
   margin: 8px 0;
   color: #555;
   font-size: 1.4rem; /* Increased font size */
@@ -69,14 +70,14 @@
 }
 
 .contact-card-details p strong{
+  color: #2c5584;
   margin: 8px 0;
-  color: #111;
   font-size: 2.5rem; /* Bigger font size */
 }
 .contact-card-details p {
   margin: 8px 0;
   color: #555;
-  font-size: 1.8rem; /* Increased font size */
+  font-size: 1.4rem; /* Increased font size */
 }
 
 .contact-card-email {
