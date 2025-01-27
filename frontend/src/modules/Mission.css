@@ -32,6 +32,7 @@
 }
 
 .mission-description {
+  text-align: justify;
   font-size: 1.4rem;
   line-height: 1.6;
   color: #333;
