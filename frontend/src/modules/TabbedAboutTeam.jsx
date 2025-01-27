@@ -239,7 +239,7 @@ const TabbedAboutTeam = () => {
         image: ramanan, // Corrected property name
       },
       {
-        name: "Mr. Hemal Patel",
+        name: "Mr. Anupam Jatole",
         role: "Advisor",
         resumeLink:
           "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_84fb4648600c448092b192d5ab18b95c.pdf",
