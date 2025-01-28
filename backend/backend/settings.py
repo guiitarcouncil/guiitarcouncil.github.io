@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g1xc8hc_u9p-#w6$ir!bf20y2+00y_n3c76m!x^^)zbxehx#x!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['guiitarcouncil.pythonanywhere.com', 'guiitarcouncil.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 

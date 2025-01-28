@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/contact/', include('contact.urls')),  # Ensure this is included
+    path('api/contact/', include('contact.urls')),  # Include the contact app URLs correctly
 ]
