@@ -31,7 +31,7 @@ footer {
 }
 
 .footer-section a:hover {
-  color: #808080; /* Grey color */
+  color: #808080;
 }
 
 .footer-divider {
@@ -43,7 +43,7 @@ footer {
 .footer-section h4 {
   font-size: 16px;
   font-weight: bold;
-  /* margin-bottom: 10px; */
+
 }
 
 .footer-section ul {

@@ -8,7 +8,6 @@ import Mission from "./modules/Mission";
 import About from "./modules/About";
 import Funding from "./modules/Funding";
 import Programs from "./modules/Programs";
-import Resources from "./modules/Resources";
 import Contact from "./modules/Contact";
 import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
@@ -70,16 +69,7 @@ function App() {
             </>
           }
         />
-        <Route
-          path="/resources"
-          element={
-            <>
-              <Navbar />
-              <Resources />
-              <Footer />
-            </>
-          }
-        />
+        
         <Route
           path="/contact"
           element={

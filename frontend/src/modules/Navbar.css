@@ -1,12 +1,11 @@
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white; 
-  opacity: 1; 
+  background-color: white;
+  opacity: 1;
   transition: background-color 0.3s ease, padding 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -15,11 +14,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   max-width: none;
-  margin: 0; 
+  margin: 0;
   padding: 15px 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .logo img {
@@ -41,7 +40,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333; 
+  color: #333;
   font-size: 20px;
   font-weight: 500;
   transition: color 0.3s;
@@ -49,5 +48,5 @@
 }
 
 .nav-links a:hover {
-  color: #2b5482; 
+  color: #2b5482;
 }

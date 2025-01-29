@@ -1,25 +1,25 @@
 .scalar-container {
-  background: white; 
-  color: #2b5482; 
+  background: white;
+  color: #2b5482;
   padding: 50px 20px;
   text-align: center;
   padding-bottom: 70px;
 }
 
 .scalar-container h2 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-bottom: 40px;
   text-transform: uppercase;
-  /* letter-spacing: 1.5px; */
+
   font-weight: bold;
-  color: #2b5482; 
+  color: #2b5482;
 }
 
 .scalar-stats {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: flex-start;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -31,22 +31,22 @@
 .scalar-item .count {
   font-size: 3rem;
   font-weight: bold;
-  color: #000; 
+  color: #000;
   margin-bottom: 10px;
-  border-bottom: 3px solid #000; 
+  border-bottom: 3px solid #000;
   display: inline-block;
   padding-bottom: 5px;
 }
 
 .scalar-item p {
   font-size: 2rem;
-  color: #666; 
+  color: #666;
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
   .scalar-stats {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -57,14 +57,14 @@
 
 @media (max-width: 480px) {
   .scalar-container h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .scalar-item .count {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .scalar-item p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }

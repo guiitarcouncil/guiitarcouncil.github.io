@@ -37,7 +37,7 @@
   height: 70px;
   width: 70px;
   margin: 0 auto 10px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 h2 {
@@ -57,7 +57,7 @@ p {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #2b5482; 
+  background-color: #2b5482;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -66,19 +66,16 @@ p {
 }
 
 .apply-section {
- 
   text-align: center;
 }
 
 .apply-title {
-  font-size: 2.0rem;
+  font-size: 2rem;
   padding-bottom: 10px;
   color: #fff;
-
 }
 
 .apply-button {
-  /* padding: 10px 20px; */
   font-size: 1.2rem;
   font-weight: bold;
   color: #2b5482;
