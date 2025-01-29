@@ -5,13 +5,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  color: #c9d1d9;
-  padding-top: 60px; /* Adjust this value to match the navbar height */
+  padding-top: 60px;
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width/height */
+  box-sizing: border-box;
 }
 
 html {

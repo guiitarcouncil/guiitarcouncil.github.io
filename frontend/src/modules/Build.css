@@ -57,7 +57,7 @@ p {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #2b5482; /* Button color */
+  background-color: #2b5482; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -65,9 +65,8 @@ p {
   margin-top: 15px;
 }
 
-
 .apply-section {
-  /* margin-top: 0px; */
+ 
   text-align: center;
 }
 
@@ -75,7 +74,7 @@ p {
   font-size: 2.0rem;
   padding-bottom: 10px;
   color: #fff;
-  /* margin-bottom: 20px; */
+
 }
 
 .apply-button {
@@ -88,6 +87,7 @@ p {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: 0.6em 1.2em;
 }
 
 .apply-button:hover {
