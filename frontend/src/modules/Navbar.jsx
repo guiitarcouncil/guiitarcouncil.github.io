@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo1 from "../assets/logos/new.png";
@@ -36,29 +37,49 @@ function Navbar() {
         </button>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>
-            <Link to="/" onClick={toggleMenu}>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={toggleMenu}
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" onClick={toggleMenu}>
-              About Us
-            </Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={toggleMenu}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/funding" onClick={toggleMenu}>
+            <NavLink
+              to="/funding"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={toggleMenu}
+            >
               Funding
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/programs" onClick={toggleMenu}>
+            <NavLink
+              to="/programs"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={toggleMenu}
+            >
               Programs & Events
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" onClick={toggleMenu}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={toggleMenu}
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
