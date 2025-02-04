@@ -8,7 +8,6 @@ import drone from "../assets/others/drone.jpg";
 import uni from "../assets/logos/university-logo.png";
 import cmpy from "../assets/logos/G.png";
 import ssip from "../assets/associations/as4-new.png";
-
 import kartavi from "../assets/achievements/kartavi.jpg";
 import lavanya from "../assets/achievements/lavanya.jpg";
 import vrati from "../assets/achievements/vrati.jpg";
@@ -20,12 +19,28 @@ import aakankshaYadav from "../assets/achievements/aakankshaYadav.jpg";
 import Riyan from "../assets/achievements/Reeyan.jpg";
 import eshanDevadhara from "../assets/achievements/eshanDevadhara.jpg";
 import dhruviGohel from "../assets/achievements/dhruviGohel.jpg";
-import Dev from "../assets/achievements/Dev.jpg";
+import devShitole from "../assets/achievements/devShitole.jpg";
 import tanujaVadi from "../assets/achievements/tanujaVadi.jpg";
 import reeyaPrajapati from "../assets/achievements/reeyaPrajapati.jpg";
+import adityaprajapati from "../assets/achievements/adityaprajapati.jpg";
+import rohan from "../assets/achievements/rohan.jpg";
+import ankush from "../assets/achievements/ankush.jpg";
+import shreyaLad from "../assets/achievements/shreyaLad.jpg";
+import AtharvaSisodiya from "../assets/achievements/AtharvaSisodiya.jpg";
+import janmejayBorad from "../assets/achievements/janmejayBorad.jpg";
+import parthGol from "../assets/achievements/parthGol.jpg";
+import pranav from "../assets/achievements/pranav.jpg";
+import Madhav_Trivedi from "../assets/achievements/Madhav_Trivedi.jpg";
+import shambhavi from "../assets/achievements/shambhavi.jpg";
+import teerth from "../assets/achievements/teerth.jpg";
+import mittal from "../assets/achievements/mittal.jpg";
+import Foram from "../assets/achievements/Foram.jpg";
+import Aayush from "../assets/achievements/Aayush.jpg";
+import urmil from "../assets/achievements/urmil.jpg";
+import smit_ssip from "../assets/achievements/smit_ssip.jpg";
 
 const achievements = [
-  {
+  {//Done-NF
     projectName: "Defense Robot",
     grantAmount: "184,800",
     details:
@@ -34,95 +49,122 @@ const achievements = [
       { name: "Aksha Vahora", imageUrl: aksha },
       { name: "Khushi Bhingradiya", imageUrl: khushi },
       { name: "Tirth Pandya", imageUrl: tirth },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  {
+  {//Done
     projectName: "Vegano Joy",
     grantAmount: "25,000",
     details:
-      "USP: Durable, Multi-terrain, with advanvced cameras and a professional-grade desig for unmatched reliability in critical operations.",
+      "USP: Plant-based meats are meat-like products that are expected to have the same taste, texture, experience and nutritional value as that of animal meat and made from plant-based ingredients. So basically, plant-based meats replicate real meat, except for the fact it does not use animal meat.",
     students: [
-      { name: "Mr Rohan Asthana", imageUrl: aksha },//Images : https://drive.google.com/drive/folders/1V8k-ryGcrYmm1SETnMhgyHdK37u3A-EB
-      { name: "Mr. Aditya S. Prajapati", imageUrl: khushi },
-      { name: "Ankush Makwana", imageUrl: tirth },
-      { name: "Shreya Lad", imageUrl: tirth },
+      { name: "Mr Rohan Asthana", imageUrl: rohan },
+      { name: "Mr. Aditya S. Prajapati", imageUrl: adityaprajapati },
+      { name: "Ankush Makwana", imageUrl: ankush },
+      { name: "Shreya Lad", imageUrl: shreyaLad },
       
     ],
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
-  {
+  {//Done
     projectName: "Chewable Oral Toothpaste",
     grantAmount: "83,500",
     details:
-      "Null",
+      "No Chemicals & 100% Herbal Secures Oral Health with the Help of Ancient Indian Ayurvedic medicine User friendly & Easy to Carry Multi Purpose (Serves as Toothpaste & Mouth freshner)",
     students: [
       { name: "Aakanksha Yadav", imageUrl: aakankshaYadav },
       { name: "Diya Visani", imageUrl: diyaVisani },
-      
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
-  {
+  {//Done
     projectName: "Nutriblend Pro ",
     grantAmount: "30,000",
     details:
-      "NULL",
+      "We're tackling the issue of the growing occurrence of nutritional deficiencies and the demand for a practical, eco-friendly, and health-conscious remedy. Numerous individuals following vegan or vegetarian diets encounter challenges in meeting their daily nutrient needs due to dietary constraints, hectic routines, and limited availability of nourishing foods. The typical nutrient gaps among vegans and vegetarians encompass Vitamin B₁₂, Vitamin D, Omega-3 fatty acids, Iodine, Iron, Calcium, and Zinc.",
     students: [
-      { name: "Janmejay Borad", imageUrl: aksha },//IMG Remainging
-      { name: "Parth Gol", imageUrl: khushi },
-      { name: "Pranav Kadam", imageUrl: tirth },
+      { name: "Janmejay Borad", imageUrl:janmejayBorad  },
+      { name: "Parth Gol", imageUrl: parthGol },
+      { name: "Pranav Kadam", imageUrl: pranav },
       
     ],
-    
-    mentor: "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
+
+    mentor:
+      "Dr. Akhilesh Prajapati, Sr. Assistant Professor (Biological Science)", // Only store the name
   },
-  {
+  {//DONE
     projectName: "USV Neil (Unmanned Maritime Vessel/ Drone)",
     grantAmount: "158,000",
     details:
-      "NULL",
-    students: [//1 IMG remaining (Manthan)
+      "USP: USV Neil: your versatile solution for sustainable unmanned surface vehicle. Our innovative technology redefines maritime operations with multifunctional capabilities, from surveillance and monitoring to research and rescue missions.",
+    students: [
       { name: "Eshan Devadhara", imageUrl: eshanDevadhara },
-      { name: "Atharva Sisodiya", imageUrl: khushi },//remaining
+      { name: "Atharva Sisodiya", imageUrl: AtharvaSisodiya },
       { name: "Dhruvi Gohil", imageUrl: dhruviGohel },
       { name: "Reeyan Shaikh", imageUrl: Riyan },
-      
     ],
-    
+
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  {
+  {//Done
     projectName: "Ayurtrix - Three Folding Life",
     grantAmount: "250,000",
     details:
-      "NULL",
+      "Ayurtrix is working to increase the production of authentic Ayurvedic products. to meet the growing demand and provide consumers with products that have the desired health benefits.",
     students: [
-      { name: "Dev Shitole", imageUrl: Dev },
+      { name: "Dev Shitole", imageUrl: devShitole },
       { name: "Reeya Prajapati", imageUrl: reeyaPrajapati  },
       { name: "Tanuja vadi", imageUrl: tanujaVadi },
-      
     ],
-    
+
     mentor: "Prof. Devjani Banerjee", // Only store the name
   },
-  {
-    projectName: "Nutriblend Pro ",
-    grantAmount: "30,000",
+  {//Done
+    projectName: "ESRT-ALOU- The Emotional Support Robot Teddy.",
+    grantAmount: "88,000",
     details:
-      "NULL",
+      "ALOU is designed to be a source of genuine comfort and companionship. The robot teddy bear will serve as an emotional support system, providing users with tactile, conversational, and emotional engagement. It aims to fill the gaps where traditional support systems may be unavailable or inadequate.",
     students: [
-      { name: "Janmejay Borad", imageUrl: aksha },
-      { name: "Parth Gol", imageUrl: khushi },
-      { name: "Pranav Kadam", imageUrl: tirth },
+      { name: "Madhav Trivedi", imageUrl: Madhav_Trivedi },
+      { name: "Shambhavi J Vyas", imageUrl: shambhavi  },
+      { name: "Theerth K R ", imageUrl: teerth },
       
     ],
     
-    mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
+    mentor: "Dr. Deepak Parashar, Associate Professor (CSE)", // Only store the name
   },
-  {
+  {//Done-Image Remaing
+    projectName: "Emotion detection through speech using AI/ML. All international languages mapped.",
+    grantAmount: "37,000",
+    details:
+      "Emotion detection through speech is a  technology that utilizes advanced signal  processing and machine learning  techniques to analyze vocal cues and  identify human emotions in real-time. By  extracting features from speech signals  and applying neural network models, this  system aims to enhance human-computer  interactions and various applications such  as customer service and mental health  monitoring.",
+    students: [
+      { name: "Dave Smit J.", imageUrl: smit_ssip },//Image remaining
+      { name: "Mittal Punvar", imageUrl: mittal  },
+      
+    ],
+    
+    mentor: "Ms. Mosam Patel, Assistant Professor, CSE", // Only store the name
+  },
+  {//
+    projectName: "Bio-Lastic: A Safe Future with Flowers",
+    grantAmount: "100,000",
+    details:
+      "BIO-LASTIC was conceived by Foram Mistry and Aayush Varia, two BSc Chemistry students. With guidance from Dr. Priya Goel, we realized the importance of finding sustainable solutions for the future. Inspired by the beauty and abundance of flowers in ritual places, we decided to harness their potential and transform them into a biodegradable polymer",
+    students: [
+      { name: "Foram Mistry", imageUrl: Foram },//Image remaining
+      { name: "Aayush Varia", imageUrl: Aayush  },
+      { name: "Urmil Patel", imageUrl: urmil  },
+      
+    ],
+    
+    mentor: "Ms. Mosam Patel, Assistant Professor, CSE", // Only store the name
+  },
+
+  {//Done-NF
     projectName: "Unmanned Ground Vehicle (UGV)",
     grantAmount: "152,665",
     details:
@@ -134,11 +176,9 @@ const achievements = [
       { name: "Divya Tiwari", imageUrl: divya },
       { name: "Chahana Kamdar", imageUrl: chahana },
       { name: "Vidur Shah", imageUrl: vidur },
-      
     ],
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
   },
-  
 ];
 
 const AchievementCarousel = () => {
@@ -159,7 +199,7 @@ const AchievementCarousel = () => {
       <h1 className="main-heading">Explore Our Programs</h1>
 
       <div className="drone">
-        <div className="drone-content">
+        <div id="drone" className="drone-content">
           <div className="drone-i">
             <img src={drone} alt="Drone" />
           </div>
@@ -181,7 +221,7 @@ const AchievementCarousel = () => {
       </div>
 
       <div className="printing">
-        <div className="printing-content">
+        <div id="3d" className="printing-content">
           <div className="printing-text">
             <h2>Learn 3D Printing</h2>
             <p>
@@ -213,7 +253,9 @@ const AchievementCarousel = () => {
         </div>
       </div>
 
-      <h1 className="main-heading">Student Achievements</h1>
+      <h1 id="active" className="main-heading">
+        Student Achievements
+      </h1>
       <div className="achievement-carousel">
         <button className="carousel-btn prev" onClick={handlePrev}>
           &#10094;
@@ -231,10 +273,9 @@ const AchievementCarousel = () => {
               <img src={cmpy} alt="Company Logo" />
             </div>
           </div>
-            <div className="pname" >
-
+          <div className="pname">
             <h3>{achievements[currentIndex].projectName}</h3>
-            </div>
+          </div>
 
           <p>
             Grant Amount:{" "}

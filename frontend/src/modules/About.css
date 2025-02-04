@@ -1,15 +1,14 @@
-/* Header image container styles (from Funding.css) */
 .img-container {
   width: 100%;
-  height: 100vh; /* Make the header take the full height of the viewport */
+  height: 100vh;
   overflow: hidden;
-  position: relative; /* Ensures text overlay positions correctly */
+  position: relative;
 }
 
 .funding-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire space */
+  object-fit: cover;
 }
 
 .funding-text-overlay {
@@ -17,13 +16,11 @@
   top: 35%;
   left: 15%;
   transform: translate(-30%, -50%);
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 60px;
   font-weight: bold;
 }
 
-
-/* Rest of your existing CSS... */
 .about-container {
   display: flex;
   flex-direction: row;
@@ -41,7 +38,7 @@
 }
 
 .about-content h2 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -67,12 +64,12 @@
 .team-section {
   margin-top: 30px;
   border-top: 1px solid #ddd;
-  background-color: #2b5482;
+  background-color: var(--primary-color);
 }
 
 .team-section h2 {
   padding-top: 20px;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
@@ -85,7 +82,7 @@
 }
 
 .message-section h2 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -100,7 +97,7 @@
 .message-item {
   flex: 1 1 30%;
   max-width: 300px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -108,7 +105,7 @@
 }
 
 .message-item h3 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 

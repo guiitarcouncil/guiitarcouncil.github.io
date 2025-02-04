@@ -20,7 +20,7 @@
 .carousel-content {
   position: relative;
   z-index: 1;
-  color: white; 
+  color:var(--secondary-color); 
   text-align: left; 
   max-width: 700px; 
   margin-left: 50px;
@@ -33,6 +33,6 @@
   font-size: 3rem; 
   font-weight: bold;
   line-height: 1.3; 
-  color: #ffffff; 
+  color: var(--secondary-color); 
   font-family: 'Oswald', sans-serif;
 }

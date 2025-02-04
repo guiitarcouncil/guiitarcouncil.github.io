@@ -12,7 +12,7 @@ import mranupam from "../assets/team/AI/mranupam.jpg";
 import mrbhavesh from "../assets/team/AI/mrbhavesh.jpg";
 import mrbimal from "../assets/team/AI/mrbimal.jpg";
 import mrhemal from "../assets/team/AI/mrhemal.jpg";
-import mrhemant from "../assets/team/AI/mrhemant.jpg";
+                            import mrhemant from "../assets/team/hemantsir.jpg";
 import mrkiran from "../assets/team/AI/mrkiran.jpg";
 import mrnilesh from "../assets/team/AI/mrnilesh.jpg";
 import mmirav from "../assets/team/AI/mrnirav.jpg";
@@ -239,7 +239,7 @@ const TabbedAboutTeam = () => {
         image: ramanan, // Corrected property name
       },
       {
-        name: "Mr. Hemal Patel",
+        name: "Mr. Anupam Jatole",
         role: "Advisor",
         resumeLink:
           "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_84fb4648600c448092b192d5ab18b95c.pdf",

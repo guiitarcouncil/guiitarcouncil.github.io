@@ -8,7 +8,7 @@
 .ac h1 {
   font-size: 3.0rem;
   font-weight: bold;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -40,7 +40,7 @@
   box-shadow: none;
 }
 .pname{
-  color: #2b5482;
+  color: var(--primary-color);
 }
 .project-header {
   display: flex;
@@ -96,7 +96,7 @@
 }
 
 .carousel-btn {
-  background-color: #2b5482;
+  background-color: var(--primary-color);
   color: #ffffff;
   border: none;
   padding: 15px;
@@ -158,12 +158,12 @@
 
 .printing-text h2 {
   font-size: 24px;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 
 .printing-text p {
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
   line-height: 1.6;
 }
@@ -201,19 +201,17 @@
   height: 350px;
 }
 .drone h1 {
-  font-size: 28px;
-  color: #2b5482;
+  font-size: 28pvar(--primary-color);
   margin-bottom: 20px;
 }
 
 .drone-text h2 {
-  font-size: 24px;
-  color: #2b5482;
+  font-size: 24pvar(--primary-color);
   margin-bottom: 15px;
 }
 
 .drone-text p {
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
   line-height: 1.6;
 }
@@ -235,8 +233,7 @@
 }
 
 .mentor h4 {
-  font-size: 20px;
-  color: #2b5482;
+  font-size: 20pvar(--primary-color);
 }
 
 .mentor p {

@@ -21,11 +21,10 @@ import img17 from "../assets/associations/as17-new.png";
 import img18 from "../assets/associations/as18-new.png";
 import img19 from "../assets/associations/as19-new.jpeg";
 import img20 from "../assets/associations/as20-new.png";
-import { CloudMoonRain } from "lucide-react";
 
 const Associations = () => {
     return (
-      <div className="associations-container">
+      <div id="associations" className="associations-container">
         <h2 className="associations-heading">You're in Good Company</h2>
         <div className="associations-grid">
           <a href="https://udhyog.gujarat.gov.in/" target="_blank" rel="noopener noreferrer">

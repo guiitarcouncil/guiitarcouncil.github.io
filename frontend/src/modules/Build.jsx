@@ -14,50 +14,64 @@ const Build = () => {
       </h1>
       <div className="offerings">
         <div className="offering">
-          <Link to="/funding">
             <img src={moneyIcon} alt="Funding" className="icon" />
             <h2>Funding</h2>
             <p>
               Get access to financial support to turn your innovative ideas into
               reality.
             </p>
+          <Link to="/funding">
             <button className="offering-button">Learn More</button>
           </Link>
         </div>
         <div className="offering">
-          <Link to="/resources">
             <img src={urbanIcon} alt="Infrastructure" className="icon" />
             <h2>Infrastructure</h2>
             <p>
               Work in state-of-the-art facilities designed for collaboration and
               growth.
             </p>
+          <Link to="/resources">
             <button className="offering-button">Learn More</button>
           </Link>
+
+          {/* <HashLink
+            smooth
+            to="/funding#ssip"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            <h2>Infrastructure</h2>
+            <p>
+              Work in state-of-the-art facilities designed for collaboration and
+              growth.
+            </p>
+          </HashLink> */}
         </div>
         <div className="offering">
-          <Link to="/programs">
             <img src={communityIcon} alt="Mentorship" className="icon" />
             <h2>Mentorship</h2>
             <p>
               Learn from leading industry experts to sharpen your strategies and
               skills.
             </p>
+          <Link to="/about">
             <button className="offering-button">Learn More</button>
           </Link>
         </div>
         <div className="offering">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc0zfawCS7M_Q-uOzlA87ARxNCCx-wNUXAAx_54RAORIF_w6g/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <img src={brainIcon} alt="IPR Support" className="icon" />
             <h2>IPR Support</h2>
             <p>
               Protect your ideas and innovations with intellectual property
               rights assistance.
             </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc0zfawCS7M_Q-uOzlA87ARxNCCx-wNUXAAx_54RAORIF_w6g/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="offering-button">Learn More</button>
           </a>
         </div>

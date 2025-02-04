@@ -1,141 +1,139 @@
 .tabbed-about-container {
-    padding: 40px;
-    background-color: #f9f9f9; 
-    font-family: Arial, sans-serif;
-    color: #fff; 
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: var(--secondary-color);
 }
 
-/* Tabs Section */
 .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .tab-button {
-    background: none;
-    border: 2px solid #ccc;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    color: #000; /* Explicit color for button text */
+  background: none;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: #000;
 }
 
 .tab-button.active {
-    background-color: #2b5482;
-    color: white;
-    /* border-color: #6200ea; */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .tab-button:hover:not(.active) {
-    background-color: #fff;
+  background-color: var(--secondary-color);
 }
 
-/* Content Section */
 .tab-content {
-    text-align: center;
+  text-align: center;
 }
 
 .tab-content h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333; /* Explicit color for headings */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .team-member {
-    background-color: #fff; /* Ensure white background for team member cards */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow to avoid full black */
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
+
 .team-member img:hover {
-    transform: scale(1.1); /* Image grows on hover */
-  }
+  transform: scale(1.1);
+}
+
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
 }
 
 .image-container:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .icon-link {
-    color: #fff; /* White icon color for contrast */
-    font-size: 2rem;
-    text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .team-member h3 {
-    margin: 15px 0 5px;
-    font-size: 1.2rem;
-    color: #333; /* Explicit color for member names */
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .team-member p {
-    font-size: 1.2rem;
-    color: #666; /* Explicit color for roles */
+  font-size: 1.2rem;
+  color: #666;
 }
 
-
 .image-container img {
-    width: 250px; /* Set a consistent width */
-    height: 250px; /* Set a consistent height */
-    object-fit: cover; /* Ensures the image fits within the container without distortion */
-    border-radius: 30%; /* Optional: Makes the image circular */
-    transition: transform 0.3s ease;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30%;
+  transition: transform 0.3s ease;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px; /* Match the width of the image */
-    height: 250px; /* Match the height of the image */
-    margin: 0 auto; /* Center the image container */
-    border: 2px solid #ddd; /* Optional: Add a border around images */
-    border-radius: 50%; /* Optional: Matches circular image styling */
-    overflow: hidden; /* Ensures the image stays within the circular container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for a polished look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjusts for image size */
-    gap: 25px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 10px;
 }

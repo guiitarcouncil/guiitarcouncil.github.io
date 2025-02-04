@@ -1,10 +1,13 @@
-import React from "react";
 import "./About.css";
 import TabbedAboutTeam from "./TabbedAboutTeam";
 import image from "../assets/others/campus.jpg";
 import headerImage from "../assets/others/contact.jpg";
+import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
 function About() {
+  
+
   return (
     <div className="mainabout">
       <div className="img-container">
@@ -45,7 +48,7 @@ function About() {
           </div>
         </div>
 
-        <div className="message-section">
+        <div id="leadership" className="message-section">
           <h2>Message From Leadership</h2>
 
           <div className="message-container">
@@ -93,7 +96,7 @@ function About() {
         </div>
 
         <div className="team-section">
-          <h2>Meet Our Team</h2>
+          <h2 id="leadership" >Meet our Leadership</h2>
           <TabbedAboutTeam />
         </div>
       </div>

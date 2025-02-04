@@ -1,0 +1,116 @@
+.infrastructure-heading h3 {
+  color: var(--primary-color);
+  font-size: 4.5rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.infrastructure-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+}
+
+.card {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 5px;
+  top: -100px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}
+
+.infrastructure-heading {
+  color: var(--primary-color);
+  font-size: 5rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.infrastructure-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+}
+
+.card {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 5px;
+  top: -100px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}

@@ -1,12 +1,11 @@
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white; 
-  opacity: 1; 
+  background-color: var(--secondary-color);
+  opacity: 1;
   transition: background-color 0.3s ease, padding 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -15,19 +14,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
-  max-width: none;
-  margin: 0; 
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
   padding: 15px 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
+/* Logo */
 .logo img {
   height: 50px;
   cursor: pointer;
   padding-left: 20px;
 }
 
+/* Nav Links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -41,7 +42,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333; 
+  color: #333;
   font-size: 20px;
   font-weight: 500;
   transition: color 0.3s;
@@ -49,5 +50,91 @@
 }
 
 .nav-links a:hover {
-  color: #2b5482; 
+  color: var(--primary-color);
+}
+.nav-links a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3.5px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive (Mobile) Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  .nav-links.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.open li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+  
+  .logo img {
+    height: 45px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
 }
