@@ -3,8 +3,6 @@ import axios from "axios";
 import "./Contact.css";
 import bg from "../assets/others/contact.jpg";
 import trial from "../assets/trial.png";
-import money from "../assets/money.png";
-import brain from "../assets/brain.png";
 
 const ProgramCard = ({ icon, title, description }) => (
   <div className="program-card">
@@ -18,23 +16,7 @@ const ProgramCard = ({ icon, title, description }) => (
 );
 
 function Contact() {
-  const programs = [
-    {
-      icon: money,
-      title: "SSIP Program",
-      description: "Get up to 2.5 Lacs for project and startup.",
-    },
-    {
-      icon: brain,
-      title: "IPR Support",
-      description: "Intellectual Property Rights Support.",
-    },
-    {
-      icon: money,
-      title: "Nodal Program",
-      description: "Support up to INR 30 lakhs.",
-    },
-  ];
+
 
   const socialLinks = [
     { name: "Facebook", url: "https://www.facebook.com/gsfcuniversity" },

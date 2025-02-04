@@ -15,7 +15,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
 body {
   overflow-x: hidden;
+}
+body {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+html {
+  scroll-behavior: smooth;
 }
