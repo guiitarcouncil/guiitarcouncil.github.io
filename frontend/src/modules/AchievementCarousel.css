@@ -8,7 +8,7 @@
 .ac h1 {
   font-size: 3.0rem;
   font-weight: bold;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -33,14 +33,14 @@
 .achievement-card {
   text-align: center;
   padding: 20px;
-  background: #ffffff;
+  background: var(--secondary-color)fff;
   border: none;
   border-radius: 12px;
   width: 900px;
   box-shadow: none;
 }
 .pname{
-  color: #2b5482;
+  color: var(--primary-color);
 }
 .project-header {
   display: flex;
@@ -96,8 +96,8 @@
 }
 
 .carousel-btn {
-  background-color: #2b5482;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color)fff;
   border: none;
   padding: 15px;
   border-radius: 50%;
@@ -158,7 +158,7 @@
 
 .printing-text h2 {
   font-size: 24px;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 
@@ -201,14 +201,12 @@
   height: 350px;
 }
 .drone h1 {
-  font-size: 28px;
-  color: #2b5482;
+  font-size: 28pvar(--primary-color);
   margin-bottom: 20px;
 }
 
 .drone-text h2 {
-  font-size: 24px;
-  color: #2b5482;
+  font-size: 24pvar(--primary-color);
   margin-bottom: 15px;
 }
 
@@ -235,8 +233,7 @@
 }
 
 .mentor h4 {
-  font-size: 20px;
-  color: #2b5482;
+  font-size: 20pvar(--primary-color);
 }
 
 .mentor p {

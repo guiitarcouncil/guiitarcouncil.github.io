@@ -16,7 +16,7 @@
   top: 35%;
   left: 15%;
   transform: translate(-30%, -50%);
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 60px;
   font-weight: bold;
 }
@@ -38,7 +38,7 @@
 }
 
 .about-content h2 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -64,12 +64,12 @@
 .team-section {
   margin-top: 30px;
   border-top: 1px solid #ddd;
-  background-color: #2b5482;
+  background-color: var(--primary-color);
 }
 
 .team-section h2 {
   padding-top: 20px;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
@@ -82,7 +82,7 @@
 }
 
 .message-section h2 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -97,7 +97,7 @@
 .message-item {
   flex: 1 1 30%;
   max-width: 300px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -105,7 +105,7 @@
 }
 
 .message-item h3 {
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 

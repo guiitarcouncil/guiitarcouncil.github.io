@@ -1,6 +1,6 @@
 .scalar-container {
-  background: white;
-  color: #2b5482;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   padding: 50px 20px;
   text-align: center;
   padding-bottom: 70px;
@@ -12,7 +12,7 @@
   text-transform: uppercase;
 
   font-weight: bold;
-  color: #2b5482;
+  color: var(--primary-color);
 }
 
 .scalar-stats {

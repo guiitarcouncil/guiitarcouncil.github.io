@@ -1,5 +1,5 @@
 .build-the-future {
-  background-color: #2b5482;
+  background-color: var(--primary-color);
   color: #333333;
   text-align: center;
   padding: 70px 20px;
@@ -7,7 +7,7 @@
 
 .section-title {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
@@ -42,7 +42,7 @@
 
 h2 {
   font-size: 1.5rem;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -56,8 +56,8 @@ p {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
-  background-color: #2b5482;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -72,14 +72,14 @@ p {
 .apply-title {
   font-size: 2rem;
   padding-bottom: 10px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .apply-button {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2b5482;
-  background-color: #fff;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;

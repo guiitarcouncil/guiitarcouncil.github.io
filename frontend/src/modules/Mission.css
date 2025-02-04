@@ -12,7 +12,7 @@
 .mission-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2b5482;
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .mission-description a {
-  color: #2b5482;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
 }

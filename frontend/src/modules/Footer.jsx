@@ -11,20 +11,20 @@ function Footer() {
         <div className="footer-section">
           <p
             className="footer-copyright"
-            style={{ color: "#fff", fontSize: "20px" }}
+            style={{ color: "var(--secondary-color)", fontSize: "20px" }}
           >
             © 2025 GUIITAR Council
           </p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>
+          <p style={{ color: "var(--secondary-color)", fontSize: "20px" }}>
             Event Room, Second Floor,
           </p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>
+          <p style={{ color: "var(--secondary-color)", fontSize: "20px" }}>
             Anviksha - GSFC University,
           </p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>
+          <p style={{ color: "var(--secondary-color)", fontSize: "20px" }}>
             Vadodara, Gujarat - 391750
           </p>
-          <p style={{ color: "#fff", fontSize: "20px" }}>India</p>
+          <p style={{ color: "var(--secondary-color)", fontSize: "20px" }}>India</p>
         </div>
         <div className="footer-divider"></div>
         <div className="footer-section">

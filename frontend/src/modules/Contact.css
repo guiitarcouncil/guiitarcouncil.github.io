@@ -9,7 +9,7 @@
   height: 550px;
   padding: 3rem;
   position: relative;
-  color: #fff;
+  color: var(--secondary-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 .contact-content p {
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
-  color: white;
+  color:var(--secondary-color);
 }
 
 .contact-card-container {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   font-family: Arial, sans-serif;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .contact-card-address h4 {
-  color: #2c5584;
+  color: var(--primary-color);
   margin-bottom: 10px;
   font-size: 3.5rem;
 }
@@ -69,9 +69,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 7rem;
-  background-color: #2c5584;
+  background-color: var(--primary-color);
   gap: 8rem;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .follow-us-content {
@@ -83,7 +83,7 @@
   margin-bottom: 2rem;
   font-weight: bold;
   text-align: left;
-  border-bottom: 2px solid #ffff;
+  border-bottom: 2px solid var(--secondary-color);
 }
 .contact-links {
   list-style: none;
@@ -101,7 +101,7 @@
 
 .contact-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -124,7 +124,7 @@
 }
 
 .come-section {
-  background-color: #2c5584;
+  background-color: var(--primary-color);
   padding: 3rem 0;
   text-align: left;
   padding-left: 3rem;
@@ -133,19 +133,19 @@
 .come-heading {
   font-size: 3rem;
   font-weight: bold;
-  color: #ffff;
+  color: var(--secondary-color);
   margin-bottom: 1.5rem;
 }
 
 .come-details {
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .come-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 1.5rem;
 }
 
@@ -170,7 +170,7 @@
 .vision {
   position: relative;
   padding: 1rem;
-  border: 2px solid white;
+  border: 2px solid var(--secondary-color);
   border-radius: 10px;
 }
 
@@ -186,19 +186,13 @@
   line-height: 1.4;
 }
 
-.quote {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffcc00;
-}
-
 .form-container {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  color: #fff;
-  background: #fff;
-  padding: 30px;
+  color: var(--secondary-color);
+  background: var(--secondary-color);
+  padding: 30px var(--secondary-color)
 }
 
 .map-container {
@@ -223,7 +217,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   align-items: center;
 }
 
@@ -231,7 +225,7 @@
   font-size: 50px;
   text-align: center;
   margin-bottom: 30px;
-  color: #2c5584;
+  color: var(--primary-color);
 }
 
 .feedback-form {
@@ -248,31 +242,27 @@
   padding: 15px;
   border-radius: 8px;
   border: 2px solid #0d0c0c;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   color: #000;
   font-size: 18px;
 }
 
-.input-field:focus,
-.textarea-field:focus {
-  outline: none;
-  border-color: #6c63ff;
-}
+
 
 .submit-button {
   width: 50%;
   padding: 12px;
   border-radius: 8px;
-  background-color: #2b5482;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border: none;
   cursor: pointer;
   font-size: 18px;
 }
 
 .submit-button:hover {
-  background-color: #fff;
-  color: #2b5482;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border: #000 2px solid;
 }
 

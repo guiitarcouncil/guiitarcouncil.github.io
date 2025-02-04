@@ -6,7 +6,7 @@
 
 .associations-heading {
   font-size: 2.5rem;
-  color: #2b5482;
+  color: var(--primary-color);
   position: relative;
   display: inline-block;
   margin-bottom: 70px;
@@ -18,7 +18,7 @@
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #2b5482;
+  background-color: var(--primary-color);
   width: 100px;
   top: 50%;
   transform: translateY(-50%);
