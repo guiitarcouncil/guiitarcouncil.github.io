@@ -53,9 +53,9 @@ export default function Particle() {
                 },
               },
               particles: {
-                color: { value: "var(--secondary-color)fff" },
+                color: { value: "#ffffff" },
                 links: {
-                  color: "var(--secondary-color)fff",
+                  color: "#ffffff",
                   distance: 100,
                   enable: true,
                   opacity: 0.9,

@@ -33,7 +33,7 @@
 .achievement-card {
   text-align: center;
   padding: 20px;
-  background: var(--secondary-color)fff;
+  background: #ffffff;
   border: none;
   border-radius: 12px;
   width: 900px;
@@ -97,7 +97,7 @@
 
 .carousel-btn {
   background-color: var(--primary-color);
-  color: var(--secondary-color)fff;
+  color: #ffffff;
   border: none;
   padding: 15px;
   border-radius: 50%;

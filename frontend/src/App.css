@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   display: block;
+  width: 100%;
 }
 
 * {
@@ -19,4 +20,5 @@ body {
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
