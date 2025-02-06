@@ -15,6 +15,7 @@ import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
 import TabbedAboutTeam from "./modules/TabbedAboutTeam";
 import Infrastructure from "./modules/Infrastructure";
+import Login from "./modules/login"
 import "./App.css";
 
 function App() {
@@ -34,6 +35,16 @@ function App() {
               <div id="associations">
                 <Associations />
               </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <>
+              <Navbar />
+              <Login/>
               <Footer />
             </>
           }

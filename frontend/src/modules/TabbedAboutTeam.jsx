@@ -12,7 +12,7 @@ import mranupam from "../assets/team/AI/mranupam.jpg";
 import mrbhavesh from "../assets/team/AI/mrbhavesh.jpg";
 import mrbimal from "../assets/team/AI/mrbimal.jpg";
 import mrhemal from "../assets/team/AI/mrhemal.jpg";
-                            import mrhemant from "../assets/team/hemantsir.jpg";
+import mrhemant from "../assets/team/hemantsir.jpg";
 import mrkiran from "../assets/team/AI/mrkiran.jpg";
 import mrnilesh from "../assets/team/AI/mrnilesh.jpg";
 import mmirav from "../assets/team/AI/mrnirav.jpg";
@@ -69,7 +69,6 @@ import saurabhJain from "../assets/team/AI/saurabhJain.jpg";
 import sudhirGupta from "../assets/team/AI/sudhirGupta.jpg";
 import sureshOthayoth from "../assets/team/AI/sureshOthayoth.jpg";
 
-
 const TabbedAboutTeam = () => {
   const [activeTab, setActiveTab] = useState("team");
 
@@ -77,8 +76,8 @@ const TabbedAboutTeam = () => {
     { id: "team", label: "Our Team" },
     { id: "directors", label: "Board of Directors" },
     { id: "advisory", label: "Advisory Board" },
-    {id: "faculty", label: "Faculty Mentors"},
-    {id: "industry", label: "Industry Mentors"},
+    { id: "faculty", label: "Faculty Mentors" },
+    { id: "industry", label: "Industry Mentors" },
   ];
 
   const teamData = {
@@ -322,68 +321,68 @@ const TabbedAboutTeam = () => {
         name: "Dr. Bharti Trivedi",
         role: "Visiting Professor",
         image: drTrivedi,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Devjani Banerjee",
         role: "Assistant Professor",
         image: devjaniBanerjee,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Chetna Parmar",
         role: "Associate Dean",
         image: chetnaParmar,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Sanjukta Bose Goswami",
         role: "Assistant Professor",
         image: drbose,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Ms. Patel Mosam",
         role: "Assistant Professor",
         image: mosamPatel,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Arti Bhadoria",
         role: "Assistant Professor",
         image: artiBhadoria,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Parin Kanaiya",
         role: "Assistant Professor",
         image: parinKanaiya,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Ms. Swati Saxena",
         role: "Assistant Professor",
         image: swatiSaxena,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Akhilesh Prajapati",
         role: "Assistant Professor",
         image: drprajapati,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Ms. Archana Magare",
         role: "Assistant Professor",
         image: msmagare,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Arti Hansda",
         role: "Assistant Professor",
         image: artiHansda,
-        resumeLink: ""
-      }
+        resumeLink: "",
+      },
     ],
 
     industry: [
@@ -391,198 +390,195 @@ const TabbedAboutTeam = () => {
         name: "Mr. Sudhir Gupta",
         role: "Member Strategic Advisory Board, Millennium Alliance",
         image: sudhirGupta,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Prof Dhruv Nath",
         role: "Director, Lead Angels Network",
         image: dhruvNath,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Ravin Sanghavi",
         role: "Founder, Ravin Sanghavi & Associates",
         image: mrravin,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Manoj Shukla",
         role: "CEO, Gurukul Academy",
         image: manojShukla,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Rupesh Shah",
         role: "CEO, Barodaweb",
         image: rupeshShah,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Kalpesh Shah",
         role: "Director, Market Creators Ltd",
         image: kalpeshShah,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Hitesh Porwal",
         role: "Founder, BIZSTART",
         image: HITESH_PORWAL,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Bhavesh Kothari",
         role: "Founder Director, Millennium Divas Pvt Ltd",
         image: bhaveshKothari,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Adv. Bhavik B Patel",
         role: "CEO, INFINVENT IP",
         image: Bhavik,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Brijesh M Garala",
         role: "Director, Oviyan Cast & Forge Pvt. Ltd.",
         image: brijeshGarala,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Bhavesh Chelani",
         role: "MD & CEO, Santushti Shakes Pvt. Ltd.",
         image: bhaveshChelani,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Saurabh Jain",
         role: "Founder, FUN2DO Labs Pvt. Ltd.",
         image: saurabhJain,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Kavita Saxena",
         role: "Freelancer, Freelancing Startup mentor",
         image: kavitaSaxena,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Suresh P Othayoth",
         role: "Manager - Research, GSFC Ltd.",
         image: sureshOthayoth,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Ashutosh Tewari",
         role: "Senior Venture Coach, GITAM (deemed to be) University",
         image: ashutoshTewari,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "CA CS Chintan Popat",
         role: "CA CS - FOUNDER, CA Chintan Popat & Associates",
         image: chintanPopat,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Devesh Chawla",
         role: "Founder & CEO, Chatur Ideas",
         image: deveshChawla,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Ashwin V. Parikh",
         role: "Director, International Business Development (IBD)",
         image: ashwinParikh,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Jekishan K Parmar",
         role: "Head of Sales & Technology, Aver India Equipment",
         image: jekishanParmar,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Amitkumar Patel",
         role: "Managing Director, PATactual IP Law Services LLP",
         image: amitPatel,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Karan Shah",
         role: "Head - Partnership & Outreach, Civitas Sustainability Foundation",
         image: karanShah,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Devang Patel",
         role: "Founder, Vantage Point Executive Coaching",
         image: devangPatel,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Prakash Vaghasiya",
         role: "CEO, Vise Organic",
         image: PRAKASH_VAGHASIYA,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Javid Shaikh",
         role: "CEO, Biopharma Incubation Center (BIC), NIPER-Ahmedabad",
         image: javidShaikh,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Adv. Dr. Heena Patel",
         role: "Partner, INFINVENT IP",
         image: Heena,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Bhavik Bhansali",
         role: "Senior Engineer, L&T Technology Services",
         image: BHAVIK_BHANSALI,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Akash Dadhania",
         role: "Owner, J K Fertilizers",
         image: akashDadhania,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "CA Jitendra Jain",
         role: "CEO, Tapanshi Finanziell Pvt. Ltd.",
         image: jitendraJain,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Dr. Ashish Kumar",
         role: "Associate Professor, Inter University Accelerator Center",
         image: ashishKumar,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Nilesh Vaghela",
         role: "CEO, Electromech Cloudtech Pvt. Ltd.",
         image: nileshVaghela,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Karmjitsinh Bihola",
         role: "Founder, Innodesk Designovation Services",
         image: karmjitsinhBihola,
-        resumeLink: ""
+        resumeLink: "",
       },
       {
         name: "Mr. Anant Acharya",
         role: "CTO, MarsBazaar.com",
         image: anantAcharya,
-        resumeLink: ""
+        resumeLink: "",
       },
-      
-      
-    ]
-    
+    ],
   };
 
   return (
