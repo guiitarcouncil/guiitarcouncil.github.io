@@ -286,14 +286,14 @@
     margin: 30px;
   }
   .follow-us-title {
-    font-size: 35px;
-    width: 60vw;
+    font-size: 10vw;
+    text-align: center;
+    width: 100%;
     /* margin-left: -10vw; */
     align-items: center;
-  }
-  .contact-links {
-    /* margin-left: 20vw; */
-  }
+  }.feedback-title{
+    font-size: 11vw;
+  } 
   .feedback-container{
     padding: 0;
   }
