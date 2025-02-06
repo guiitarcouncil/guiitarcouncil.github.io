@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo1 from "../assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
+import FooterMobile from "./FooterMobile"
+
 
 function Footer() {
   return (
+    <>
     <footer>
       <div className="footer-container">
         <div className="footer-section">
@@ -197,6 +200,10 @@ function Footer() {
         </div>
       </div>
     </footer>
+        <div className="footer-mobile-ft">
+        <FooterMobile />
+      </div>
+      </>
   );
 }
 

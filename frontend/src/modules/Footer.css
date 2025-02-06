@@ -87,3 +87,14 @@ footer {
 .social-icon:hover {
   color: #ccc;
 }
+.footer-mobile-ft{
+  display: none;
+}
+@media (max-width: 750px) {
+  footer{
+    display: none;
+  }
+  .footer-mobile-ft{
+    display: block;
+  }
+}
