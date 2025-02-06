@@ -272,3 +272,36 @@
   color: #ccc;
   text-align: center;
 }
+
+@media (max-width: 750px) {
+  .contact-card-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-card-address{
+    margin: 30px;
+  }
+  .follow-us-title{
+    font-size: 35px;
+    width: 60vw;
+    margin-left: -10vw;
+    align-items: center;
+  }
+  .contact-links{
+margin-left: 20vw;
+  }
+  .map-container{
+    display: none;
+  }
+  .feedback-form{
+    width: 80vw;
+  }
+  .funding-text-overlay{
+    left: 35vw;
+    margin-top: 8vh;
+  }
+.follow-us-image{
+  display: none;
+}
+}
