@@ -34,7 +34,7 @@
 .contact-content p {
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .contact-card-container {
@@ -192,7 +192,7 @@
   height: 100vh;
   color: var(--secondary-color);
   background: var(--secondary-color);
-  padding: 30px var(--secondary-color)
+  padding: 30px var(--secondary-color);
 }
 
 .map-container {
@@ -247,8 +247,6 @@
   font-size: 18px;
 }
 
-
-
 .submit-button {
   width: 50%;
   padding: 12px;
@@ -271,4 +269,53 @@
   font-size: 16px;
   color: #ccc;
   text-align: center;
+}
+
+@media (max-width: 750px) {
+  .contact-card-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .img-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-card-address {
+    margin: 30px;
+  }
+  .follow-us-title {
+    font-size: 10vw;
+    text-align: center;
+    width: 100%;
+    /* margin-left: -10vw; */
+    align-items: center;
+  }.feedback-title{
+    font-size: 11vw;
+  } 
+  .feedback-container{
+    padding: 0;
+  }
+  .map-container {
+    display: none;
+  }
+  .feedback-form {
+    width: 80vw;
+  }
+  .follow-us-content {
+    max-width: 100vw;
+  }
+  .follow-us-section {
+    display: flex;
+    justify-content: center;
+  }
+  .funding-text-overlay {
+    left: 35vw;
+    margin-top: 8vh;
+    font-size: 16vw;
+  }
+  .follow-us-image {
+    display: none;
+  }
 }
