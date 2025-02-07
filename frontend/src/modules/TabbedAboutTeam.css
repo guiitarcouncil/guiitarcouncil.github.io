@@ -137,3 +137,10 @@
   gap: 25px;
   padding: 10px;
 }
+
+@media (max-width : 750px){
+.tabbed-about-container {
+  padding: 0;
+}
+
+}

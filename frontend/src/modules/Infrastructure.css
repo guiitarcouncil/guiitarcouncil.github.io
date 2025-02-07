@@ -114,3 +114,17 @@
   color: #555;
   text-align: center;
 }
+
+@media (max-width : 750px){
+  .infrastructure-cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .infrastructure-heading h3 {
+    margin: 0 10px 0 10px;
+  }
+}
