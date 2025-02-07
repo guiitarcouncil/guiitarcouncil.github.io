@@ -125,3 +125,20 @@
   max-width: 500px;
   text-align: center;
 }
+ @media (max-width: 750px){
+  .about-content { 
+    flex: 0;
+    padding: 0;
+  }
+  .about-container{
+    display: block;
+  }
+  .message-item{
+    flex: none;
+  }
+  .tabs{
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+  }
+}

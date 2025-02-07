@@ -92,3 +92,11 @@
   color: var(--primary-color);
   border: #333 solid 1px;
 }
+@media (max-width: 750px) {
+  .image-car{
+    display: none;
+  }
+  .grid-container{
+    display: block;
+  }
+}
