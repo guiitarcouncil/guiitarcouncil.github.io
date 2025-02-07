@@ -90,3 +90,17 @@ p {
 .apply-button:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
 }
+
+@media (max-width : 750px){
+  .offerings{
+    padding: 50px 0;
+  }
+  .offering{
+    margin: 10px 0;
+  }
+  .associations-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+}
