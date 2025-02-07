@@ -1,13 +1,11 @@
 import "./About.css";
+import React, { useEffect } from "react";
 import TabbedAboutTeam from "./TabbedAboutTeam";
 import image from "../assets/others/campus.jpg";
 import headerImage from "../assets/others/contact.jpg";
-import { useLocation } from "react-router-dom";
-import React, { useEffect } from "react";
+import Infrastructure from "./Infrastructure";
 
 function About() {
-  
-
   return (
     <div className="mainabout">
       <div className="img-container">
@@ -26,6 +24,7 @@ function About() {
               and spirit of enterprise among young minds and innovators. GUIITAR
               Council is registered under section 8 of Companies Act, 2013.
             </p>
+
             <p>
               GUIITAR Council is committed to nurture and develop startups
               through shared resources, infrastructure, cutting-edge
@@ -96,9 +95,10 @@ function About() {
         </div>
 
         <div className="team-section">
-          <h2 id="leadership" >Meet our Leadership</h2>
+          <h2 id="leadership">Meet our Leadership</h2>
           <TabbedAboutTeam />
         </div>
+        <Infrastructure />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./modules/Navbar";
@@ -13,10 +14,7 @@ import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
 import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
-import TabbedAboutTeam from "./modules/TabbedAboutTeam";
-import Infrastructure from "./modules/Infrastructure";
-import Login from "./modules/login"
-import "./App.css";
+import Login from "./modules/login";
 
 function App() {
   return (
@@ -44,7 +42,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Login/>
+              <Login />
               <Footer />
             </>
           }
@@ -55,7 +53,7 @@ function App() {
             <>
               <Navbar />
               <About />
-              <Infrastructure />
+
               <Footer />
             </>
           }
@@ -80,7 +78,7 @@ function App() {
             </>
           }
         />
-        
+
         <Route
           path="/contact"
           element={

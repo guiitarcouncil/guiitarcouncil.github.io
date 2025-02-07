@@ -10,7 +10,9 @@ function Footer() {
   return (
     <>
     <footer>
+      
       <div className="footer-container">
+        
         <div className="footer-section">
           <p
             className="footer-copyright"
@@ -33,7 +35,15 @@ function Footer() {
         <div className="footer-section">
           <ul>
             <li>
-              <Link to="/programs">Infrastructure</Link>
+            <HashLink
+                smooth
+                to="/about#form"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Infrastructure
+              </HashLink>
             </li>
             <li>
               <Link to="/programs">Previous Events</Link>

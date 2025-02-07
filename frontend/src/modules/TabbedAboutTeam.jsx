@@ -68,6 +68,9 @@ import saurabhJain from "../assets/team/AI/saurabhJain.jpg";
 // import shaurinPatel from "../assets/team/AI/shaurinPatel.jpg";
 import sudhirGupta from "../assets/team/AI/sudhirGupta.jpg";
 import sureshOthayoth from "../assets/team/AI/sureshOthayoth.jpg";
+import krish from "../assets/team/krish.jpg";
+import foram from "../assets/team/foram.jpg"
+import kartavi from "../assets/achievements/kartavi.jpg"
 
 const TabbedAboutTeam = () => {
   const [activeTab, setActiveTab] = useState("team");
@@ -78,6 +81,7 @@ const TabbedAboutTeam = () => {
     { id: "advisory", label: "Advisory Board" },
     { id: "faculty", label: "Faculty Mentors" },
     { id: "industry", label: "Industry Mentors" },
+    { id: "tc", label: "Technical Associates" },
   ];
 
   const teamData = {
@@ -579,6 +583,33 @@ const TabbedAboutTeam = () => {
         resumeLink: "",
       },
     ],
+
+    tc: [
+      {
+        name: "Ms. Foram Mistry",
+        role: "Technical Associate",
+        image: foram,
+        resumeLink: "",
+      },
+      {
+        name: "Mr. Krish Shah",
+        role: "Technical Associate",
+        image: krish,
+        resumeLink: "",
+      },
+      {
+        name: "Ms. Kartavi Patel",
+        role: "Technical Associate",
+        image: kartavi,
+        resumeLink: "",
+      },
+      {
+        name: "Mr. Chandraveer Sinh Solanki",
+        role: "Technical Associate",
+        image: kartavi,
+        resumeLink: "",
+      },
+    ],
   };
 
   return (
@@ -598,7 +629,7 @@ const TabbedAboutTeam = () => {
       <div className="tab-content">
         <h2>{tabs.find((tab) => tab.id === activeTab)?.label}</h2>
         <div className="team-grid">
-          {teamData[activeTab].map((member, index) => (
+          {teamData[activeTab]?.map((member, index) => (
             <div className="team-member" key={index}>
               <div className="image-container">
                 <img src={member.image} alt={member.name} />
