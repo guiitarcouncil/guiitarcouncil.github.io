@@ -37,7 +37,7 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/login"
           element={
             <>
@@ -46,7 +46,7 @@ function App() {
               <Footer />
             </>
           }
-        />
+        /> */}
         <Route
           path="/about"
           element={
