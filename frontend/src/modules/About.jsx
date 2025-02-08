@@ -44,7 +44,7 @@ function About() {
           </div>
         </div>
 
-        <div id="leadership" className="message-section">
+        <div className="message-section">
           <h2>Message From Leadership</h2>
 
           <div className="message-container">
@@ -91,10 +91,11 @@ function About() {
           </div>
         </div>
 
-        <div className="team-section">
-          <h2 id="leadership">Meet our Leadership</h2>
+        <div id="leadership" className="team-section">
+          <h2>Meet our Leadership</h2>
           <TabbedAboutTeam />
         </div>
+        <div id="infra" className="infra"></div>
         <Infrastructure />
       </div>
     </div>

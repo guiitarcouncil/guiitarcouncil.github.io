@@ -1,6 +1,11 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./modules/Navbar";
 import Footer from "./modules/Footer";
 import Carousel from "./modules/Carousel";
@@ -14,83 +19,91 @@ import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
 import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
-// import Login from "./modules/login";
+import Privacy from "./modules/Privacy";
+
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <Routes key={location.pathname}>
+      {" "}
+      
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Carousel />
+            <Mission />
+            <Build />
+            <Scalar />
+            <div id="associations">
+              <Associations />
+            </div>
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <>
+            <Navbar />
+            <About />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/privacy"
+        element={
+          <>
+            <Navbar />
+            <Privacy/>
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/funding"
+        element={
+          <>
+            <Navbar />
+            <Funding />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/programs"
+        element={
+          <>
+            <Navbar />
+            <Programs />
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <>
+            <Navbar />
+            <Contact />
+            <Footer />
+          </>
+        }
+      />
+      <Route path="*" element={<Notfound />} />
+    </Routes>
+  );
+}
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navbar />
-              <Carousel />
-              <Mission />
-              <Build />
-              <Scalar />
-              <div id="associations">
-                <Associations />
-              </div>
-              <Footer />
-            </>
-          }
-        />
-        {/* <Route
-          path="/login"
-          element={
-            <>
-              <Navbar />
-              <Login />
-              <Footer />
-            </>
-          }
-        /> */}
-        <Route
-          path="/about"
-          element={
-            <>
-              <Navbar />
-              <About />
-
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/funding"
-          element={
-            <>
-              <Navbar />
-              <Funding />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/programs"
-          element={
-            <>
-              <Navbar />
-              <Programs />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/contact"
-          element={
-            <>
-              <Navbar />
-              <Contact />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="*" element={<Notfound />} />
-      </Routes>
+      <AppContent />
     </Router>
   );
 }

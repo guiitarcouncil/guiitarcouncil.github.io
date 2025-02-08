@@ -2,7 +2,7 @@ import React from "react";
 import "./Programs.css";
 import Navbar from "../modules/Navbar";
 import AchievementCarousel from "../modules/AchievementCarousel";
-import programImage from "../assets/others/contact.jpg"; // Add your image file path here
+import programImage from "../assets/others/contact.jpg";
 
 const achievements = [
   { studentCount: 2, grantAmount: 5000, projectName: "AI Research" },
@@ -15,7 +15,6 @@ function Programs() {
     <div className="programs">
       <Navbar />
 
-      {/* Add an image with text overlay */}
       <div className="img-container">
         <img
           src={programImage}
@@ -25,11 +24,15 @@ function Programs() {
         <div className="funding-text-overlay">Our Programs</div>
       </div>
 
-      {/* Achievements Section */}
-      <section id="active" className="programs-achievements">
+      <div id="programs-achievements" className="programs-achievements">
         <AchievementCarousel achievements={achievements} />
-      </section>
-      
+      </div>
+
+      <div className="phe">
+        <h1 id="phe-hea" className="phe-hea">
+          Previous Events
+        </h1>
+      </div>
     </div>
   );
 }

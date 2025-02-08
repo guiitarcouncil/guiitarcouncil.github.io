@@ -1,0 +1,114 @@
+.pira {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+.pira h1 {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pira h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.pira p {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 2px;
+}
+
+.pira ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.pira li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .pira h1 {
+    font-size: 36px;
+  }
+
+  .pira h2 {
+    font-size: 30px;
+  }
+
+  .pira p {
+    font-size: 22px;
+  }
+
+  .pira li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pira h1 {
+    font-size: 34px;
+  }
+
+  .pira h2 {
+    font-size: 28px;
+  }
+
+  .pira p {
+    font-size: 20px;
+  }
+
+  .pira li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pira h1 {
+    font-size: 28px;
+  }
+
+  .pira h2 {
+    font-size: 26px;
+  }
+
+  .pira p {
+    font-size: 18px;
+  }
+
+  .pira li {
+    font-size: 16px;
+  }
+
+  .pira {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pira h1 {
+    font-size: 32px;
+  }
+
+  .pira h2 {
+    font-size: 22px;
+  }
+
+  .pira p {
+    font-size: 16px;
+  }
+
+  .pira li {
+    font-size: 16px;
+  }
+}
