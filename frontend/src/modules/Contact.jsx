@@ -124,7 +124,7 @@ function Contact() {
           ></iframe>
         </div>
         <div id="form" className="feedback-container">
-          <h2 className="feedback-title">Get Involved with Us</h2>
+          <h2 className="feedback-title">Ask Query</h2>
           <form className="feedback-form" onSubmit={handleSubmit}>
             <input
               type="text"
