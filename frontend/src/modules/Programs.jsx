@@ -22,7 +22,7 @@ function Programs() {
           alt="Programs Background"
           className="programs-image"
         />
-        <div className="programs-text-overlay">Our Programs</div>
+        <div className="funding-text-overlay">Our Programs</div>
       </div>
 
       {/* Achievements Section */}
