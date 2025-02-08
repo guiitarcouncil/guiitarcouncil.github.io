@@ -1,16 +1,16 @@
-@import "https://fonts.googleapis.com/css2?family=Oswald&display=swap";
-:root {
-  font-family: Oswald, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #333;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.footer-mobile {
-  background-color: black;
+
+@import"https://fonts.googleapis.com/css2?family=Oswald&display=swap";:root {
+    font-family: Oswald,sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #333;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+  .footer-mobile {
+  background-color: #0d0c0c;
   color: white;
   font-family: Oswald, sans-serif;
 }

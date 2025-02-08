@@ -4,11 +4,13 @@ import { HashLink } from "react-router-hash-link";
 import logo1 from "../assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
 import FooterMobile from "./FooterMobile"
+import Newsletter from "./Newsletter"
 
 
 function Footer() {
   return (
     <>
+    <Newsletter />
     <footer>
       
       <div className="footer-container">
