@@ -34,17 +34,6 @@ function Footer() {
           <div className="footer-section">
             <ul>
               <li>
-                <HashLink
-                  smooth
-                  to="/about#form"
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                >
-                  Infrastructure
-                </HashLink>
-              </li>
-              <li>
                 <Link to="/programs">Previous Events</Link>
               </li>
 
@@ -56,7 +45,7 @@ function Footer() {
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
                 >
-                  Innovate with us
+                  Ask Query
                 </HashLink>
               </li>
               <li>
@@ -67,12 +56,15 @@ function Footer() {
                   Annual Return
                 </a>
               </li>
-              <a
-                href="https://drive.google.com/drive/folders/1JXvxN1ys5SzgwIUpajSl8wWqYnuGjkkT"
-                target="_blank"
-              >
-                Startup Resources
-              </a>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/1JXvxN1ys5SzgwIUpajSl8wWqYnuGjkkT"
+                  target="_blank"
+                >
+                  Startup Resources
+                </a>
+              </li>
+              
             </ul>
           </div>
           <div className="footer-section">
@@ -80,25 +72,15 @@ function Footer() {
               <li>
                 <HashLink
                   smooth
-                  to="/funding#ssip"
+                  to="/funding"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
                 >
-                  SSIP 2.0
+                  Apply for Funding
                 </HashLink>
               </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/funding#nodal"
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                >
-                  Nodal Institute
-                </HashLink>
-              </li>
+
               <li>
                 <HashLink
                   smooth
@@ -132,6 +114,17 @@ function Footer() {
                   Active Projects
                 </HashLink>
               </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/programs#active"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  FAQs
+                </HashLink>
+              </li>
             </ul>
           </div>
           <div className="footer-section">
@@ -161,6 +154,18 @@ function Footer() {
                   Our Associations
                 </HashLink>
               </li>
+              <li>
+              <HashLink
+                  smooth
+                  to="/funding"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Privacy Policy
+                </HashLink>
+              </li>
+              
               <li>
                 <Link to="/contact">Contact</Link>
               </li>{" "}

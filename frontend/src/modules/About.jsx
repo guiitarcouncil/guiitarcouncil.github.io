@@ -23,16 +23,13 @@ function About() {
               Vadodara, dedicated to promote and support creativity, innovation
               and spirit of enterprise among young minds and innovators. GUIITAR
               Council is registered under section 8 of Companies Act, 2013.
-            </p>
-
-            <p>
               GUIITAR Council is committed to nurture and develop startups
               through shared resources, infrastructure, cutting-edge
               laboratories, tailored mentorship, extended networking, and other
               common services such as co-working space, equipment, business
               support, and intellectual property protection.
             </p>
-
+            <br />
             <h2>Our Mission</h2>
             <p>
               Our aim is to establish global gold standards for innovation and

@@ -41,8 +41,6 @@
   transform: scale(1);
 }
 
-
-
 .newsletter-submit-container p {
   color: #fff;
   text-align: center;
@@ -51,41 +49,37 @@
   margin-top: 10px;
   height: 30px;
   width: 160px;
-  /* align-items: center; */
   border-radius: 15px;
 }
 .Newsletter-description-parent {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* max-width:250px; */
 }
 .Newsletter-description-child {
   max-width: 300px;
 }
-
-
 .email-form input::placeholder {
   color: #bbb;
 }
 .newsletter-container {
   height: 25vh;
   width: 100vw;
-  padding: 50px 0; /* Adjusted padding */
-  background-color: black;
+  padding: 50px 0;
+  background-color:var(--primary-color);
   display: flex;
-  align-items: center; /* Centers items vertically */
-  justify-content: center; /* Centers items horizontally */
+  align-items: center; 
+  justify-content: center; 
   color: #fff;
-  gap: 20px; /* Space between text and input box */
-  flex-direction: row; /* Aligns items in a row */
+  gap: 20px; 
+  flex-direction: row;
 }
 
 .newsletter-title {
   font-size: 30px;
   color: var(--secondary-color);
   font-weight: bold;
-  white-space: nowrap; /* Prevents wrapping */
+  white-space: nowrap; 
 }
 
 .newsletter-submit-container {
@@ -128,9 +122,6 @@
   margin-left: 10px;
 }
 
-
-
-/* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
   .newsletter-container {
     flex-direction: column;
@@ -158,7 +149,7 @@
 
 @media screen and (max-width: 480px) {
   .newsletter-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .email-form {

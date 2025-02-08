@@ -1,15 +1,15 @@
-
-@import"https://fonts.googleapis.com/css2?family=Oswald&display=swap";:root {
-    font-family: Oswald,sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #333;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-  }
-  .footer-mobile {
+@import "https://fonts.googleapis.com/css2?family=Oswald&display=swap";
+:root {
+  font-family: Oswald, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer-mobile {
   background-color: #0d0c0c;
   color: white;
   font-family: Oswald, sans-serif;
@@ -17,7 +17,7 @@
 .footer-mob-upper {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 0px;
   text-align: center;
   height: 25vw;
@@ -37,7 +37,6 @@
 .footer-mob-bottom {
   align-content: center;
   font-size: 25px;
-  margin-left: 18vw;
   text-align: justify;
   margin-top: -20px;
 }
@@ -67,4 +66,5 @@
 .footer-mob-section ul {
   list-style-type: none;
   padding-top: 20px;
+  text-align: center;
 }

@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: var(--secondary-color);
 }
 
 .about-content {
@@ -125,10 +125,20 @@
   max-width: 500px;
   text-align: center;
 }
- @media (max-width: 750px){
+
+
+
+
+@media (max-width: 750px){
   .about-content { 
     flex: 0;
     padding: 0;
+    text-align: center;
+  }
+  .about-content p{ 
+    flex: 0;
+    padding: 0;
+    justify-content: center;
   }
   .about-container{
     display: block;

@@ -1,6 +1,6 @@
 .infrastructure-heading h3 {
   color: var(--primary-color);
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
@@ -122,9 +122,10 @@
     width: 100%;
     gap: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .infrastructure-heading h3 {
-    margin: 0 10px 0 10px;
+    font-size:60px;
+    padding-bottom: 30px;
   }
 }

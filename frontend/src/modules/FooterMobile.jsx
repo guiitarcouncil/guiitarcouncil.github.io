@@ -1,5 +1,7 @@
 import React from "react";
 import "./FooterMobile.css";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import GUIITAR_LOGO from "../assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -7,21 +9,34 @@ function FooterMobile() {
   return (
     <>
       <div className="footer-mobile">
-        {/* <div className="footer-divider"></div> */}
-
         <div className="footer-mob-bottom">
           <div className="footer-mob-section">
             <ul style={{ marginTop: "50px" }}>
               <li>
-                <a href="">Infrastructure</a>
+                <HashLink
+                  smooth
+                  to="/about#form"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Infrastructure
+                </HashLink>
               </li>
               <li>
                 <a href="">Previous Events</a>
               </li>
 
               <li>
-                <div></div>
-                <a href="">Innovate with us</a>
+                <HashLink
+                  smooth
+                  to="/contact#form"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Ask Query
+                </HashLink>
               </li>
               <li>
                 <a
