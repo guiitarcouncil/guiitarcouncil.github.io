@@ -5,5 +5,3 @@ dist/
 __pycache__/
 *.yaml 
 *.pyc
-login.jsx
-login.css
