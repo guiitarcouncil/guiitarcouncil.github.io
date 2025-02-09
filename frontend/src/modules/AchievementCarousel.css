@@ -12,7 +12,8 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.main-heading{
+
+.main-heading {
   padding-top: 50px;
   align-items: center;
   font-size: 2.5rem;
@@ -39,9 +40,11 @@
   width: 900px;
   box-shadow: none;
 }
-.pname{
+
+.pname {
   color: var(--primary-color);
 }
+
 .project-header {
   display: flex;
   align-items: center;
@@ -56,12 +59,14 @@
   text-align: center;
 }
 
-.project-header .uni, .project-header .cmpy {
+.project-header .uni,
+.project-header .cmpy {
   width: 150px;
   height: 50px;
 }
 
-.project-header .uni img, .project-header .cmpy img {
+.project-header .uni img,
+.project-header .cmpy img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -120,8 +125,7 @@
   right: -50px;
 }
 
-
-/* 3D Priting Program */
+/* 3D Printing Program */
 .printing {
   text-align: center;
   padding: 40px;
@@ -131,23 +135,23 @@
 }
 
 .printing-content {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   gap: 90px;
 }
 
 .printing-text {
   flex: 1;
-  max-width: 700px; 
+  max-width: 700px;
   text-align: left;
   padding: 20px;
 }
 
 .printing-model {
   flex: 1;
-  width: 700px; 
+  width: 700px;
 }
 
 .printing h1 {
@@ -178,28 +182,30 @@
 }
 
 .drone-content {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   gap: 90px;
 }
 
 .drone-text {
   flex: 1;
-  max-width: 700px; 
+  max-width: 700px;
   text-align: left;
   padding: 20px;
 }
 
 .drone-i {
   flex: 1;
-  width: 700px; 
+  width: 700px;
 }
-.drone-i img{
+
+.drone-i img {
   width: 100%;
   height: 350px;
 }
+
 .drone h1 {
   font-size: 28px;
   color: #2b5482;
@@ -219,12 +225,12 @@
 }
 
 /* University logo */
-
-.achievement-carousel .uni img{
+.achievement-carousel .uni img {
   height: 50px;
   width: 150px;
 }
-.achievement-carousel .cmpy img{
+
+.achievement-carousel .cmpy img {
   height: 50px;
   width: 150px;
 }
@@ -243,4 +249,140 @@
   font-size: 18px;
   color: #555;
   margin-top: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .achievement-carousel {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .achievement-card {
+    width: 90%;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-header h3 {
+    font-size: 20px;
+  }
+
+  .students {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .student-image {
+    width: 120px;
+    height: 160px;
+  }
+
+  .student-name {
+    font-size: 12px;
+  }
+
+  .carousel-btn {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .printing-content,
+  .drone-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .printing-text,
+  .drone-text {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .printing-model,
+  .drone-i {
+    width: 100%;
+  }
+
+  .drone-i img {
+    height: 250px;
+  }
+
+  .printing h1,
+  .drone h1 {
+    font-size: 24px;
+  }
+
+  .printing-text h2,
+  .drone-text h2 {
+    font-size: 20px;
+  }
+
+  .printing-text p,
+  .drone-text p {
+    font-size: 18px;
+  }
+
+  .mentor h4 {
+    font-size: 18px;
+  }
+
+  .mentor p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ac h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .achievement-card {
+    width: 100%;
+  }
+
+  .student-image {
+    width: 100px;
+    height: 140px;
+  }
+
+  .student-name {
+    font-size: 10px;
+  }
+
+  .carousel-btn {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .printing h1,
+  .drone h1 {
+    font-size: 22px;
+  }
+
+  .printing-text h2,
+  .drone-text h2 {
+    font-size: 18px;
+  }
+
+  .printing-text p,
+  .drone-text p {
+    font-size: 16px;
+  }
+
+  .mentor h4 {
+    font-size: 16px;
+  }
+
+  .mentor p {
+    font-size: 14px;
+  }
 }
