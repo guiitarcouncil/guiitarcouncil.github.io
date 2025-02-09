@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import "./FAQ.css";
+import "./Faq.css";
 
 const faqs = [
   { question: "Question 1?", answer: "Answer 1." },
