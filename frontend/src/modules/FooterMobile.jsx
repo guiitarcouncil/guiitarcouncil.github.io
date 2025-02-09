@@ -11,26 +11,105 @@ function FooterMobile() {
       <div className="footer-mobile">
         <div className="footer-mob-bottom">
           <div className="footer-mob-section">
-            <ul style={{ marginTop: "50px" }}>
+            <ul>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>{" "}
               <li>
                 <HashLink
                   smooth
-                  to="/about#form"
+                  to="/#associations"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
                 >
-                  Infrastructure
+                  Our Associations
                 </HashLink>
               </li>
               <li>
-                <a href="">Previous Events</a>
+                <HashLink
+                  smooth
+                  to="/privacy"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Privacy Policy
+                </HashLink>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>{" "}
+            </ul>
+          </div>
+          <div className="footer-mob-section">
+            <ul>
+              <li>
+                <HashLink
+                  smooth
+                  to="/funding"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Apply for Funding
+                </HashLink>
               </li>
 
               <li>
                 <HashLink
                   smooth
-                  to="/contact#form"
+                  to="/programs#programs-achievements"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Drone Workshop
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/programs#programs-achievements"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  3D Printing Workshop
+                </HashLink>
+              </li>
+
+              <li>
+                <HashLink
+                  smooth
+                  to="/"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  FAQs
+                </HashLink>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-mob-section" style={{ marginBottom: "-30px" }}>
+            <ul style={{ marginTop: "50px" }}>
+              <li>
+                <HashLink
+                  smooth
+                  to="/programs#phe-hea"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Previous Events
+                </HashLink>
+              </li>
+
+              <li>
+                <HashLink
+                  smooth
+                  to="/contact#ask"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -53,48 +132,6 @@ function FooterMobile() {
                 >
                   Startup Resources
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-mob-section">
-            <ul>
-              <li>
-                <a href="">SSIP 2.0</a>
-              </li>
-              <li>
-                <a href="">Nodal Institute</a>
-              </li>
-
-              <li>
-                <a href="">Drone Workshop</a>
-              </li>
-              <li>
-                <a href="" target="_blank">
-                  3D Printing Workshop
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank">
-                  Active Project
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-mob-section" style={{ marginBottom: "-30px" }}>
-            <ul>
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Leadership</a>
-              </li>
-
-              <li>
-                <div></div>
-                <a href="">Our Associations</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
               </li>
             </ul>
           </div>

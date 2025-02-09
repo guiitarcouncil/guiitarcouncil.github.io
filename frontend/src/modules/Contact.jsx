@@ -16,8 +16,6 @@ const ProgramCard = ({ icon, title, description }) => (
 );
 
 function Contact() {
-
-
   const socialLinks = [
     { name: "Facebook", url: "https://www.facebook.com/gsfcuniversity" },
     {
@@ -111,7 +109,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="form-container">
+      <div id="ask" className="form-container">
         <div className="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29514.989203451187!2d73.14472959999999!3d22.377267200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc97b15555555%3A0x86e6773a36e1a153!2sGSFC%20University!5e0!3m2!1sen!2sin!4v1737613685120!5m2!1sen!2sin"
@@ -123,8 +121,10 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div id="form" className="feedback-container">
-          <h2 className="feedback-title">Ask Query</h2>
+        <div className="feedback-container">
+          <h2 className="feedback-title">
+            Ask Query
+          </h2>
           <form className="feedback-form" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -168,5 +168,3 @@ function Contact() {
 }
 
 export default Contact;
-
-

@@ -305,7 +305,7 @@ const AchievementCarousel = () => {
           &#10095;
         </button>
       </div>
-      <h1 className="main-heading">Previous Events</h1>
+      
     </div>
   );
 };

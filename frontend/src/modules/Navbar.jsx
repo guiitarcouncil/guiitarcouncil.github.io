@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo1 from "../assets/logos/new.png";
 
@@ -10,60 +10,45 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleNavigation = (path) => {
+    toggleMenu();
+    window.location.href = path; 
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <Link to="/">
+          <Link to="/" onClick={() => handleNavigation("/")}>
             <img src={logo1} alt="Logo" />
           </Link>
         </div>
 
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "")}
-              onClick={toggleMenu}
-            >
+            <Link to="/" onClick={() => handleNavigation("/")}>
               Home
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? "active" : "")}
-              onClick={toggleMenu}
-            >
+            <Link to="/about" onClick={() => handleNavigation("/about")}>
               About
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="/funding"
-              className={({ isActive }) => (isActive ? "active" : "")}
-              onClick={toggleMenu}
-            >
+            <Link to="/funding" onClick={() => handleNavigation("/funding")}>
               Funding
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="/programs"
-              className={({ isActive }) => (isActive ? "active" : "")}
-              onClick={toggleMenu}
-            >
+            <Link to="/programs" onClick={() => handleNavigation("/programs")}>
               Programs & Events
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) => (isActive ? "active" : "")}
-              onClick={toggleMenu}
-            >
+            <Link to="/contact" onClick={() => handleNavigation("/contact")}>
               Contact
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </div>

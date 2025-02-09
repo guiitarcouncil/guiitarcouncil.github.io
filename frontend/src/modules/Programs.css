@@ -20,3 +20,15 @@
   font-size: 60px;
   font-weight: bold;
 }
+.phe-hea{
+  padding-top: 50px;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.phe h1 {
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: #2b5482;
+  margin-bottom: 20px;
+  text-align: center;
+}

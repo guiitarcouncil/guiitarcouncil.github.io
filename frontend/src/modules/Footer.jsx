@@ -34,13 +34,21 @@ function Footer() {
           <div className="footer-section">
             <ul>
               <li>
-                <Link to="/programs">Previous Events</Link>
+                <HashLink
+                  smooth
+                  to="/programs#phe-hea"
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Previous Events
+                </HashLink>
               </li>
 
               <li>
                 <HashLink
                   smooth
-                  to="/contact#form"
+                  to="/contact#ask"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -64,7 +72,6 @@ function Footer() {
                   Startup Resources
                 </a>
               </li>
-              
             </ul>
           </div>
           <div className="footer-section">
@@ -84,7 +91,7 @@ function Footer() {
               <li>
                 <HashLink
                   smooth
-                  to="/programs#drone"
+                  to="/programs#programs-achievements"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -95,7 +102,7 @@ function Footer() {
               <li>
                 <HashLink
                   smooth
-                  to="/programs#3d"
+                  to="/programs#programs-achievements"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -103,21 +110,11 @@ function Footer() {
                   3D Printing Workshop
                 </HashLink>
               </li>
+
               <li>
                 <HashLink
                   smooth
-                  to="/programs#active"
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                >
-                  Active Projects
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/programs#active"
+                  to="/"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -135,17 +132,6 @@ function Footer() {
               <li>
                 <HashLink
                   smooth
-                  to="/about#leadership"
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                >
-                  Leadership
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
                   to="/#associations"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -155,9 +141,9 @@ function Footer() {
                 </HashLink>
               </li>
               <li>
-              <HashLink
+                <HashLink
                   smooth
-                  to="/funding"
+                  to="/privacy"
                   scroll={(el) =>
                     el.scrollIntoView({ behavior: "smooth", block: "start" })
                   }
@@ -165,7 +151,6 @@ function Footer() {
                   Privacy Policy
                 </HashLink>
               </li>
-              
               <li>
                 <Link to="/contact">Contact</Link>
               </li>{" "}
