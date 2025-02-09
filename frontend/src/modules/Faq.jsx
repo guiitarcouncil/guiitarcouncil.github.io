@@ -19,6 +19,7 @@ export default function FAQ() {
 
   return (
     <div className="faq-container-parent">
+       <center> <p style={{fontSize:"50px", color:"var(--primary-color)"}}>FAQs</p></center>
     <div className="faq-container-child">
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
