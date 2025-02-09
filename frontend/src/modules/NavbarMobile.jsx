@@ -64,7 +64,6 @@ const NavbarMobile = () => {
             </div>
           )}
         </div>
-        
       </div>
 
       {/* Menu overlay */}
