@@ -21,6 +21,7 @@ import Associations from "./modules/Associations";
 import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
 import Privacy from "./modules/Privacy";
+import Faq from "./modules/Faq";
 
 function AppContent() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function AppContent() {
               <div id="associations">
                 <Associations />
               </div>
+            <Faq />
               <Footer />
             </>
           }
