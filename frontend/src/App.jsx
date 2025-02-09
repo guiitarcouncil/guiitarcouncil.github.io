@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./modules/Navbar";
+import NavbarMobile from "./modules/NavbarMobile";
 import Footer from "./modules/Footer";
 import Carousel from "./modules/Carousel";
 import Scalar from "./modules/Scalar";
@@ -26,6 +27,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <NavbarMobile />
               <Carousel />
               <Mission />
               <Build />
@@ -52,8 +54,8 @@ function App() {
           element={
             <>
               <Navbar />
+              <NavbarMobile />
               <About />
-
               <Footer />
             </>
           }
@@ -63,6 +65,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <NavbarMobile />
               <Funding />
               <Footer />
             </>
@@ -73,6 +76,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <NavbarMobile />
               <Programs />
               <Footer />
             </>
@@ -84,6 +88,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <NavbarMobile />
               <Contact />
               <Footer />
             </>
