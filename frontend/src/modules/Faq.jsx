@@ -18,7 +18,8 @@ export default function FAQ() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container-parent">
+    <div className="faq-container-child">
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
           <button
@@ -33,6 +34,7 @@ export default function FAQ() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
