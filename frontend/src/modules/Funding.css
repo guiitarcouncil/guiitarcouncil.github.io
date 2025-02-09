@@ -18,7 +18,7 @@
 
 .funding-text-overlay {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 15%;
   transform: translate(-30%, -50%);
   color: var(--secondary-color);
