@@ -1,4 +1,8 @@
-.faq-container {
+.faq-container-parent {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+}
+.faq-container-child {
     max-width: 80vw;
     margin: 0 auto;
     padding: 10px;

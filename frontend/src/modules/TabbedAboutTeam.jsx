@@ -69,8 +69,9 @@ import saurabhJain from "../assets/team/AI/saurabhJain.jpg";
 import sudhirGupta from "../assets/team/AI/sudhirGupta.jpg";
 import sureshOthayoth from "../assets/team/AI/sureshOthayoth.jpg";
 import krish from "../assets/team/krish.jpg";
-import foram from "../assets/team/foram.jpg"
-import kartavi from "../assets/achievements/kartavi.jpg"
+import foram from "../assets/team/foram.jpg";
+import kartavi from "../assets/achievements/kartavi.jpg";
+import chandraveer from "../assets/team/chandraveer.png";
 
 const TabbedAboutTeam = () => {
   const [activeTab, setActiveTab] = useState("team");
@@ -606,7 +607,7 @@ const TabbedAboutTeam = () => {
       {
         name: "Mr. Chandraveer Sinh Solanki",
         role: "Technical Associate",
-        image: kartavi,
+        image: chandraveer,
         resumeLink: "",
       },
     ],

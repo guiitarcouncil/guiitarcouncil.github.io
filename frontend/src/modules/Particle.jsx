@@ -29,7 +29,7 @@ export default function Particle() {
               autoPlay: true,
               fpsLimit: 150,
               detectRetina: true,
-              fullScreen: { enable: false }, 
+              fullScreen: { enable: true }, 
               interactivity: {
                 detectsOn: "window",
                 events: {
