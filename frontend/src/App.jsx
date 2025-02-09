@@ -7,6 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Navbar from "./modules/Navbar";
+import NavbarMobile from "./modules/NavbarMobile";
 import Footer from "./modules/Footer";
 import Carousel from "./modules/Carousel";
 import Scalar from "./modules/Scalar";

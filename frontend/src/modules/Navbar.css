@@ -10,6 +10,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Hide desktop navbar on mobile */
+@media screen and (max-width: 740px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
