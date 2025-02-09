@@ -40,7 +40,7 @@ const NavbarMobile = () => {
     <nav className="navbar-mobile">
       <div className="navbar-mobile-container">
         <Link to="/" className="navbar-mobile-logo">
-          <img src={logo} alt="" height={45} />
+          <img src={logo} alt="" height={40} />
         </Link>
         
         <div className="menu-container" ref={menuRef}>
