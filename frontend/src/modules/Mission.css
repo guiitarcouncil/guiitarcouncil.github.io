@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 3vw; /* Adjust padding dynamically */
   text-align: center;
   background-color: #f9f9f9;
   color: black;
@@ -16,15 +16,17 @@
   margin-bottom: 30px;
 }
 
+/* Ensure the image wrapper scales well on different screen sizes */
 .mission-image-wrapper {
-  max-width: 650px;
-  width: 100%;
+  max-width: 100%;
+  width: 650px;
   margin: 30px 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
 
+/* Make the image responsive */
 .mission-image {
   width: 650px;
   height: auto;
@@ -35,8 +37,7 @@
   font-size: 1.4rem;
   line-height: 1.6;
   color: #333;
-
-  margin: 20px 0;
+  margin: 20px 5%;
   max-width: 900px;
 }
 
@@ -48,4 +49,50 @@
 
 .mission-description a:hover {
   text-decoration: underline;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+  .mission-title {
+    font-size: 2.2rem;
+  }
+
+  .mission-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .mission-container {
+    padding: 20px;
+  }
+
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .mission-description {
+    font-size: 1rem;
+  }
+
+  .mission-image-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .mission-title {
+    font-size: 1.8rem;
+  }
+  .mission-description {
+    font-size: 0.95rem;
+  }
+  .mission-image-wrapper {
+    width: 300px;
+  }
+  .mission-image {
+    width: 300px;
+  }
 }

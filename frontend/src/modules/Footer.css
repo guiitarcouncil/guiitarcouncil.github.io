@@ -7,7 +7,7 @@ footer {
 }
 .footer-copyright {
   margin-bottom: 25px;
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 .footer-mail {
   margin-top: 25px;
@@ -19,7 +19,7 @@ footer {
   padding-bottom: 55px;
   margin-bottom: 40px;
   position: relative;
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 
 .footer-section {
@@ -27,7 +27,7 @@ footer {
   flex: 1;
   margin: 0 10px;
   font-size: 20px;
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 
 .footer-section a:hover {
@@ -43,7 +43,6 @@ footer {
 .footer-section h4 {
   font-size: 16px;
   font-weight: bold;
-
 }
 
 .footer-section ul {
@@ -87,14 +86,14 @@ footer {
 .social-icon:hover {
   color: #ccc;
 }
-.footer-mobile-ft{
+.footer-mobile-ft {
   display: none;
 }
 @media (max-width: 750px) {
-  footer{
+  footer {
     display: none;
   }
-  .footer-mobile-ft{
+  .footer-mobile-ft {
     display: block;
   }
 }
