@@ -26,77 +26,73 @@ function AppContent() {
   const location = useLocation();
 
   return (
-    <Routes key={location.pathname}>
-      {" "}
-      
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Carousel />
-            <Mission />
-            <Build />
-            <Scalar />
-            <div id="associations">
-              <Associations />
-            </div>
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <>
-            <Navbar />
-            <About />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/privacy"
-        element={
-          <>
-            <Navbar />
-            <Privacy/>
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/funding"
-        element={
-          <>
-            <Navbar />
-            <Funding />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/programs"
-        element={
-          <>
-            <Navbar />
-            <Programs />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path="/contact"
-        element={
-          <>
-            <Navbar />
-            <Contact />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="*" element={<Notfound />} />
-    </Routes>
+    <>
+      <Navbar />
+      <NavbarMobile />
+      <Routes key={location.pathname}>
+        <Route
+          path="/"
+          element={
+            <>
+              <Carousel />
+              <Mission />
+              <Build />
+              <Scalar />
+              <div id="associations">
+                <Associations />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <About />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/privacy"
+          element={
+            <>
+              <Privacy/>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/funding"
+          element={
+            <>
+              <Funding />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/programs"
+          element={
+            <>
+              <Programs />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="*" element={<Notfound />} />
+      </Routes>
+    </>
   );
 }
 
