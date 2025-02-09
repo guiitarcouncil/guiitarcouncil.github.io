@@ -20,6 +20,7 @@ import Notfound from "./modules/Notfound";
 import Associations from "./modules/Associations";
 import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
+import Faq from "./modules/Faq";
 import Privacy from "./modules/Privacy";
 
 function AppContent() {
@@ -41,6 +42,7 @@ function AppContent() {
             <div id="associations">
               <Associations />
             </div>
+            <Faq />
             <Footer />
           </>
         }
