@@ -263,9 +263,12 @@
   .achievement-card {
     width: 90%;
   }
+  .achievement-carousel .uni img,.achievement-carousel .cmpy img  {
+    width: 100px;
+  }
 
   .project-header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
