@@ -240,7 +240,7 @@ const TabbedAboutTeam = () => {
         role: "Advisor",
         resumeLink:
           "https://drive.google.com/file/d/16STS2iKqGGcaUzEtHfY_fYdvWIASZMgw/view?usp=drive_link",
-        image: ramanan, // Corrected property name
+        image: ramanan,
       },
       {
         name: "Mr. Anupam Jatole",// Resume remaining

@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .project-header h3 {
@@ -348,6 +349,14 @@
   .achievement-card {
     width: 100%;
   }
+  .carousel-btn.prev {
+    position: absolute;
+    left: 1px;
+  }
+  .carousel-btn.next {
+    position: absolute;
+    right: 1px;
+}
 
   .student-image {
     width: 100px;
