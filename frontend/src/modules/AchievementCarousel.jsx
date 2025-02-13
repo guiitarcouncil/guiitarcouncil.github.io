@@ -104,7 +104,7 @@ const achievements = [
       { name: "Eshan Devadhara", imageUrl: eshanDevadhara },
       { name: "Atharva Sisodiya", imageUrl: AtharvaSisodiya },
       { name: "Dhruvi Gohil", imageUrl: dhruviGohel },
-      { name: "Reeyan Shaikh", imageUrl: Riyan },
+      { name: "Ryaan Shaikh", imageUrl: Riyan },
     ],
 
     mentor: "Mr. Yatharth Bhatt, Lab Assistant, SOT, GSFCU", // Only store the name
