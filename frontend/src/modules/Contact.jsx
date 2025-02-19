@@ -52,7 +52,8 @@ function Contact() {
       );
       setStatusMessage("Contact form submitted successfully!");
       setFormData({ name: "", email: "", message: "" }); // Reset form
-    } catch (error) {
+    } 
+    catch (error) {
       setStatusMessage("There was an error submitting the form.");
     }
   };

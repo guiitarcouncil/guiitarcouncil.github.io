@@ -32,6 +32,9 @@
     text-decoration: none;
     color: #333;
   }
+  .navbar-mobile-logo img {
+    height: 55px;
+  }
 
   .menu-container {
     position: relative;
@@ -71,7 +74,7 @@
   }
 
   .dropdown-menu::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -6px;
     right: 10px;

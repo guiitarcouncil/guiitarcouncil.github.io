@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background-color: var(--primary-color); 
+  color: var(--secondary-color); 
+}
 
 :root {
   font-family: "Oswald", sans-serif;
