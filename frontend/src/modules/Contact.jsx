@@ -47,7 +47,7 @@ function Contact() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/contact/submit/", // API endpoint
+        "https://guiitarcouncil.pythonanywhere.com/api/contact/submit/", // API endpoint
         formData
       );
       setStatusMessage("Contact form submitted successfully!");
