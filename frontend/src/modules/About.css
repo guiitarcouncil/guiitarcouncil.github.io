@@ -126,27 +126,24 @@
   text-align: center;
 }
 
-
-
-
-@media (max-width: 750px){
-  .about-content { 
+@media (max-width: 750px) {
+  .about-content {
     flex: 0;
     padding: 0;
     text-align: center;
   }
-  .about-content p{ 
+  .about-content p {
     flex: 0;
     padding: 0;
     justify-content: center;
   }
-  .about-container{
+  .about-container {
     display: block;
   }
-  .message-item{
+  .message-item {
     flex: none;
   }
-  .tabs{
+  .tabs {
     flex-direction: column;
     gap: 10px;
     padding: 40px;

@@ -10,7 +10,7 @@ function About() {
     <div className="mainabout">
       <div className="img-container">
         <img src={headerImage} alt="About GUIITAR" className="funding-image" />
-        <div className="funding-text-overlay">About GUIITAR Council</div>
+        <div className="funding-text-overlay">About US</div>
       </div>
 
       <div className="about-content">

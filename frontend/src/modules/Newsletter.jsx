@@ -1,36 +1,38 @@
 import React, { useState } from "react";
-
+import axios from "axios";
 import "./Newsletter.css";
 
 function Newsletter() {
   const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  // Get the API URL from environment variables (fallback to local IP)
+  const API_URL = import.meta.env.VITE_API_URL || "http://192.168.154.10:8000";
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!email) return;
+    try {
+      const response = await axios.post(`${API_URL}/api/newsletter/submit/`, {
+        email,
+      });
 
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setEmail(""); // Reset input field
-    }, 2000);
+      setStatusMessage("Email submitted successfully!");
+      setEmail(""); // Reset email field
+      setSubmitted(true); // Mark as submitted
+    } catch (error) {
+      setStatusMessage("There was an error submitting the form.");
+    }
   };
+
   return (
     <>
       <div className="newsletter-container">
         <div className="newsletter-title">Sign Up for News & Events</div>
         <div className="newsletter-submit-container">
-          <form
-            action=""
-            method="post"
-            className="email-form"
-            onSubmit={handleSubmit}
-          >
+          <form className="email-form" onSubmit={handleSubmit}>
             <input
               type="email"
-              name="newsletter-email"
-              id="newsletter-email"
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -89,7 +91,9 @@ function Newsletter() {
           </form>
         </div>
         <div className="Newsletter-description-parent">
-          
+          {statusMessage && (
+            <div className="status-message">{statusMessage}</div>
+          )}
         </div>
       </div>
     </>
