@@ -110,61 +110,62 @@ const TabbedAboutTeam = () => {
           "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=drive_link",
       },
       {
-        name: "Dr. Abha Kalaiya", //Resume remaining
+        name: "Dr. Abha Kalaiya", //done
         role: "Startup Coordinator SOM",
         image: drabha,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_791c9db3c99748eea011626aafbeb7ec.pdf",
+          "https://drive.google.com/file/d/1UWotFOvcqX73ue7MR6E1pZocL7YrsQuj/view?usp=sharing",
       },
       {
-        name: "Ms. Shweta Rajput",//Resume remaining
+        name: "Ms. Shweta Rajput",//done
         role: "Startup Coordinator SOT",
         image: msrajput,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_30e545b68e8646abb4043ff56baac9c0.pdf",
+          "https://drive.google.com/file/d/1OYMqkEx7neQQaLcQBcebpKYRX5PTMXhc/view?usp=sharing",
       },
       {
-        name: "Ms. Archana Magare",//Resume remaining
+        name: "Ms. Archana Magare",//done
         role: "Startup Coordinator SOT",
         image: msmagare,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_8c862fecfb4040eda9bb6065da714685.pdf",
+          "https://drive.google.com/file/d/1ITVTL_O2TDeGdyRF0XE254bSkbUAeKbj/view?usp=sharing",
       },
       {
-        name: "Dr. Aditya Puranik",//Resume remaining
+        name: "Dr. Aditya Puranik",//done
         role: "Startup Coordinator SOS",
         image: mrpuranik,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_e3c5553bcf1f486099ef05503f0fca2b.pdf",
+          "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
       },
       {
-        name: "Dr. Trupti Gajarai",//Resume remaining
+        name: "Dr. Trupti Gajarai",//done
         role: "Startup Coordinator SOS",
         image: drgajarai,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_f325edb945c44e829fb22469fc4668d8.pdf",
+          "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
       },
       {
-        name: "Mr. Akhilesh Prajapati",//Resume remaining
+        name: "Mr. Akhilesh Prajapati",//done
         role: "Startup Coordinator SOS",
         image: drprajapati,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_5788e1f0ae2e403ab1cdb81150dd8d4e.pdf",
+          "https://drive.google.com/file/d/1Br9gUAJ1BXvaTveLrCcnPlYRREHgGRb2/view?usp=sharing",
       },
       {
-        name: "Dr. Ankit Sudhir",//Resume remaining
+        name: "Dr. Ankit Sudhir",//done
+
         role: "Startup Coordinator SOS",
         image: drankit,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_f9f02c92324f4ef181f44044d1c9e0ce.pdf",
+          "https://drive.google.com/file/d/138G6jO_hUBZiNLQR-SmHbSk1C_PAuoAb/view?usp=sharing",
       },
 
       {
-        name: "Mr. Hemant Rajpoot",//Resume remaining
+        name: "Mr. Hemant Rajpoot",//done
         role: "IT Coordinator",
         image: mrhemant,
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_80848bbd7d624149bfa32ef7b1210ec6.pdf",
+          "https://drive.google.com/file/d/1j3pqIx6TDc_rbHZG58SqJEfE9S_MbTyY/view?usp=sharing",
       },
     ],
 
@@ -246,21 +247,21 @@ const TabbedAboutTeam = () => {
         name: "Mr. Anupam Jatole",// Resume remaining
         role: "Advisor",
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_84fb4648600c448092b192d5ab18b95c.pdf",
+          "https://drive.google.com/file/d/14CTQ1re-FYTLSavteSPDZeNpSFD85xhQ/view?usp=sharing",
         image: mranupam,
       },
       {
         name: "Mr. Hemal Patel",// Resume remaining
         role: "Advisor",
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_1a4249d90d2145d9aa72ce031579de13.pdf",
+          "https://drive.google.com/file/d/181dBRXhs5jd_gJCfxN6SAmlRyH4IiNWG/view?usp=sharing",
         image: mrhemal,
       },
       {
         name: "Mr. Shankar C Rele",// Resume remaining
         role: "Advisor",
         resumeLink:
-          "https://www.guiitarstartupcouncil.org/_files/ugd/ff2b71_c23d9d698ff940b9b4f840023375b57c.pdf",
+          "https://drive.google.com/file/d/1fgdUmTy9v5aHHtlFkwVQwA2BPHTWUpAw/view?usp=sharing",
         image: mrshankar,
       },
       {
@@ -527,7 +528,7 @@ const TabbedAboutTeam = () => {
         name: "Mr. Prakash Vaghasiya", //Resume remainig
         role: "CEO, Vise Organic",
         image: PRAKASH_VAGHASIYA,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1Cw8fFm7AZGInc6GIriNr30lqv9Cx-yCJ/view?usp=sharing",
       },
       {
         name: "Mr. Javid Shaikh",
@@ -539,7 +540,7 @@ const TabbedAboutTeam = () => {
         name: "Adv. Dr. Heena Patel", // Resume remaining
         role: "Partner, INFINVENT IP",
         image: Heena,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1FhznlDFTjrQxxzPc81a72raVViXJm_vW/view?usp=sharing",
       },
       {
         name: "Mr. Bhavik Bhansali",
@@ -557,19 +558,19 @@ const TabbedAboutTeam = () => {
         name: "CA Jitendra Jain", //Resume remaining
         role: "CEO, Tapanshi Finanziell Pvt. Ltd.",
         image: jitendraJain,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1ZIjMlISzfEHKzBtX17uy5mnafAgZyPIb/view?usp=sharing",
       },
       {
         name: "Dr. Ashish Kumar", //Resume remaining
         role: "Associate Professor, Inter University Accelerator Center",
         image: ashishKumar,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1Jk7yWnkL1dp5VS19oOrwTWrg6suAl9pi/view?usp=sharing",
       },
       {
         name: "Nilesh Vaghela", //Resume remaining
         role: "CEO, Electromech Cloudtech Pvt. Ltd.",
         image: nileshVaghela,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/126zhWcYEPqMwzxDH_p3g883ZNb4a6EYA/view?usp=sharing",
       },
       {
         name: "Karmjitsinh Bihola",
@@ -590,7 +591,7 @@ const TabbedAboutTeam = () => {
         name: "Ms. Foram Mistry",
         role: "Technical Associate",
         image: foram,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
       },
       {
         name: "Mr. Krish Shah",
@@ -608,7 +609,7 @@ const TabbedAboutTeam = () => {
         name: "Mr. Chandraveer Sinh Solanki",
         role: "Technical Associate",
         image: chandraveer,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1TGVNe7Q9Z5UFB0K1u2GGTieFTKzSJP1W/view?usp=sharing",
       },
     ],
   };

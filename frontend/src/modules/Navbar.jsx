@@ -50,6 +50,11 @@ function Navbar() {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/" onClick={() => handleNavigation("/")}>
+              Apply
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
