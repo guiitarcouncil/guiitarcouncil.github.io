@@ -16,7 +16,7 @@ function About() {
       <div className="about-content">
         <div className="about-container">
           <div className="about-content">
-            <h2>About US</h2>
+            <h2>About India</h2>
             <p>
               GU Incubation Innovation Technology and Applied Research (GUIITAR)
               Council has been established by GSFC University (GSFCU) at
