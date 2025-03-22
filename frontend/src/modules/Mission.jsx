@@ -21,7 +21,7 @@ const Mission = () => {
         mentorship, networking opportunities, and resources like co-working
         spaces and business support, we empower innovators to transform ideas
         into impactful technologies. Our goal is to nurture confident,
-        independent leaders and drive advancements that benefit society and
+        independent leaders and drive advancements that benefit society &
         industries.
       </p>
       <p className="mission-description">
