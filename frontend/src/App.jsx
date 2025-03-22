@@ -28,13 +28,13 @@ function AppContent() {
 
   return (
     <>
-      <Navbar />
-      <NavbarMobile />
       <Routes key={location.pathname}>
         <Route
           path="/"
           element={
             <>
+              <Navbar />
+              <NavbarMobile />
               <Carousel />
               <Mission />
               <Build />
@@ -42,7 +42,7 @@ function AppContent() {
               <div id="associations">
                 <Associations />
               </div>
-            <Faq />
+              <Faq />
               <Footer />
             </>
           }
@@ -51,8 +51,8 @@ function AppContent() {
           path="/about"
           element={
             <>
+              {" "}
               <About />
-              <Footer />
             </>
           }
         />
@@ -60,8 +60,10 @@ function AppContent() {
           path="/privacy"
           element={
             <>
-              <Privacy/>
-              <Footer />
+            <NavbarMobile />
+            <Navbar/>
+              <Privacy />
+              <Footer/>
             </>
           }
         />
@@ -70,7 +72,6 @@ function AppContent() {
           element={
             <>
               <Funding />
-              <Footer />
             </>
           }
         />
@@ -79,7 +80,6 @@ function AppContent() {
           element={
             <>
               <Programs />
-              <Footer />
             </>
           }
         />
@@ -88,7 +88,6 @@ function AppContent() {
           element={
             <>
               <Contact />
-              <Footer />
             </>
           }
         />

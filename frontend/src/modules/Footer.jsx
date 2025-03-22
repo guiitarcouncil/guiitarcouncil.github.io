@@ -72,6 +72,7 @@ function Footer() {
                   Startup Resources
                 </a>
               </li>
+              
             </ul>
           </div>
           <div className="footer-section">
@@ -140,20 +141,13 @@ function Footer() {
                   Our Associations
                 </HashLink>
               </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/privacy"
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                >
-                  Privacy Policy
-                </HashLink>
-              </li>
+              
               <li>
                 <Link to="/contact">Contact</Link>
               </li>{" "}
+              <li>
+                <Link to="/">Login</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -200,6 +194,30 @@ function Footer() {
               <i className="fa fa-envelope"></i>
             </a>
           </div>
+        </div>
+        <div className="allrsd">
+          <p>All rights Reserved &copy; 2025</p>
+          <HashLink
+            smooth
+            to="/terms"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Terms & Conditions
+          </HashLink>
+          <HashLink
+            smooth
+            to="/privacy"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Privacy Policy
+          </HashLink>
+          <a href="https://ivedantmistry.vercel.app/">
+            Maintained by Vedant Mistry
+          </a>
         </div>
       </footer>
       <div className="footer-mobile-ft">

@@ -222,6 +222,35 @@ function FooterMobile() {
             <i className="fa fa-envelope"></i>
           </a>
         </div>
+          
+      </div>
+      <div className="allrsd">
+      <div
+            className="footer-divider-mob-child"
+            style={{ marginTop: "50px", marginBottom: "50px" }}
+          ></div>
+        <p>All rights Reserved &copy; 2025</p>
+        <HashLink
+          smooth
+          to="/terms"
+          scroll={(el) =>
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        >
+          Terms & Conditions
+        </HashLink>
+        <HashLink
+          smooth
+          to="/privacy"
+          scroll={(el) =>
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        >
+          Privacy Policy
+        </HashLink>
+        <a href="https://ivedantmistry.vercel.app/">
+          Maintained by Vedant Mistry
+        </a>
       </div>
     </>
   );

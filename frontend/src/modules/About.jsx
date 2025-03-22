@@ -4,10 +4,15 @@ import TabbedAboutTeam from "./TabbedAboutTeam";
 import image from "../assets/others/campus.jpg";
 import headerImage from "../assets/others/contact.jpg";
 import Infrastructure from "./Infrastructure";
+import Navbar from "./Navbar"
+import NavbarMobile from "./NavbarMobile"
+import Footer from "./Footer"
 
 function About() {
   return (
     <div className="mainabout">
+      <Navbar/>
+      <NavbarMobile/>
       <div className="img-container">
         <img src={headerImage} alt="About GUIITAR" className="funding-image" />
         <div className="funding-text-overlay">About US</div>
@@ -16,7 +21,7 @@ function About() {
       <div className="about-content">
         <div className="about-container">
           <div className="about-content">
-            <h2>About India</h2>
+            <h2>About Us</h2>
             <p>
               GU Incubation Innovation Technology and Applied Research (GUIITAR)
               Council has been established by GSFC University (GSFCU) at
@@ -30,6 +35,14 @@ function About() {
               support, and intellectual property protection.
             </p>
             <br />
+            <h2>VISION</h2>
+            <p>
+              To nurture young minds by providing platform to explore and
+              showcase their potential along with generation of high added value
+              with a focus on innovation as well as marketing of technologies
+              for the betterment of Scientific, Engineering, Science &
+              Management Communities and the Society.
+            </p>
             <h2>Our Mission</h2>
             <p>
               Our aim is to establish global gold standards for innovation and
@@ -98,6 +111,7 @@ function About() {
         <div id="infra" className="infra"></div>
         <Infrastructure />
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -51,8 +51,8 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => handleNavigation("/")}>
-              Apply
+            <Link to="/login" onClick={() => handleNavigation("/login")}>
+              Login
             </Link>
           </li>
         </ul>

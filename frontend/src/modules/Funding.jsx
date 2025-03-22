@@ -4,10 +4,15 @@ import ssip from '../assets/associations/as4-new.png';
 import ipr_logo from '../assets/others/ipr.jpg';
 import wall2 from '../assets/others/contact.jpg'; 
 import nodal from '../assets/associations/guj.png'
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import NavbarMobile from "./NavbarMobile"
+
 const Funding = () => {
   return (
     <>
-      
+      <Navbar/>
+      <NavbarMobile/>
       <div className="img-container">
         <img src={wall2} alt="Background image" className="funding-image" />
         <div className="funding-text-overlay">Funding Opportunities</div>
@@ -50,6 +55,7 @@ const Funding = () => {
           <div className="image-car ipr-logo"><img src={ipr_logo} alt="" height={"400vh"} /></div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

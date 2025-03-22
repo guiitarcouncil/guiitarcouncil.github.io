@@ -61,6 +61,7 @@ const NavbarMobile = () => {
               <Link to="/funding" className="dropdown-item" onClick={() => setIsOpen(false)}>Funding</Link>
               <Link to="/programs" className="dropdown-item" onClick={() => setIsOpen(false)}>Programs and Events</Link>
               <Link to="/contact" className='dropdown-item' onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link to="/login" className='dropdown-item' onClick={() => setIsOpen(false)}>Login</Link>
             </div>
           )}
         </div>

@@ -3,6 +3,9 @@ import axios from "axios";
 import "./Contact.css";
 import bg from "../assets/others/contact.jpg";
 import trial from "../assets/trial.png";
+import Navbar from "./Navbar";
+import NavbarMobile from "./NavbarMobile";
+import Footer from "./Footer";
 
 const ProgramCard = ({ icon, title, description }) => (
   <div className="program-card">
@@ -52,8 +55,7 @@ function Contact() {
       );
       setStatusMessage("Contact form submitted successfully!");
       setFormData({ name: "", email: "", message: "" }); // Reset form
-    } 
-    catch (error) {
+    } catch (error) {
       setStatusMessage("There was an error submitting the form.");
     }
   };
@@ -61,6 +63,8 @@ function Contact() {
   return (
     <>
       <div className="mainabout">
+        <Navbar />
+        <NavbarMobile />
         <div className="img-container">
           <img src={bg} alt="About GUIITAR" className="funding-image" />
           <div className="funding-text-overlay">Contact Us</div>
@@ -112,20 +116,23 @@ function Contact() {
 
       <div id="ask" className="form-container">
         <div className="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29514.989203451187!2d73.14472959999999!3d22.377267200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc97b15555555%3A0x86e6773a36e1a153!2sGSFC%20University!5e0!3m2!1sen!2sin!4v1737613685120!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style={{ border: "0" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div className="gmap">
+            <h2 className="map-title"> Visit US </h2>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29514.989203451187!2d73.14472959999999!3d22.377267200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc97b15555555%3A0x86e6773a36e1a153!2sGSFC%20University!5e0!3m2!1sen!2sin!4v1737613685120!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: "0" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+
         <div className="feedback-container">
-          <h2 className="feedback-title">
-            Ask Query
-          </h2>
+          <h2 className="feedback-title">Ask a Query </h2>
           <form className="feedback-form" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -164,6 +171,7 @@ function Contact() {
           {statusMessage && <p className="status-message">{statusMessage}</p>}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

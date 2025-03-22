@@ -1,6 +1,8 @@
 import React from "react";
 import "./Programs.css";
 import Navbar from "../modules/Navbar";
+import NavbarMobile from "../modules/NavbarMobile";
+import Footer from "../modules/Footer";
 import AchievementCarousel from "../modules/AchievementCarousel";
 import programImage from "../assets/others/contact.jpg";
 
@@ -14,6 +16,7 @@ function Programs() {
   return (
     <div className="programs">
       <Navbar />
+      <NavbarMobile />
 
       <div className="img-container">
         <img
@@ -33,6 +36,7 @@ function Programs() {
           Previous Events
         </h1>
       </div>
+      <Footer/>
     </div>
   );
 }
