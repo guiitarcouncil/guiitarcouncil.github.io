@@ -597,7 +597,7 @@ const TabbedAboutTeam = () => {
         name: "Mr. Krish Shah",
         role: "Technical Associate",
         image: krish,
-        resumeLink: "",
+        resumeLink: "https://drive.google.com/file/d/1U1y8UrjXI7msX5wbgbTD2h1VGwlMNaiv/view?usp=sharing",
       },
       {
         name: "Ms. Kartavi Patel",
