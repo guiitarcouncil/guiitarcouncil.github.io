@@ -86,7 +86,7 @@ const TabbedAboutTeam = () => {
   ];
 
   const teamData = {
-    team: [ //8 Resumes remaining
+    team: [
       {
         name: "Mr. Bimal Bhayani",
         role: "CEO, GUIITAR",
