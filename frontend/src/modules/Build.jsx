@@ -5,6 +5,7 @@ import moneyIcon from "../assets/money.png";
 import urbanIcon from "../assets/urban.png";
 import communityIcon from "../assets/community.png";
 import brainIcon from "../assets/brain.png";
+import { HashLink } from "react-router-hash-link";
 
 const Build = () => {
   return (
@@ -14,61 +15,65 @@ const Build = () => {
       </h1>
       <div className="offerings">
         <div className="offering">
-            <img src={moneyIcon} alt="Funding" className="icon" />
-            <h2>Funding</h2>
-            <p>
-              Get access to financial support to turn your innovative ideas into
-              reality.
-            </p>
-          <Link to="/funding">
-            <button className="offering-button">Learn More</button>
-          </Link>
-        </div>
-        <div className="offering">
-            <img src={urbanIcon} alt="Infrastructure" className="icon" />
-            <h2>Infrastructure</h2>
-            <p>
-              Work in state-of-the-art facilities designed for collaboration and
-              growth.
-            </p>
-          <Link to="/resources">
-            <button className="offering-button">Learn More</button>
-          </Link>
-
-          {/* <HashLink
+          <img src={moneyIcon} alt="Funding" className="icon" />
+          <h2>Funding</h2>
+          <p>
+            Get access to financial support to turn your innovative ideas into
+            reality.
+          </p>
+          <HashLink
             smooth
-            to="/funding#ssip"
+            to="/funding#funding-image"
             scroll={(el) =>
               el.scrollIntoView({ behavior: "smooth", block: "start" })
             }
           >
-            <h2>Infrastructure</h2>
-            <p>
-              Work in state-of-the-art facilities designed for collaboration and
-              growth.
-            </p>
-          </HashLink> */}
-        </div>
-        <div className="offering">
-            <img src={communityIcon} alt="Mentorship" className="icon" />
-            <h2>Mentorship</h2>
-            <p>
-              Learn from leading industry experts to sharpen your strategies and
-              skills.
-            </p>
-          <Link to="/about">
             <button className="offering-button">Learn More</button>
-          </Link>
+          </HashLink>
         </div>
         <div className="offering">
-            <img src={brainIcon} alt="IPR Support" className="icon" />
-            <h2>IPR Support</h2>
-            <p>
-              Protect your ideas and innovations with intellectual property
-              rights assistance.
-            </p>
+          <img src={urbanIcon} alt="Infrastructure" className="icon" />
+          <h2>Infrastructure</h2>
+          <p>
+            Work in state-of-the-art facilities designed for collaboration and
+            growth.
+          </p>
+          <HashLink
+            smooth
+            to="/about#infra"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            <button className="offering-button">Learn More</button>
+          </HashLink>
+        </div>
+        <div className="offering">
+          <img src={communityIcon} alt="Mentorship" className="icon" />
+          <h2>Mentorship</h2>
+          <p>
+            Learn from leading industry experts to sharpen your strategies and
+            skills.
+          </p>
+          <HashLink
+            smooth
+            to="/about#leadership"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            <button className="offering-button">Learn More</button>
+          </HashLink>
+        </div>
+        <div className="offering">
+          <img src={brainIcon} alt="IPR Support" className="icon" />
+          <h2>IPR Support</h2>
+          <p>
+            Protect your ideas and innovations with intellectual property rights
+            assistance.
+          </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc0zfawCS7M_Q-uOzlA87ARxNCCx-wNUXAAx_54RAORIF_w6g/viewform"
+            href="https://drive.google.com/file/d/1krFQgyQ_nasChoSLrFF8zbHzNg1yM9G9/view"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -22,6 +22,8 @@ import Build from "./modules/Build";
 import ScrollToTop from "./modules/ScrollTop";
 import Privacy from "./modules/Privacy";
 import Faq from "./modules/Faq";
+import Terms from "./modules/Terms";
+import Login from "./modules/Login"
 
 function AppContent() {
   const location = useLocation();
@@ -60,10 +62,21 @@ function AppContent() {
           path="/privacy"
           element={
             <>
-            <NavbarMobile />
-            <Navbar/>
+              <NavbarMobile />
+              <Navbar />
               <Privacy />
-              <Footer/>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <>
+              <NavbarMobile />
+              <Navbar />
+              <Terms />
+              <Footer />
             </>
           }
         />
@@ -91,6 +104,14 @@ function AppContent() {
             </>
           }
         />
+        <Route
+          path="/login"
+          element={
+            <>
+            <Login/>
+            </>
+          }
+        />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </>
@@ -100,7 +121,7 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <AppContent />
     </Router>
   );

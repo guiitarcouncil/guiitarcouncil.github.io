@@ -6,7 +6,7 @@
 }
 
 .ac h1 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #2b5482;
   margin-bottom: 20px;
@@ -19,6 +19,19 @@
   font-size: 2.5rem;
 }
 
+.project-header .uni,
+.project-header .cmpy {
+  width: 150px;
+  height: 50px;
+}
+
+.project-header .uni img,
+.project-header .cmpy img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .achievement-carousel {
   display: flex;
   align-items: center;
@@ -26,9 +39,13 @@
   gap: 10px;
   background-color: #f9f9f9;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 40px auto;
-  position: relative;
+  position: relative;  /* Ensure that buttons are positioned relative to this container */
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .achievement-card {
@@ -37,12 +54,15 @@
   background: #ffffff;
   border: none;
   border-radius: 12px;
-  width: 900px;
+  width: 100%;
   box-shadow: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .pname {
   color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .project-header {
@@ -82,48 +102,59 @@
 }
 
 .student {
-  text-align: center;
+  align-items: center;
 }
 
-.student-image {
-  width: 140px;
-  height: 180px;
-  border-radius: 30%;
+.student img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover;
-  object-position: center;
-  margin-bottom: 10px;
 }
 
 .student-name {
-  margin-top: 8px;
   font-size: 14px;
   color: #333;
 }
 
 .carousel-btn {
-  background-color: #2b5482;
-  color: #ffffff;
+  background-color: #2b5482;  /* Ensure buttons are visible */
+  color: white;
   border: none;
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
   transition: background-color 0.3s ease;
+  z-index: 10 !important;  /* Ensure buttons are above other elements */
+  position: absolute !important;  /* Explicitly set absolute positioning */
 }
 
 .carousel-btn:hover {
   background-color: #000;
 }
 
+/* Adjusting the button positions */
 .carousel-btn.prev {
-  position: absolute;
-  left: -50px;
+  left: 10px !important;  /* Position button on the left */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-btn.next {
-  position: absolute;
-  right: -50px;
+  right: 10px !important;  /* Position button on the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .achievement-carousel {
+    width: 90%;
+  }
+  .achievement-card {
+    width: 100%;
+  }
 }
 
 /* 3D Printing Program */
@@ -252,6 +283,7 @@
   margin-top: 5px;
 }
 
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .achievement-carousel {
@@ -263,7 +295,8 @@
   .achievement-card {
     width: 90%;
   }
-  .achievement-carousel .uni img,.achievement-carousel .cmpy img  {
+  .achievement-carousel .uni img,
+  .achievement-carousel .cmpy img {
     width: 100px;
   }
 
@@ -359,7 +392,7 @@
   .carousel-btn.next {
     position: absolute;
     right: 1px;
-}
+  }
 
   .student-image {
     width: 100px;

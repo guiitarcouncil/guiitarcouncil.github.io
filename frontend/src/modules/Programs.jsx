@@ -24,7 +24,10 @@ function Programs() {
           alt="Programs Background"
           className="programs-image"
         />
-        <div className="funding-text-overlay">Our Programs</div>
+        <div className="funding-text-overlay">Our Programs
+          
+        </div>
+        
       </div>
 
       <div id="programs-achievements" className="programs-achievements">

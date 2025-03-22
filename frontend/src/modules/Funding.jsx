@@ -14,7 +14,7 @@ const Funding = () => {
       <Navbar/>
       <NavbarMobile/>
       <div className="img-container">
-        <img src={wall2} alt="Background image" className="funding-image" />
+        <img id = "funding-image" src={wall2} alt="Background image" className="funding-image" />
         <div className="funding-text-overlay">Funding Opportunities</div>
       </div>
 

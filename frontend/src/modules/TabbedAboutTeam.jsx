@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./TabbedAboutTeam.css";
+import dummy from "../assets/team/dummy.jpeg";
 import drbose from "../assets/team/AI/drbose.jpg";
 import drankit from "../assets/team/AI/drankit.jpg";
 import drabha from "../assets/team/AI/drabha.jpg";
@@ -102,47 +103,54 @@ const TabbedAboutTeam = () => {
           "https://drive.google.com/file/d/1ElxEwweEeZeroWkqfCd6RtrPqxKo5ZK-/view?usp=drive_link",
       },
 
+      // {
+      //   name: "Dr. Sanjukta Bose Goswami",
+      //   role: "Startup Coordinator SOT",
+      //   image: drbose,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=drive_link",
+      // },
       {
-        name: "Dr. Sanjukta Bose Goswami",
-        role: "Startup Coordinator SOT",
-        image: drbose,
+        name: "Dr. Nilesh Bhadure",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=drive_link",
+          "/",
       },
       {
-        name: "Dr. Abha Kalaiya", //done
-        role: "Startup Coordinator SOM",
-        image: drabha,
+        name: "Dr. Chandra Has",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1UWotFOvcqX73ue7MR6E1pZocL7YrsQuj/view?usp=sharing",
+          "/",
       },
       {
-        name: "Ms. Shweta Rajput",//done
-        role: "Startup Coordinator SOT",
-        image: msrajput,
+        name: "Dr. Jignesh Valand",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1OYMqkEx7neQQaLcQBcebpKYRX5PTMXhc/view?usp=sharing",
+          "/",
       },
       {
-        name: "Ms. Archana Magare",//done
-        role: "Startup Coordinator SOT",
-        image: msmagare,
+        name: "Dr. Rahul Sharma",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1ITVTL_O2TDeGdyRF0XE254bSkbUAeKbj/view?usp=sharing",
+          "/",
       },
       {
-        name: "Dr. Aditya Puranik",//done
-        role: "Startup Coordinator SOS",
-        image: mrpuranik,
+        name: "Dr. Mihir Trivedi",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
+          "/",
       },
       {
-        name: "Dr. Trupti Gajarai",//done
-        role: "Startup Coordinator SOS",
-        image: drgajarai,
+        name: "Mr. Abidhusain Lodha",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
+        "/",
       },
       {
         name: "Mr. Akhilesh Prajapati",//done
@@ -152,16 +160,72 @@ const TabbedAboutTeam = () => {
           "https://drive.google.com/file/d/1Br9gUAJ1BXvaTveLrCcnPlYRREHgGRb2/view?usp=sharing",
       },
       {
-        name: "Dr. Ankit Sudhir",//done
-
-        role: "Startup Coordinator SOS",
-        image: drankit,
+        name: "Ms. Charmi Mehta",
+        role: "Not Mentioned",
+        image: dummy,
         resumeLink:
-          "https://drive.google.com/file/d/138G6jO_hUBZiNLQR-SmHbSk1C_PAuoAb/view?usp=sharing",
+          "/",
       },
+      {
+        name: "Shri Anup Upadhaya",
+        role: "Not Mentioned",
+        image: dummy,
+        resumeLink:
+          "/",
+        },
+        {
+          name: "Ms. Chaitali Karpe",
+          role: "Not Mentioned",
+          image: dummy,
+          resumeLink:
+          "/",
+      },
+      // {
+      //   name: "Dr. Abha Kalaiya", //done
+      //   role: "Startup Coordinator SOM",
+      //   image: drabha,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1UWotFOvcqX73ue7MR6E1pZocL7YrsQuj/view?usp=sharing",
+      // },
+      // {
+      //   name: "Ms. Shweta Rajput",//done
+      //   role: "Startup Coordinator SOT",
+      //   image: msrajput,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1OYMqkEx7neQQaLcQBcebpKYRX5PTMXhc/view?usp=sharing",
+      // },
+      // {
+      //   name: "Ms. Archana Magare",//done
+      //   role: "Startup Coordinator SOT",
+      //   image: msmagare,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1ITVTL_O2TDeGdyRF0XE254bSkbUAeKbj/view?usp=sharing",
+      // },
+      // {
+      //   name: "Dr. Aditya Puranik",//done
+      //   role: "Startup Coordinator SOS",
+      //   image: mrpuranik,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
+      // },
+      // {
+      //   name: "Dr. Trupti Gajarai",//done
+      //   role: "Startup Coordinator SOS",
+      //   image: drgajarai,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/1NBPBs-RnWe6Yj9Y4P9EEI--Tav6F-yuh/view?usp=sharing",
+      // },
+      // {
+      //   name: "Dr. Ankit Sudhir",//done
+
+      //   role: "Startup Coordinator SOS",
+      //   image: drankit,
+      //   resumeLink:
+      //     "https://drive.google.com/file/d/138G6jO_hUBZiNLQR-SmHbSk1C_PAuoAb/view?usp=sharing",
+      // },
 
       {
-        name: "Mr. Hemant Rajpoot",//done
+        name: "Mr. Hemant Rajpoot"  ,//done
         role: "IT Coordinator",
         image: mrhemant,
         resumeLink:

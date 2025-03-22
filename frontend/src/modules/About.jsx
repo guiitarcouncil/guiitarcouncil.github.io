@@ -4,15 +4,15 @@ import TabbedAboutTeam from "./TabbedAboutTeam";
 import image from "../assets/others/campus.jpg";
 import headerImage from "../assets/others/contact.jpg";
 import Infrastructure from "./Infrastructure";
-import Navbar from "./Navbar"
-import NavbarMobile from "./NavbarMobile"
-import Footer from "./Footer"
+import Navbar from "./Navbar";
+import NavbarMobile from "./NavbarMobile";
+import Footer from "./Footer";
 
 function About() {
   return (
     <div className="mainabout">
-      <Navbar/>
-      <NavbarMobile/>
+      <Navbar />
+      <NavbarMobile />
       <div className="img-container">
         <img src={headerImage} alt="About GUIITAR" className="funding-image" />
         <div className="funding-text-overlay">About US</div>
@@ -108,10 +108,11 @@ function About() {
           <h2>Meet our Leadership</h2>
           <TabbedAboutTeam />
         </div>
-        <div id="infra" className="infra"></div>
-        <Infrastructure />
+        <div id="infra" className="infra">
+          <Infrastructure />
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
