@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo1 from "../Assets/logos/new.png";
+import logo1 from "../../Assets/logos/new.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
