@@ -2,8 +2,8 @@ import React from "react";
 import "./FooterMobile.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import GUIITAR_LOGO from "../../Assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
+const GUIITAR_LOGO = "/Assets/logos/white.png";
 
 function FooterMobile() {
   return (

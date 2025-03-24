@@ -1,10 +1,10 @@
+import "./Programs.css";
 import React from "react";
-import "../Programs/Programs.css";
 import Navbar from "../Navbar";
 import NavbarMobile from "../NavbarMobile";
 import Footer from "../Footer/Footer";
 import AchievementCarousel from "../Programs/AchievementCarousel";
-import programImage from "../../Assets/others/contact.jpg";
+const programImage = "/Assets/others/contact.jpg";
 
 const achievements = [
   { studentCount: 2, grantAmount: 5000, projectName: "AI Research" },

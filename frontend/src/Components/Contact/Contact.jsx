@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import axios from "axios";
 import "./Contact.css";
-import bg from "../../Assets/others/contact.jpg";
-import trial from "../../Assets/others/trial.png";
+import axios from "axios";
 import Navbar from "../Navbar";
+import React, { useState } from "react";
 import NavbarMobile from "../NavbarMobile";
 import Footer from "../Footer/Footer";
+const bg = "/Assets/others/contact.jpg";
+const trial = "/Assets/others/trial.png";
 
 const ProgramCard = ({ icon, title, description }) => (
   <div className="program-card">

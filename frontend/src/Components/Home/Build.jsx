@@ -1,11 +1,11 @@
-import React from "react";
 import "./Build.css";
+import React from "react";
 import { Link } from "react-router-dom";
-import moneyIcon from "../../Assets/others/money.png";
-import urbanIcon from "../../Assets/others/urban.png";
-import communityIcon from "../../Assets/others/community.png";
-import brainIcon from "../../Assets/others/brain.png";
 import { HashLink } from "react-router-hash-link";
+const moneyIcon = "/Assets/others/money.png";
+const urbanIcon = "/Assets/others/urban.png";
+const communityIcon = "/Assets/others/community.png";
+const brainIcon = "/Assets/others/brain.png";
 
 const Build = () => {
   return (

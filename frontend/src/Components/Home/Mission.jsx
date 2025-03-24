@@ -1,7 +1,7 @@
+import "./Mission.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Mission.css";
-import missionImage from "../../Assets/others/trial.png";
+const missionImage = "/Assets/others/trial.png";
 
 const Mission = () => {
   return (

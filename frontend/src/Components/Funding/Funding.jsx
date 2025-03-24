@@ -1,12 +1,12 @@
-import React from 'react';
 import './Funding.css';
-import ssip from '../../Assets/associations/as4-new.png';
-import ipr_logo from '../../Assets/others/ipr.jpg';
-import wall2 from '../../Assets/others/contact.jpg'; 
-import nodal from '../../Assets/associations/guj.png'
+import React from 'react';
 import Navbar from "../Navbar"
 import Footer from "../Footer/Footer"
 import NavbarMobile from "../NavbarMobile"
+const ssip = "/Assets/associations/as4-new.png";
+const ipr_logo = "/Assets/others/ipr.jpg";
+const wall2 = "/Assets/others/contact.jpg"; 
+const nodal = "/Assets/associations/guj.png";
 
 const Funding = () => {
   return (

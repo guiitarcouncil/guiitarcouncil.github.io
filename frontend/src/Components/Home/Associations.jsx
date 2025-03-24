@@ -1,27 +1,26 @@
 import React from "react";
 import "./Associations.css";
 
-// import img1 from "../../Assets/associations/as1-new.png";
-import img1 from "../../Assets/associations/as1-new.png";
-import img2 from "../../Assets/associations/guj.png";
-import img3 from "../../Assets/associations/as3-new.png";
-import img4 from "../../Assets/associations/as4-new.png";
-import img5 from "../../Assets/associations/as5-new.png";
-import img6 from "../../Assets/associations/as6-new.png";
-import img7 from "../../Assets/associations/as7-new.png";
-import img8 from "../../Assets/associations/as8.png";
-import img9 from "../../Assets/associations/as9.png";
-import img10 from "../../Assets/associations/as10-new.png";
-import img11 from "../../Assets/associations/as11-new.png";
-import img12 from "../../Assets/associations/as12-new.png";
-import img13 from "../../Assets/associations/as13-new.png";
-import img14 from "../../Assets/associations/as14-new.png";
-import img15 from "../../Assets/associations/as15-new.png";
-import img16 from "../../Assets/associations/as16-new.png";
-import img17 from "../../Assets/associations/as17-new.png";
-import img18 from "../../Assets/associations/as18-new.png";
-import img19 from "../../Assets/associations/as19-new.jpeg";
-import img20 from "../../Assets/associations/as20-new.png";
+const img1 = "/Assets/associations/as1-new.png";
+const img2 = "/Assets/associations/guj.png";
+const img3 = "/Assets/associations/as3-new.png";
+const img4 = "/Assets/associations/as4-new.png";
+const img5 = "/Assets/associations/as5-new.png";
+const img6 = "/Assets/associations/as6-new.png";
+const img7 = "/Assets/associations/as7-new.png";
+const img8 = "/Assets/associations/as8.png";
+const img9 = "/Assets/associations/as9.png";
+const img10 = "/Assets/associations/as10-new.png";
+const img11 = "/Assets/associations/as11-new.png";
+const img12 = "/Assets/associations/as12-new.png";
+const img13 = "/Assets/associations/as13-new.png";
+const img14 = "/Assets/associations/as14-new.png";
+const img15 = "/Assets/associations/as15-new.png";
+const img16 = "/Assets/associations/as16-new.png";
+const img17 = "/Assets/associations/as17-new.png";
+const img18 = "/Assets/associations/as18-new.png";
+const img19 = "/Assets/associations/as19-new.jpeg";
+const img20 = "/Assets/consts/as20-new.png";
 
 const Associations = () => {
     return (

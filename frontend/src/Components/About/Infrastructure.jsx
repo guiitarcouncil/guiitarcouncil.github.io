@@ -1,14 +1,14 @@
 import React from "react";
 import "../About/Infrastructure.css";
-import coWorkingSpace from "../../Assets/infrastructure/coWorkingSpace.jpg";
-import designLab from "../../Assets/infrastructure/designLab.jpg";
-import droneLab_GUIITAR from "../../Assets/infrastructure/droneLab_GUIITAR.jpg";
-import giitarlab from "../../Assets/infrastructure/giitarlab.jpg";
-import library from "../../Assets/infrastructure/library.jpg";
-import printingLab from "../../Assets/infrastructure/printingLab.jpg";
-import supercomputer_lab from "../../Assets/infrastructure/supercomputer_lab.jpg";
-import surjan from "../../Assets/infrastructure/surjan.jpg";
-import tinkeringLab from "../../Assets/infrastructure/tinkeringLab.jpg";
+const coWorkingSpace = "/Assets/infrastructure/coWorkingSpace.jpg";
+const designLab = "/Assets/infrastructure/designLab.jpg";
+const droneLab_GUIITAR = "/Assets/infrastructure/droneLab_GUIITAR.jpg";
+const giitarlab = "/Assets/infrastructure/giitarlab.jpg";
+const library = "/Assets/infrastructure/library.jpg";
+const printingLab = "/Assets/infrastructure/printingLab.jpg";
+const supercomputer_lab = "/Assets/infrastructure/supercomputer_lab.jpg";
+const surjan = "/Assets/infrastructure/surjan.jpg";
+const tinkeringLab = "/Assets/infrastructure/tinkeringLab.jpg";
 
 function Infrastructure() {
   const cardsData = [

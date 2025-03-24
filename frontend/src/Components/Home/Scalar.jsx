@@ -1,5 +1,5 @@
-import React from "react";
 import "./Scalar.css"; 
+import React from "react";
 
 function Scalar() {
   const stats = [

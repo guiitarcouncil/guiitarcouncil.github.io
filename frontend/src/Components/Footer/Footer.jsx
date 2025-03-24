@@ -1,10 +1,10 @@
 import "./Footer.css";
+import Newsletter from "./Newsletter";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo1 from "../../Assets/logos/white.png";
 import "font-awesome/css/font-awesome.min.css";
+const logo1 = "/Assets/logos/white.png";
 import FooterMobile from "./FooterMobile";
-import Newsletter from "./Newsletter";
 
 function Footer() {
   return (

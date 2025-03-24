@@ -1,5 +1,5 @@
-import React from 'react';
 import './Carousel.css';
+import React from 'react';
 import Particle from './Particle';
 
 function Carousel() {

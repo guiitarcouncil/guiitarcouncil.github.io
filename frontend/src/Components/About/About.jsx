@@ -1,12 +1,12 @@
 import "./About.css";
 import React, { useEffect } from "react";
-import TabbedAboutTeam from "../About/TabbedAboutTeam";
-import image from "../../Assets/others/campus.jpg";
-import headerImage from "../../Assets/others/contact.jpg";
-import Infrastructure from "../About/Infrastructure";
 import Navbar from "../Navbar";
-import NavbarMobile from "../NavbarMobile";
 import Footer from "../Footer/Footer";
+import NavbarMobile from "../NavbarMobile";
+import Infrastructure from "../About/Infrastructure";
+import TabbedAboutTeam from "../About/TabbedAboutTeam";
+const image = "/Assets/others/campus.jpg";
+const headerImage = "/Assets/others/contact.jpg";
 
 function About() {
   return (
