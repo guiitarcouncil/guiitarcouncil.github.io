@@ -6,24 +6,23 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Navbar from "./modules/Navbar";
-import NavbarMobile from "./modules/NavbarMobile";
-import Footer from "./modules/Footer";
-import Carousel from "./modules/Carousel";
-import Scalar from "./modules/Scalar";
-import Mission from "./modules/Mission";
-import About from "./modules/About";
-import Funding from "./modules/Funding";
-import Programs from "./modules/Programs";
-import Contact from "./modules/Contact";
-import Notfound from "./modules/Notfound";
-import Associations from "./modules/Associations";
-import Build from "./modules/Build";
-import ScrollToTop from "./modules/ScrollTop";
-import Privacy from "./modules/Privacy";
-import Faq from "./modules/Faq";
-import Terms from "./modules/Terms";
-import Login from "./modules/Login"
+import Navbar from "./components/Navbar";
+import NavbarMobile from "./components/NavbarMobile";
+import Footer from "./components/Footer/Footer";
+import Carousel from "./components/Home/Carousel";
+import Scalar from "./components/Home/Scalar";
+import Mission from "./components/Home/Mission";
+import About from "./components/About/About";
+import Funding from "./components/Funding/Funding";
+import Programs from "./components/Programs/Programs";
+import Contact from "./components/Contact/Contact";
+import Notfound from "./components/Notfound";
+import Associations from "./components/Home/Associations";
+import Build from "./components/Home/Build";
+import Privacy from "./components/Privacy";
+import Faq from "./Components/Home/Faq";
+import Terms from "./components/Terms";
+import Login from "./Auth/Login"
 
 function AppContent() {
   const location = useLocation();
