@@ -6,8 +6,8 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Navbar from "../Navbar";
-import NavbarMobile from "../NavbarMobile";
+import Navbar from "../src/Components/Navbar";
+import NavbarMobile from "../src/Components/NavbarMobile";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Home/Carousel";
 import Scalar from "./components/Home/Scalar";
