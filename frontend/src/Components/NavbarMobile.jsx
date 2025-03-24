@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarMobile.css';
-import logo from "../../Assets/logos/logo.jpeg";
+import logo from ".././Assets/logos/logo.jpeg";
+// import logo from "../../Assets/logos/logo.jpeg";
 
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
