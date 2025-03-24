@@ -12,15 +12,15 @@ import Footer from "../src/Components/Footer/Footer";
 import Carousel from "../src/Components/Home/Carousel";
 import Scalar from "../src/Components/Home/Scalar";
 import Mission from "../src/Components/Home/Mission";
-import About from "..src/Components/About/About";
-import Funding from "..src/Components/Funding/Funding";
-import Programs from "..src/Components/Programs/Programs";
-import Contact from "..src/Components/Contact/Contact";
+import About from "../src/Components/About/About";
+import Funding from "../src/Components/Funding/Funding";
+import Programs from "../src/Components/Programs/Programs";
+import Contact from "../src/Components/Contact/Contact";
 import Notfound from "./Components/Notfound";
-import Associations from "..src/Components/Home/Associations";
-import Build from "..src/Components/Home/Build";
+import Associations from "../src/Components/Home/Associations";
+import Build from "../src/Components/Home/Build";
 import Privacy from "./Components/Privacy";
-import Faq from "..src/Components/Home/Faq";
+import Faq from "../src/Components/Home/Faq";
 import Terms from "./Components/Terms";
 import Login from "./Auth/Login"
 
