@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Navbar from "../src/Components/Navbar";
 import NavbarMobile from "../src/Components/NavbarMobile";
-import Footer from "./components/Footer/Footer";
+import Footer from "../src/Components/Footer/Footer";
 import Carousel from "./components/Home/Carousel";
 import Scalar from "./components/Home/Scalar";
 import Mission from "./components/Home/Mission";
