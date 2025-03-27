@@ -1,93 +1,167 @@
 import React, { useState } from "react";
 import "./TabbedAboutTeam.css";
-// import shaurinPatel from "../../Assets/team/AI/shaurinPatel.jpg";
-const drankit = "/Assets/team/AI/drankit.jpg";
-const drgajarai = "/Assets/team/AI/drgajarai.jpg";
-const abha = "/Assets/team/AI/drabha.jpg";
-const mrpuranik = "/Assets/team/AI/mrpuranik.jpg";
-const msrajput = "/Assets/team/AI/msrajput.jpg";
-const dummy = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068744/dummy_yky2vq.jpg";
-const drbose = "/Assets/team/AI/drbose.jpg";
-const drmadhukumar = "/Assets/team/AI/drmadhukumar.jpg";
-const drprajapati = "/Assets/team/AI/drprajapati.jpg";
-const mrgrsinha = "/Assets/team/AI/mr_grsinha.jpg";
-const mrali = "/Assets/team/AI/mrali.jpg";
-const mranupam = "/Assets/team/AI/mranupam.jpg";
-const mrbhavesh = "/Assets/team/AI/mrbhavesh.jpg";
-const mrbimal = "/Assets/team/AI/mrbimal.jpg";
-const mrhemal = "/Assets/team/AI/mrhemal.jpg";
-const mrhemant = "/Assets/team/hemantsir.jpg";
-const mrkiran = "/Assets/team/AI/mrkiran.jpg";
-const mrnilesh = "/Assets/team/AI/mrnilesh.jpg";
-const mmirav = "/Assets/team/AI/mrnirav.jpg";
-const mrpanchal = "/Assets/team/AI/mrpanchal.jpg";
-const mrpktaneja = "/Assets/team/AI/mrpktaneja.jpg";
-const mrpujan = "/Assets/team/AI/mrpujan.jpg";
-const ramanan = "/Assets/team/AI/mrramanan.jpg";
-const mrravin = "/Assets/team/AI/mrravin.jpg";
-const mrshankar = "/Assets/team/AI/mrshankar.jpg";
-const mrutkarsh = "/Assets/team/AI/mrutkarsh.jpg";
-const msmagare = "/Assets/team/AI/msmagare.jpg";
-const mspoyni = "/Assets/team/AI/mspoyni.jpg";
-const msswati = "/Assets/team/AI/msswati.jpg";
-const drTrivedi = "/Assets/team/AI/drTrivedi.jpg";
-const devjaniBanerjee = "/Assets/team/AI/devjaniBanerjee.jpg";
-const chetnaParmar = "/Assets/team/AI/chetnaParmar.jpg";
-const mosamPatel = "/Assets/team/AI/mosamPatel.jpg";
-const artiBhadoria = "/Assets/team/AI/artiBhadoria.jpg";
-const parinKanaiya = "/Assets/team/AI/parinKanaiya.jpg";
-const swatiSaxena = "/Assets/team/AI/swatiSaxena.jpg";
-const artiHansda = "/Assets/team/AI/artiHansda.jpg";
-const akashDadhania = "/Assets/team/AI/akashDadhania.jpg";
-const amitPatel = "/Assets/team/AI/amitPatel.jpg";
-const anantAcharya = "/Assets/team/AI/anantAcharya.jpg";
-const ashishKumar = "/Assets/team/AI/ashishKumar.jpg";
-const ashutoshTewari = "/Assets/team/AI/ashutoshTewari.jpg";
-const ashwinParikh = "/Assets/team/AI/ashwinParikh.jpg";
-const bhaveshChelani = "/Assets/team/AI/bhaveshChelani.jpg";
-const bhaveshKothari = "/Assets/team/AI/bhaveshKothari.jpg";
-const Bhavik = "/Assets/team/AI/Bhavik.jpg";
-const BHAVIK_BHANSALI = "/Assets/team/AI/BHAVIK_BHANSALI.jpg";
-const brijeshGarala = "/Assets/team/AI/brijeshGarala.jpg";
-const chintanPopat = "/Assets/team/AI/chintanPopat.jpg";
-const devangPatel = "/Assets/team/AI/devangPatel.jpg";
-const deveshChawla = "/Assets/team/AI/deveshChawla.jpg";
-const dhruvNath = "/Assets/team/AI/dhruvNath.jpg";
-const Heena = "/Assets/team/AI/Heena.jpg";
-const HITESH_PORWAL = "/Assets/team/AI/HITESH_PORWAL.jpg";
-const javidShaikh = "/Assets/team/AI/javidShaikh.jpg";
-const jekishanParmar = "/Assets/team/AI/jekishanParmar.jpg";
-const jitendraJain = "/Assets/team/AI/jitendraJain.jpg";
-const kalpeshShah = "/Assets/team/AI/kalpeshShah.jpg";
-const karanShah = "/Assets/team/AI/karanShah.jpg";
-const karmjitsinhBihola = "/Assets/team/AI/karmjitsinhBihola.jpg";
-const kavitaSaxena = "/Assets/team/AI/kavitaSaxena.jpg";
-const manojShukla = "/Assets/team/AI/manojShukla.jpg";
-const nileshVaghela = "/Assets/team/AI/nileshVaghela.jpg";
-const PRAKASH_VAGHASIYA = "/Assets/team/AI/PRAKASH_VAGHASIYA.jpg";
-const rupeshShah = "/Assets/team/AI/rupeshShah.jpg";
-const saurabhJain = "/Assets/team/AI/saurabhJain.jpg";
-const sudhirGupta = "/Assets/team/AI/sudhirGupta.jpg";
-const sureshOthayoth = "/Assets/team/AI/sureshOthayoth.jpg";
-const krish = "/Assets/team/krish.jpg";
-const foram = "/Assets/team/foram.jpg";
-const kartavi = "/Assets/achievements/kartavi.jpg";
-const chandraveer = "/Assets/team/chandraveer.png";
-const chaitali = "/Assets/team/original/chaitalikarpe.jpeg";
-const chhaya = "/Assets/team/original/ChhayaRaundal.jpeg";
-const drchandra = "/Assets/team/original/drchandra.jpeg";
-const drnilesh = "/Assets/team/original/drnilesh.jpeg";
-const drrahul = "/Assets/team/original/chaitalikarpe.jpeg";
-const drmihir = "/Assets/team/original/drmihir.jpg";
-const drjignesh = "/Assets/team/original/drjignesh.jpg";
-const ishika = "/Assets/team/original/IshikaPatel.jpeg";
-const Abidhusain = "/Assets/team/original/MrAbidhusain.jpeg";
-const mranup = "/Assets/team/original/mranup.jpg";
-const pranjal = "/Assets/team/original/PRANJALDAVE.png";
-const Charmi = "/Assets/team/original/MsCharmi.jpeg";
-const soham = "/Assets/team/original/Soham.png";
-const vedantratna = "/Assets/team/original/Vedantratna.jpeg";
 
+const dummy =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068625/dhruv_kfxnz7.jpg";
+const drbose =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068727/sanjukta_bose_k4tfew.jpg";
+const drmadhukumar =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068629/drmadhukumar_o8pfhu.jpg";
+const drprajapati =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drprajapati_ypczef.jpg";
+const mrgrsinha =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068647/mr_grsinha_bhbmg4.jpg";
+const mrali =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068651/mrali_cardsj.jpg";
+const mranupam =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068652/mranupam_pohuly.jpg";
+const mrbhavesh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068654/mrbhavesh_yonp29.jpg";
+const mrbimal =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068655/mrbimal_d4r8h2.jpg";
+const mrhemal =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068656/mrhemal_fzbb5p.jpg";
+const mrhemant =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068642/hemantsir_irkbsj.jpg";
+const mrkiran =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068658/mrkiran_wpigss.jpg";
+const mrnilesh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068660/mrnirav_iqrfx1.jpg";
+const mrnirav =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068660/mrnirav_iqrfx1.jpg";
+const mrpanchal =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068661/mrpanchal_g3v5ku.jpg";
+const mrpktaneja =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068724/pk_taneja_pq9i2q.jpg";
+const mrpujan =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068661/mrpujan_ov7rvt.jpg";
+const ramanan =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068665/mrramanan_t90lph.jpg";
+const mrravin =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068666/mrravin_zsrq5f.jpg";
+const mrshankar =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068680/mrshankar_d8pvxh.jpg";
+const mrutkarsh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068716/mrutkarsh_t4mamo.jpg";
+const msmagare =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068718/msmagare_ocjvny.jpg";
+const mspoyni =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068719/mspoyni_bpxhog.jpg";
+const msswati =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068721/msswati_yw12e4.jpg";
+const drTrivedi =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068632/drTrivedi_efxgjx.jpg";
+const devjaniBanerjee =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068624/devjaniBanerjee_tlo8oe.jpg";
+const chetnaParmar =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068619/chetnaParmar_yfnx5c.jpg";
+const mosamPatel =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068646/mosamPatel_luof6n.jpg";
+const artiBhadoria =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068734/artiBhadoria_xqz49x.jpg";
+const parinKanaiya =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068723/parinKanaiya_ncss5w.jpg";
+const swatiSaxena =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068730/swatiSaxena_int6i1.jpg";
+const artiHansda =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068735/artiHansda_gv8r2e.jpg";
+const akashDadhania =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068732/akash_dadhania_frz2do.jpg";
+const amitPatel =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068733/amitPatel_itsz5t.jpg";
+const anantAcharya =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068733/anantAcharya_pdpleu.jpg";
+const ashishKumar =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068735/ashishKumar_xpeop2.jpg";
+const ashutoshTewari =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068736/ashutoshTewari_qjytum.jpg";
+const ashwinParikh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068737/ashwinParikh_pvlsbh.jpg";
+const bhaveshChelani =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068737/bhaveshChelani_raywik.jpg";
+const bhaveshKothari =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068738/bhaveshKothari_ibrrho.jpg";
+const Bhavik =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068739/Bhavik_tlzsaf.jpg";
+const BHAVIK_BHANSALI =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068741/BHAVIK_BHANSALI_cdzcjl.jpg";
+const brijeshGarala =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068741/brijeshGarala_ymszsa.jpg";
+const chintanPopat =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068621/chintanPopat_vyngwy.jpg";
+const devangPatel =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068622/devangPatel_nqxnwm.jpg";
+const deveshChawla =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068623/deveshChawla_e931vr.jpg";
+const dhruvNath =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068626/dhruvNath_ba3e2w.jpg";
+const Heena =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068632/Heena_cgb9ch.jpg";
+const HITESH_PORWAL =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068633/HITESH_PORWAL_u14kdn.jpg";
+const javidShaikh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068636/javidShaikh_w5rso1.jpg";
+const jekishanParmar =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068637/jekishanParmar_qruizp.jpg";
+const jitendraJain =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068638/jitendraJain_oruign.jpg";
+const kalpeshShah =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068639/kalpeshShah_joqjhn.jpg";
+const karanShah =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068641/karanShah_kq4vvj.jpg";
+const karmjitsinhBihola =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068643/karmjitsinhBihola_tonpdi.jpg";
+const kavitaSaxena =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068644/kavitaSaxena_dzfbg1.jpg";
+const manojShukla =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068644/manojShukla_kdobmf.jpg";
+const nileshVaghela =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068722/nileshVaghela_hfv68d.jpg";
+const PRAKASH_VAGHASIYA =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068725/PRAKASH_VAGHASIYA_dils92.jpg";
+const rupeshShah =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068726/rupeshShah_odommw.jpg";
+const saurabhJain =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068728/saurabhJain_qbia4b.jpg";
+const sudhirGupta =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068729/sudhirGupta_ozqefj.jpg";
+const sureshOthayoth =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068730/sureshOthayoth_nrjh3x.jpg";
+const krish =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068650/krish_ibj5de.jpg";
+const foram =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068646/foram_msehlq.jpg";
+const kartavi =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068648/kartavi_pxkpla.jpg";
+const chandraveer =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068618/chandraveer_ikxedq.png";
+const chaitali =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068742/chaitalikarpe_qp8mqs.jpg";
+const chhaya =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068620/ChhayaRaundal_n8di4m.jpg";
+const drchandra =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068627/drchandra_lrl3it.jpg";
+const drnilesh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068630/drnilesh_o3ikuu.jpg";
+const drrahul =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068631/drrahul_lhskon.jpg";
+const drmihir =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068629/drmihir_eh0zjh.jpg";
+const drjignesh =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068628/drjignesh_kdyj4f.jpg";
+const ishika =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068634/IshikaPatel_bdyaum.jpg";
+const Abidhusain =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068649/MrAbidhusain_q28i3r.jpg";
+const mranup =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068652/mranup_jicdrs.jpg";
+const pranjal =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068726/pranjal_tbznpe.png";
+const Charmi =
+  "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068718/MsCharmi_jg7rq3.jpg";
+  const soham = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068729/Soham_vuqlss.png";
+const vedantratna = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743068731/Vedantratna_cilhhc.jpg";
+const devanshi = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743075961/WhatsApp_Image_2025-03-27_at_17.14.31_67532fc6_vevmxd.jpg";
 const TabbedAboutTeam = () => {
   const [activeTab, setActiveTab] = useState("team");
 
@@ -127,48 +201,42 @@ const TabbedAboutTeam = () => {
       // },
       {
         name: "Dr. Nilesh Bhadure",
-        role: "Not Mentioned",
+        role: "Professor",
         image: drnilesh,
-        resumeLink:
-          "",
+        resumeLink: "https://drive.google.com/file/d/1isIJeartTJQp5yJwirfFRPKvlNifryRJ/view?usp=sharing",
       },
       {
         name: "Dr. Chandra Has",
-        role: "Not Mentioned",
+        role: "Assistant Professor",
         image: drchandra,
-        resumeLink:
-          "",
+        resumeLink: "",
       },
       {
         name: "Dr. Jignesh Valand",
-        role: "Not Mentioned",
+        role: "Assistant Professor",
         image: drjignesh,
-        resumeLink:
-          "",
+        resumeLink: "",
       },
       {
         name: "Dr. Rahul Sharma",
-        role: "Not Mentioned",
+        role: "Assistant Professor",
         image: drrahul,
-        resumeLink:
-          "",
+        resumeLink: "",
       },
       {
         name: "Dr. Mihir Trivedi",
-        role: "Not Mentioned",
+        role: "Sr. Assistant Professor",
         image: drmihir,
-        resumeLink:
-          "",
+        resumeLink: "",
       },
       {
         name: "Mr. Abidhusain Lodha",
-        role: "Not Mentioned",
+        role: "Assistant Professor",
         image: Abidhusain,
-        resumeLink:
-        "",
+        resumeLink: "",
       },
       {
-        name: "Mr. Akhilesh Prajapati",//done
+        name: "Mr. Akhilesh Prajapati", //done
         role: "Startup Coordinator SOS",
         image: drprajapati,
         resumeLink:
@@ -176,24 +244,21 @@ const TabbedAboutTeam = () => {
       },
       {
         name: "Ms. Charmi Mehta",
-        role: "Not Mentioned",
+        role: "Assistant Professor",
         image: Charmi,
-        resumeLink:
-          "",
+        resumeLink: "",
       },
       {
         name: "Shri Anup Upadhaya",
-        role: "Not Mentioned",
+        role: "Lab assistant",
         image: mranup,
-        resumeLink:
-          "",
-        },
-        {
-          name: "Ms. Chaitali Karpe",
-          role: "Not Mentioned",
-          image: chaitali,
-          resumeLink:
-          "",
+        resumeLink: "",
+      },
+      {
+        name: "Ms. Chaitali Karpe",
+        role: "Lab assistant",
+        image: chaitali,
+        resumeLink: "",
       },
       // {
       //   name: "Dr. Abha Kalaiya", //done
@@ -240,7 +305,7 @@ const TabbedAboutTeam = () => {
       // },
 
       {
-        name: "Mr. Hemant Rajpoot"  ,//done
+        name: "Mr. Hemant Rajpoot", //done
         role: "IT Coordinator",
         image: mrhemant,
         resumeLink:
@@ -248,7 +313,8 @@ const TabbedAboutTeam = () => {
       },
     ],
 
-    directors: [ //Done
+    directors: [
+      //Done
       {
         name: "Shri P. K. Taneja, IAS (Retd.)",
         role: "Chairman",
@@ -307,7 +373,7 @@ const TabbedAboutTeam = () => {
       },
     ],
 
-    advisory: [ 
+    advisory: [
       {
         name: "Dr. Madhukumar Mehta",
         role: "Advisor",
@@ -323,21 +389,21 @@ const TabbedAboutTeam = () => {
         image: ramanan,
       },
       {
-        name: "Mr. Anupam Jatole",// Resume remaining
+        name: "Mr. Anupam Jatole", // Resume remaining
         role: "Advisor",
         resumeLink:
           "https://drive.google.com/file/d/14CTQ1re-FYTLSavteSPDZeNpSFD85xhQ/view?usp=sharing",
         image: mranupam,
       },
       {
-        name: "Mr. Hemal Patel",// Resume remaining
+        name: "Mr. Hemal Patel", // Resume remaining
         role: "Advisor",
         resumeLink:
           "https://drive.google.com/file/d/181dBRXhs5jd_gJCfxN6SAmlRyH4IiNWG/view?usp=sharing",
         image: mrhemal,
       },
       {
-        name: "Mr. Shankar C Rele",// Resume remaining
+        name: "Mr. Shankar C Rele", // Resume remaining
         role: "Advisor",
         resumeLink:
           "https://drive.google.com/file/d/1fgdUmTy9v5aHHtlFkwVQwA2BPHTWUpAw/view?usp=sharing",
@@ -369,7 +435,7 @@ const TabbedAboutTeam = () => {
         role: "Advisor",
         resumeLink:
           "https://drive.google.com/file/d/1ovlOr2LVEmLbqmK8-H2JtIt0A2ONA3Kt/view?usp=drive_link",
-        image: mmirav,
+        image: mrnirav,
       },
       {
         name: "Mr. Azam Ali Khan",
@@ -401,297 +467,344 @@ const TabbedAboutTeam = () => {
       },
     ],
 
-    faculty: [ //Done
+    faculty: [
+      //Done
       {
         name: "Dr. Bharti Trivedi",
         role: "Visiting Professor",
         image: drTrivedi,
-        resumeLink: "https://drive.google.com/file/d/1A2q3HkyB8UPMfXCWcSFfjG1ob5zg_cuw/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1A2q3HkyB8UPMfXCWcSFfjG1ob5zg_cuw/view?usp=sharing",
       },
       {
         name: "Dr. Devjani Banerjee",
         role: "Assistant Professor",
         image: devjaniBanerjee,
-        resumeLink: "https://drive.google.com/file/d/17lLS0KlbIGr7IQusyJjNAVBFGrDWFkwm/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/17lLS0KlbIGr7IQusyJjNAVBFGrDWFkwm/view?usp=sharing",
       },
       {
         name: "Dr. Chetna Parmar",
         role: "Associate Dean",
         image: chetnaParmar,
-        resumeLink: "https://drive.google.com/file/d/1FwSxe7Wzou8lnaDJ-_tCtX5Ud0f0mA6T/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1FwSxe7Wzou8lnaDJ-_tCtX5Ud0f0mA6T/view?usp=sharing",
       },
       {
         name: "Dr. Sanjukta Bose Goswami",
         role: "Assistant Professor",
         image: drbose,
-        resumeLink: "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1oUzPVx2ZyouUqacRfDDSeRTkqsBJQBIH/view?usp=sharing",
       },
       {
         name: "Ms. Patel Mosam",
         role: "Assistant Professor",
         image: mosamPatel,
-        resumeLink: "https://drive.google.com/file/d/1118j5nUZCXwib9PAQWEX6-QhY64eu3Ns/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1118j5nUZCXwib9PAQWEX6-QhY64eu3Ns/view?usp=sharing",
       },
       {
         name: "Dr. Arti Bhadoria",
         role: "Assistant Professor",
         image: artiBhadoria,
-        resumeLink: "https://drive.google.com/file/d/1x0fC1FwVlDKEQnWv0z7OVVk8Itl68_f4/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1x0fC1FwVlDKEQnWv0z7OVVk8Itl68_f4/view?usp=sharing",
       },
       {
         name: "Dr. Parin Kanaiya",
         role: "Assistant Professor",
         image: parinKanaiya,
-        resumeLink: "https://drive.google.com/file/d/1-3OHEchNo4efjv6bmnDpNFqruRnjSuqK/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1-3OHEchNo4efjv6bmnDpNFqruRnjSuqK/view?usp=sharing",
       },
       {
         name: "Ms. Swati Saxena",
         role: "Assistant Professor",
         image: swatiSaxena,
-        resumeLink: "https://drive.google.com/file/d/1vBzRUcKz506cpJu0lbzZvK5-EfGo3gZa/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1vBzRUcKz506cpJu0lbzZvK5-EfGo3gZa/view?usp=sharing",
       },
       {
         name: "Dr. Akhilesh Prajapati",
         role: "Assistant Professor",
         image: drprajapati,
-        resumeLink: "https://drive.google.com/file/d/113w46kL1amfBIjEpStdAj6quOW4KLrnh/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/113w46kL1amfBIjEpStdAj6quOW4KLrnh/view?usp=sharing",
       },
       {
         name: "Ms. Archana Magare",
         role: "Assistant Professor",
         image: msmagare,
-        resumeLink: "https://drive.google.com/file/d/18SrHuomt-nJXyOCr2BOz1R67WOEq79_G/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/18SrHuomt-nJXyOCr2BOz1R67WOEq79_G/view?usp=sharing",
       },
       {
         name: "Dr. Arti Hansda",
         role: "Assistant Professor",
         image: artiHansda,
-        resumeLink: "https://drive.google.com/file/d/1xHbWbvWJ3q3gKB5k3tLhFnKaIxlKByas/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1xHbWbvWJ3q3gKB5k3tLhFnKaIxlKByas/view?usp=sharing",
       },
     ],
 
-    industry: [ 
+    industry: [
       {
         name: "Mr. Sudhir Gupta",
         role: "Member Strategic Advisory Board, Millennium Alliance",
         image: sudhirGupta,
-        resumeLink: "https://drive.google.com/file/d/1lcGUw_iv5QV_26Ws1Yw8L90m7xfyRwli/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1lcGUw_iv5QV_26Ws1Yw8L90m7xfyRwli/view?usp=sharing",
       },
       {
         name: "Prof Dhruv Nath",
         role: "Director, Lead Angels Network",
         image: dhruvNath,
-        resumeLink: "https://drive.google.com/file/d/1Xc4elkNejWYzfkdsWpvp1gzy5xeO7rZV/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Xc4elkNejWYzfkdsWpvp1gzy5xeO7rZV/view?usp=sharing",
       },
       {
         name: "Mr. Ravin Sanghavi",
         role: "Founder, Ravin Sanghavi & Associates",
         image: mrravin,
-        resumeLink: "https://drive.google.com/file/d/1buZ3lzvPBI4KuKT5ePXjW73I85Ua8MRW/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1buZ3lzvPBI4KuKT5ePXjW73I85Ua8MRW/view?usp=sharing",
       },
       {
         name: "Dr. Manoj Shukla",
         role: "CEO, Gurukul Academy",
         image: manojShukla,
-        resumeLink: "https://drive.google.com/file/d/1_gRfG0ArnfrgmEoFvciyp1mf97oEK-R7/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1_gRfG0ArnfrgmEoFvciyp1mf97oEK-R7/view?usp=sharing",
       },
       {
         name: "Mr. Rupesh Shah",
         role: "CEO, Barodaweb",
         image: rupeshShah,
-        resumeLink: "https://drive.google.com/file/d/1gDR1HkvgLwi00oeI1p18gZbH5uUyqmiG/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1gDR1HkvgLwi00oeI1p18gZbH5uUyqmiG/view?usp=sharing",
       },
       {
         name: "Kalpesh Shah",
         role: "Director, Market Creators Ltd",
         image: kalpeshShah,
-        resumeLink: "https://drive.google.com/file/d/12lHXezQ2B8cWsozcIfHbj8Uyuh1Mnk6C/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/12lHXezQ2B8cWsozcIfHbj8Uyuh1Mnk6C/view?usp=sharing",
       },
       {
         name: "Mr. Hitesh Porwal",
         role: "Founder, BIZSTART",
         image: HITESH_PORWAL,
-        resumeLink: "https://drive.google.com/file/d/1Ghm7j6Aank9BTTqNoPDz0xPSGwfnjYtz/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Ghm7j6Aank9BTTqNoPDz0xPSGwfnjYtz/view?usp=sharing",
       },
       {
         name: "Mr. Bhavesh Kothari",
         role: "Founder Director, Millennium Divas Pvt Ltd",
         image: bhaveshKothari,
-        resumeLink: "https://drive.google.com/file/d/17ffQE3p6HXSjGNKmHSEPAEGzbj5LPJPv/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/17ffQE3p6HXSjGNKmHSEPAEGzbj5LPJPv/view?usp=sharing",
       },
       {
         name: "Adv. Bhavik B Patel",
         role: "CEO, INFINVENT IP",
         image: Bhavik,
-        resumeLink: "https://drive.google.com/file/d/1Lzqfwid7roX6WrtQRodrzl1YFIeiJ0VV/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Lzqfwid7roX6WrtQRodrzl1YFIeiJ0VV/view?usp=sharing",
       },
       {
         name: "Mr. Brijesh M Garala",
         role: "Director, Oviyan Cast & Forge Pvt. Ltd.",
         image: brijeshGarala,
-        resumeLink: "https://drive.google.com/file/d/14EZFKx8KV_cJXYEOtYqvif8IWw_aXJDL/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/14EZFKx8KV_cJXYEOtYqvif8IWw_aXJDL/view?usp=sharing",
       },
       {
         name: "Mr. Bhavesh Chelani",
         role: "MD & CEO, Santushti Shakes Pvt. Ltd.",
         image: bhaveshChelani,
-        resumeLink: "https://drive.google.com/file/d/1M-Y3RraBCfMLoh1fLKkGSUlXCD1zqI4_/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1M-Y3RraBCfMLoh1fLKkGSUlXCD1zqI4_/view?usp=sharing",
       },
       {
         name: "Mr. Saurabh Jain",
         role: "Founder, FUN2DO Labs Pvt. Ltd.",
         image: saurabhJain,
-        resumeLink: "https://drive.google.com/file/d/19dmD6O2djzWMpLjt6uQMpQujBGTNgP8z/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/19dmD6O2djzWMpLjt6uQMpQujBGTNgP8z/view?usp=sharing",
       },
       {
         name: "Dr. Kavita Saxena",
         role: "Freelancer, Freelancing Startup mentor",
         image: kavitaSaxena,
-        resumeLink: "https://drive.google.com/file/d/1IKCwwhE4ABIcHe5I134-KJztuU0TI1IM/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1IKCwwhE4ABIcHe5I134-KJztuU0TI1IM/view?usp=sharing",
       },
       {
         name: "Dr. Suresh P Othayoth",
         role: "Manager - Research, GSFC Ltd.",
         image: sureshOthayoth,
-        resumeLink: "https://drive.google.com/file/d/1Azn_SAlQllptbGpXVMGylr9UIV7UQFdg/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Azn_SAlQllptbGpXVMGylr9UIV7UQFdg/view?usp=sharing",
       },
       {
         name: "Mr. Ashutosh Tewari",
         role: "Senior Venture Coach, GITAM (deemed to be) University",
         image: ashutoshTewari,
-        resumeLink: "https://drive.google.com/file/d/12Ny8kNha6UslxYB3LCJ4qMn7PocIAVSp/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/12Ny8kNha6UslxYB3LCJ4qMn7PocIAVSp/view?usp=sharing",
       },
       {
         name: "CA CS Chintan Popat",
         role: "CA CS - FOUNDER, CA Chintan Popat & Associates",
         image: chintanPopat,
-        resumeLink: "https://drive.google.com/file/d/109FOpZyhXr8ISppZnsG_XpISwwEcvVPR/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/109FOpZyhXr8ISppZnsG_XpISwwEcvVPR/view?usp=sharing",
       },
       {
         name: "Mr. Devesh Chawla",
         role: "Founder & CEO, Chatur Ideas",
         image: deveshChawla,
-        resumeLink: "https://drive.google.com/file/d/1ZBYCdGXvn3m1byMTxBltETJcE6k5GtMj/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1ZBYCdGXvn3m1byMTxBltETJcE6k5GtMj/view?usp=sharing",
       },
       {
         name: "Mr. Ashwin V. Parikh",
         role: "Director, International Business Development (IBD)",
         image: ashwinParikh,
-        resumeLink: "https://drive.google.com/file/d/1s9mst6_51eWPtcRjPFMuQKAbwHHZCvMR/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1s9mst6_51eWPtcRjPFMuQKAbwHHZCvMR/view?usp=sharing",
       },
       {
         name: "Mr. Jekishan K Parmar",
         role: "Head of Sales & Technology, Aver India Equipment",
         image: jekishanParmar,
-        resumeLink: "https://drive.google.com/file/d/1F_tQegSFZcVim7xi3nwr5UL6Vo3UCdzj/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1F_tQegSFZcVim7xi3nwr5UL6Vo3UCdzj/view?usp=sharing",
       },
       {
         name: "Mr. Amitkumar Patel",
         role: "Managing Director, PATactual IP Law Services LLP",
         image: amitPatel,
-        resumeLink: "https://drive.google.com/file/d/1Bnnp0wRZ9uec637ZvGwypIrpWDzolHZi/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Bnnp0wRZ9uec637ZvGwypIrpWDzolHZi/view?usp=sharing",
       },
       {
         name: "Mr. Karan Shah",
         role: "Head - Partnership & Outreach, Civitas Sustainability Foundation",
         image: karanShah,
-        resumeLink: "https://drive.google.com/file/d/1ejVLhVI4mhVfG1GbYK84rKBIEo6ynQNS/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1ejVLhVI4mhVfG1GbYK84rKBIEo6ynQNS/view?usp=sharing",
       },
       {
         name: "Mr. Devang Patel",
         role: "Founder, Vantage Point Executive Coaching",
         image: devangPatel,
-        resumeLink: "https://drive.google.com/file/d/1v2J70FPeCtw3Et-1Ni4cEdjAAdIrf5T_/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1v2J70FPeCtw3Et-1Ni4cEdjAAdIrf5T_/view?usp=sharing",
       },
       {
         name: "Mr. Prakash Vaghasiya", //Resume remainig
         role: "CEO, Vise Organic",
         image: PRAKASH_VAGHASIYA,
-        resumeLink: "https://drive.google.com/file/d/1Cw8fFm7AZGInc6GIriNr30lqv9Cx-yCJ/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Cw8fFm7AZGInc6GIriNr30lqv9Cx-yCJ/view?usp=sharing",
       },
       {
         name: "Mr. Javid Shaikh",
         role: "CEO, Biopharma Incubation Center (BIC), NIPER-Ahmedabad",
         image: javidShaikh,
-        resumeLink: "https://drive.google.com/file/d/1luBN1fWumxnQ6LcLwgxKztkmBUsSxcey/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1luBN1fWumxnQ6LcLwgxKztkmBUsSxcey/view?usp=sharing",
       },
       {
         name: "Adv. Dr. Heena Patel", // Resume remaining
         role: "Partner, INFINVENT IP",
         image: Heena,
-        resumeLink: "https://drive.google.com/file/d/1FhznlDFTjrQxxzPc81a72raVViXJm_vW/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1FhznlDFTjrQxxzPc81a72raVViXJm_vW/view?usp=sharing",
       },
       {
         name: "Mr. Bhavik Bhansali",
         role: "Senior Engineer, L&T Technology Services",
         image: BHAVIK_BHANSALI,
-        resumeLink: "https://drive.google.com/file/d/1uOb76AHhegheXcK7H9u1p4Gl2sT5zAeq/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1uOb76AHhegheXcK7H9u1p4Gl2sT5zAeq/view?usp=sharing",
       },
       {
         name: "Mr. Akash Dadhania",
         role: "Owner, J K Fertilizers",
         image: akashDadhania,
-        resumeLink: "https://drive.google.com/file/d/1wtPGs-6lRCm27oABbdNKH4IQWreXKIj0/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1wtPGs-6lRCm27oABbdNKH4IQWreXKIj0/view?usp=sharing",
       },
       {
         name: "CA Jitendra Jain", //Resume remaining
         role: "CEO, Tapanshi Finanziell Pvt. Ltd.",
         image: jitendraJain,
-        resumeLink: "https://drive.google.com/file/d/1ZIjMlISzfEHKzBtX17uy5mnafAgZyPIb/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1ZIjMlISzfEHKzBtX17uy5mnafAgZyPIb/view?usp=sharing",
       },
       {
         name: "Dr. Ashish Kumar", //Resume remaining
         role: "Associate Professor, Inter University Accelerator Center",
         image: ashishKumar,
-        resumeLink: "https://drive.google.com/file/d/1Jk7yWnkL1dp5VS19oOrwTWrg6suAl9pi/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1Jk7yWnkL1dp5VS19oOrwTWrg6suAl9pi/view?usp=sharing",
       },
       {
         name: "Nilesh Vaghela", //Resume remaining
         role: "CEO, Electromech Cloudtech Pvt. Ltd.",
         image: nileshVaghela,
-        resumeLink: "https://drive.google.com/file/d/126zhWcYEPqMwzxDH_p3g883ZNb4a6EYA/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/126zhWcYEPqMwzxDH_p3g883ZNb4a6EYA/view?usp=sharing",
       },
       {
         name: "Karmjitsinh Bihola",
         role: "Founder, Innodesk Designovation Services",
         image: karmjitsinhBihola,
-        resumeLink: "https://drive.google.com/file/d/15Qqik9s9MGSf1mBJ6Hah9C9ZqF8YXs1t/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/15Qqik9s9MGSf1mBJ6Hah9C9ZqF8YXs1t/view?usp=sharing",
       },
       {
         name: "Mr. Anant Acharya",
         role: "CTO, MarsBazaar.com",
         image: anantAcharya,
-        resumeLink: "https://drive.google.com/file/d/1USIuhnmDN2InedqhFO11F5y6MRbuDRsF/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1USIuhnmDN2InedqhFO11F5y6MRbuDRsF/view?usp=sharing",
       },
     ],
 
-    tc: [ 
+    tc: [
       {
         name: "Ms. Foram Mistry",
         role: "Technical Associate",
         image: foram,
-        resumeLink: "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1la_2SILlCEtfEqzgV0Klq5bXEFdFJ95R/view?usp=sharing",
       },
       {
         name: "Mr. Krish Shah",
         role: "Technical Associate",
         image: krish,
-        resumeLink: "https://drive.google.com/file/d/1U1y8UrjXI7msX5wbgbTD2h1VGwlMNaiv/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1U1y8UrjXI7msX5wbgbTD2h1VGwlMNaiv/view?usp=sharing",
       },
       {
         name: "Ms. Kartavi Patel",
         role: "Technical Associate",
         image: kartavi,
-        resumeLink: "https://drive.google.com/file/d/1He8AgeoGrk53c28OtLTIg-EnLZGZ8f4g/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1He8AgeoGrk53c28OtLTIg-EnLZGZ8f4g/view?usp=sharing",
       },
       {
         name: "Mr. Chandraveer Sinh Solanki",
         role: "Technical Associate",
         image: chandraveer,
-        resumeLink: "https://drive.google.com/file/d/1TGVNe7Q9Z5UFB0K1u2GGTieFTKzSJP1W/view?usp=sharing",
+        resumeLink:
+          "https://drive.google.com/file/d/1TGVNe7Q9Z5UFB0K1u2GGTieFTKzSJP1W/view?usp=sharing",
       },
     ],
-
 
     student: [
       {
@@ -703,7 +816,7 @@ const TabbedAboutTeam = () => {
       {
         name: "Ms. Devanshi Mufti",
         role: "Academic Associate",
-        image: dummy,
+        image: devanshi,
         resumeLink: "",
       },
       {
@@ -742,7 +855,7 @@ const TabbedAboutTeam = () => {
         image: dummy,
         resumeLink: "",
       },
-    ]
+    ],
   };
 
   return (

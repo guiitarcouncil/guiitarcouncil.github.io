@@ -5,8 +5,7 @@ import Footer from "../Footer/Footer";
 import NavbarMobile from "../NavbarMobile";
 import Infrastructure from "../About/Infrastructure";
 import TabbedAboutTeam from "../About/TabbedAboutTeam";
-// const image = "/Assets/others/campus.jpg";
-// const headerImage = "/Assets/others/contact.jpg";
+
 
 function About() {
   return (
