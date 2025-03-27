@@ -5,8 +5,8 @@ import Footer from "../Footer/Footer";
 import NavbarMobile from "../NavbarMobile";
 import Infrastructure from "../About/Infrastructure";
 import TabbedAboutTeam from "../About/TabbedAboutTeam";
-const image = "/Assets/others/campus.jpg";
-const headerImage = "/Assets/others/contact.jpg";
+// const image = "/Assets/others/campus.jpg";
+// const headerImage = "/Assets/others/contact.jpg";
 
 function About() {
   return (
@@ -14,7 +14,7 @@ function About() {
       <Navbar />
       <NavbarMobile />
       <div className="img-container">
-        <img src={headerImage} alt="About GUIITAR" className="funding-image" />
+        <img src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068853/contact_qbimui.jpg" alt="About GUIITAR" className="funding-image" />
         <div className="funding-text-overlay">About US</div>
       </div>
 
@@ -53,7 +53,7 @@ function About() {
           </div>
 
           <div className="about-image">
-            <img src={image} alt="GUIITAR Image" />
+            <img src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743068851/campus_vggvjo.jpg" alt="Campus" />
           </div>
         </div>
 

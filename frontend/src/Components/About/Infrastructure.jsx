@@ -1,14 +1,14 @@
 import React from "react";
 import "../About/Infrastructure.css";
-const coWorkingSpace = "/Assets/infrastructure/coWorkingSpace.jpg";
-const designLab = "/Assets/infrastructure/designLab.jpg";
-const droneLab_GUIITAR = "/Assets/infrastructure/droneLab_GUIITAR.jpg";
-const giitarlab = "/Assets/infrastructure/giitarlab.jpg";
-const library = "/Assets/infrastructure/library.jpg";
-const printingLab = "/Assets/infrastructure/printingLab.jpg";
-const supercomputer_lab = "/Assets/infrastructure/supercomputer_lab.jpg";
-const surjan = "/Assets/infrastructure/surjan.jpg";
-const tinkeringLab = "/Assets/infrastructure/tinkeringLab.jpg";
+const coWorkingSpace = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/coworking_space_ntgoh3.jpg";
+const designLab = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/design_lab_kj2aaa.jpg";
+const droneLab_GUIITAR = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/drone_lab_mkxvo9.jpg";
+const giitarlab = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/guiitar_lab_lh8t0a.jpg";
+const library = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/library_pt4z2o.jpg";
+const printingLab = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066525/printing_lab_wrw93w.png";
+const supercomputer_lab = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066520/supercomputer_lab_t0kplg.jpg";
+const surjan = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066521/surjan_ground_wds1sg.jpg";
+const tinkeringLab = "https://res.cloudinary.com/dopcjxehj/image/upload/v1743066521/tinkering_lab_xabcx4.jpg";
 
 function Infrastructure() {
   const cardsData = [

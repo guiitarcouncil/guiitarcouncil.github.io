@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const logo1 = "/Assets/logos/new.png";
+// const logo1 = "/Assets/logos/new.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <Link to="/" onClick={() => handleNavigation("/")}>
-            <img src={logo1} alt="Logo" />
+            <img src="https://res.cloudinary.com/dopcjxehj/image/upload/v1743065708/new_f92wp6.png" alt="Logo" />
           </Link>
         </div>
 
