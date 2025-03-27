@@ -1,5 +1,5 @@
 import "./Contact.css";
-import axios from "axios";
+// import axios from "axios";
 import Navbar from "../Navbar";
 import React, { useState } from "react";
 import NavbarMobile from "../NavbarMobile";
