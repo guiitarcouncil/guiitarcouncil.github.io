@@ -11,13 +11,14 @@ Make sure to install the following software:
 
 ## Steps to Run the Project
 
-### 1. Clone the Repository
+### 1. Either Clone the Repository using Git version control or Download the Zip file from below URL
 
 First, clone the project repository to your local machine by running the following command in your terminal or VS Code:
 ```bash
 git clone https://github.com/guiitarcouncil/home.git
 ```
 
+Download, the zip file from: https://github.com/guiitarcouncil/guiitarcouncil.github.io
 ### 2. Set Up the Frontend
 
 #### Navigate to the Frontend Directory
